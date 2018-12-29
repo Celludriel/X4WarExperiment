@@ -13,9 +13,6 @@
         <param name="AllowYaxis" default="false"/>
         <param name="DebugChance" default="0"/>
       </params>
-      <conditions>
-        <event_cue_signalled/>
-      </conditions>
       <actions>
         <do_if value="$TargetSector != null">
           <set_value name="$Station" exact="null"/>

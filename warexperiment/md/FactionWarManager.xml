@@ -6,12 +6,16 @@
         <event_cue_signalled/>
       </conditions>
 	  <actions>
-		<debug_text text="'Manage War Triggering'" chance="100"/>
 		<set_value name="$Faction" exact="event.param.{1}"/>
 		<set_value name="$ClaimedSectors" exact="event.param.{2}"/>
 		<set_value name="$AdjacentSectors" exact="event.param.{3}"/>
-		<set_value name="$DefenceStations" exact="[]"/>
-		<debug_text text="'Faction: %1 - ClaimedSectors: %2 - AdjacentSectors: %3'.[$Faction,$ClaimedSectors,$AdjacentSectors]" chance="100"/>
+		<set_value name="$TargetSector" exact="null"/>
+		<set_value name="$StationTag" exact="null"/>
+		<set_value name="$StationType" exact="''"/>
+		<set_value name="$DebugChance" exact="100"/>
+		
+		<debug_text text="'Manage War Triggering: %1'.[$Faction]" chance="$DebugChance"/>
+		<debug_text text="'Faction: %1 - ClaimedSectors: %2 - AdjacentSectors: %3'.[$Faction,$ClaimedSectors,$AdjacentSectors]" chance="$DebugChance"/>
 	  </actions>
 	  <cues>
 	  	<cue name="FWM_Prepare_Expansion">
@@ -22,41 +26,39 @@
 			<do_if value="$Faction.id == 'xenon'">
 				<set_value name="$StationType" exact="'defence'"/>
 			</do_if>
+			<set_value name="$DefenceStations" exact="[]"/>
 			
 			<do_if value="$AdjacentSectors.count gt 0">
 				<do_all exact="$AdjacentSectors.count" counter="$i" reverse="true">				
 					<find_station name="$DefenceStations" planneddefencestation="true" space="$AdjacentSectors.{$i}" checkoperational="false" multiple="true"/>
 					<find_station name="$AlreadyInProgressForFactionDefenseStations" owner="$Faction" planneddefencestation="true" space="$AdjacentSectors.{$i}" checkoperational="false" multiple="true"/>
-					<debug_text text="'Sector: %1 Owned by %2'.[$AdjacentSectors.{$i}.knownname, $AdjacentSectors.{$i}.owner.id]" chance="100"/>
-					<debug_text text="'DefenceStations: %1'.[$DefenceStations.count]" chance="100"/>
+					<debug_text text="'Sector: %1 Owned by %2'.[$AdjacentSectors.{$i}.knownname, $AdjacentSectors.{$i}.owner.id]" chance="$DebugChance"/>
+					<debug_text text="'DefenceStations: %1'.[$DefenceStations.count]" chance="$DebugChance"/>
 					<do_if value="$AdjacentSectors.{$i}.owner.id != 'ownerless' or $DefenceStations.count gt 0">
 						<remove_value name="$AdjacentSectors.{$i}"/>
 					</do_if>
 					<do_if value="$AlreadyInProgressForFactionDefenseStations.count gt 0">
 						<do_all exact="$AlreadyInProgressForFactionDefenseStations.count" counter="$i" reverse="true">	
-							<debug_text text="'%2 Already Building In Progress in: %1'.[$AlreadyInProgressForFactionDefenseStations.{$i}.sector.knownname,$Faction.knownname]" chance="100"/>
+							<debug_text text="'%2 Already Building In Progress in: %1'.[$AlreadyInProgressForFactionDefenseStations.{$i}.sector.knownname,$Faction.knownname]" chance="$DebugChance"/>
 						</do_all>
 						<set_value name="$AlreadyInProgressForFaction" exact="true"/>
 					</do_if>
 				</do_all>
-				<debug_text text="'AdjacentSectors Left: %1'.[$AdjacentSectors.count]" chance="100"/>
-				<debug_text text="'AlreadyInProgressForFaction: %1'.[$AlreadyInProgressForFaction]" chance="100"/>
+				<debug_text text="'AdjacentSectors Left: %1'.[$AdjacentSectors.count]" chance="$DebugChance"/>
+				<debug_text text="'AlreadyInProgressForFaction: %1'.[$AlreadyInProgressForFaction]" chance="$DebugChance"/>
 				<do_if value="$AdjacentSectors.count gt 0 and $AlreadyInProgressForFaction == false">
 					<set_value name="$TargetSector" exact="$AdjacentSectors.{1}" />
-					<debug_text text="'TargetSector: %1 Owned by %2'.[$TargetSector.knownname, $TargetSector.owner.knownname]" chance="100"/>
-					<signal_cue cue="FWM_Build_Defense_Station" />
+					<debug_text text="'TargetSector: %1 Owned by %2'.[$TargetSector.knownname, $TargetSector.owner.knownname]" chance="$DebugChance"/>
 				</do_if>
 			</do_if>
 		  </actions>
 		</cue>
-		<cue name="FWM_Build_Defense_Station" instantiate="true" ref="md.WarLibraries.BuildStation">
-		  <params>
+		<cue name="FWM_Build_Defense_Station" ref="md.WarLibraries.BuildStation">
 			<param name="TargetSector" value="$TargetSector"/>
 			<param name="Faction" value="$Faction"/>
 			<param name="StationTag" value="$StationTag"/>
 			<param name="StationType" value="$StationType"/>
-			<param name="DebugChance" value="100"/>
-		  </params>
+			<param name="DebugChance" value="$DebugChance"/>	
 		</cue>		
 	  </cues>
 	</cue>	
