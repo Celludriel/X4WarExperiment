@@ -1,0 +1,2746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <macro name="warexp_zone001_cluster01_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster01_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c01s001z002_c08s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster01_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c01s001z003_c02s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster01_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c01s001z004_c04s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster02_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster02_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c02s001z002_c01s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster02_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c02s001z003_c04s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster02_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c02s001z004_c10s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster03_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster03_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c03s001z002_c11s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster03_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c03s001z003_c13s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster03_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c03s001z004_c15s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster04_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster04_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c04s001z002_c02s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster04_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c04s001z003_c01s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster04_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c04s001z004_c06s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster04_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c04s001z005_c07s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster05_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster05_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c05s001z002_c12s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster05_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c05s001z003_c14s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster05_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c05s001z004_c16s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster06_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster06_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c06s001z002_c04s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster06_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c06s001z003_c17s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster06_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c06s001z004_c07s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster07_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster07_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c07s001z002_c04s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster07_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c07s001z003_c06s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster07_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c07s001z004_c19s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster08_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster08_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c08s001z002_c01s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster08_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c08s001z003_c25s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster08_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c08s001z004_c29s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster08_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c08s001z005_c09s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster08_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c08s001z006_c26s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster09_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster09_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c09s001z002_c08s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster09_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c09s001z003_c10s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster09_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c09s001z004_c27s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster10_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster10_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c10s001z002_c27s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster10_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c10s001z003_c09s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster10_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c10s001z004_c02s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster10_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c10s001z005_c12s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster10_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c10s001z006_c28s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone007_cluster10_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c10s001z007_c30s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster11_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster11_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c11s001z002_c03s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster11_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c11s001z003_c29s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster11_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c11s001z004_c32s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster11_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c11s001z005_c13s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster12_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster12_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c12s001z002_c10s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster12_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c12s001z003_c05s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster12_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c12s001z004_c14s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster12_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c12s001z005_c30s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster12_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c12s001z006_c33s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster13_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster13_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c13s001z002_c03s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster13_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c13s001z003_c11s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster13_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c13s001z004_c32s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster13_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c13s001z005_c37s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster13_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c13s001z006_c42s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone007_cluster13_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c13s001z007_c15s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster14_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster14_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c14s001z002_c12s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster14_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c14s001z003_c05s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster14_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c14s001z004_c16s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster14_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c14s001z005_c33s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster14_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c14s001z006_c38s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone007_cluster14_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c14s001z007_c43s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster15_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster15_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c15s001z002_c03s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster15_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c15s001z003_c13s001z007_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster15_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c15s001z004_c42s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster15_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c15s001z005_c45s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster15_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c15s001z006_c17s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster16_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster16_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c16s001z002_c14s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster16_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c16s001z003_c05s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster16_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c16s001z004_c19s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster16_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c16s001z005_c43s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster16_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c16s001z006_c46s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster17_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster17_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c17s001z002_c06s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster17_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c17s001z003_c15s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster17_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c17s001z004_c45s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster17_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c17s001z005_c47s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster17_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c17s001z006_c18s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone007_cluster17_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c17s001z007_c48s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster18_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster18_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c18s001z002_c17s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster18_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c18s001z003_c48s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster18_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c18s001z004_c19s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster18_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c18s001z005_c49s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster19_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster19_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c19s001z002_c16s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster19_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c19s001z003_c07s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster19_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c19s001z004_c18s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster19_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c19s001z005_c49s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster19_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c19s001z006_c46s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone007_cluster19_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c19s001z007_c50s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster20_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster20_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c20s001z002_c21s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster21_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster21_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c21s001z002_c20s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster21_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c21s001z003_c22s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster21_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c21s001z004_c23s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster22_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster22_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c22s001z002_c21s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster22_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c22s001z003_c24s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster22_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c22s001z004_c23s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster23_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster23_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c23s001z002_c21s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster23_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c23s001z003_c22s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster24_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster24_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c24s001z002_c22s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster24_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c24s001z003_c26s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster24_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c24s001z004_c27s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster25_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster25_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c25s001z002_c08s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster25_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c25s001z003_c29s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster25_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c25s001z004_c26s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster26_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster26_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c26s001z002_c24s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster26_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c26s001z003_c25s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster26_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c26s001z004_c08s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster26_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c26s001z005_c27s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster27_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster27_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c27s001z002_c10s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster27_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c27s001z003_c24s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster27_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c27s001z004_c26s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster27_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c27s001z005_c09s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster27_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c27s001z006_c28s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster28_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster28_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c28s001z002_c27s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster28_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c28s001z003_c10s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster28_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c28s001z004_c30s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster29_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster29_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c29s001z002_c08s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster29_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c29s001z003_c11s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster29_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c29s001z004_c25s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster29_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c29s001z005_c32s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster29_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c29s001z006_c56s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster30_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster30_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c30s001z002_c28s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster30_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c30s001z003_c10s001z007_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster30_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c30s001z004_c12s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster30_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c30s001z005_c33s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster30_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c30s001z006_c57s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster31_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster31_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c31s001z002_c36s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster32_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster32_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c32s001z002_c11s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster32_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c32s001z003_c13s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster32_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c32s001z004_c29s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster32_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c32s001z005_c37s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster33_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster33_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c33s001z002_c30s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster33_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c33s001z003_c12s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster33_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c33s001z004_c14s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster33_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c33s001z005_c38s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster34_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster34_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c34s001z002_c39s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster34_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c34s001z003_c40s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster35_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster35_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c35s001z002_c36s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster36_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster36_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c36s001z002_c31s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster36_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c36s001z003_c35s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster36_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c36s001z004_c41s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster36_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c36s001z005_c37s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster37_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster37_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c37s001z002_c13s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster37_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c37s001z003_c32s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster37_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c37s001z004_c36s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster37_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c37s001z005_c42s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster38_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster38_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c38s001z002_c33s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster38_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c38s001z003_c14s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster38_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c38s001z004_c43s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster38_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c38s001z005_c39s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster39_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster39_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c39s001z002_c34s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster39_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c39s001z003_c38s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster39_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c39s001z004_c40s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster39_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c39s001z005_c44s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster40_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster40_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c40s001z002_c34s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster40_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c40s001z003_c39s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster40_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c40s001z004_c44s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster41_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster41_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c41s001z002_c36s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster42_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster42_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c42s001z002_c13s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster42_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c42s001z003_c15s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster42_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c42s001z004_c37s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster42_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c42s001z005_c45s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster43_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster43_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c43s001z002_c38s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster43_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c43s001z003_c14s001z007_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster43_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c43s001z004_c16s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster43_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c43s001z005_c46s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster44_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster44_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c44s001z002_c40s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster44_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c44s001z003_c39s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster45_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster45_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c45s001z002_c15s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster45_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c45s001z003_c17s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster45_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c45s001z004_c42s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster45_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c45s001z005_c47s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster45_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c45s001z006_c58s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster46_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster46_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c46s001z002_c43s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster46_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c46s001z003_c16s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster46_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c46s001z004_c19s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster46_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c46s001z005_c50s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster46_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c46s001z006_c59s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster47_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster47_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c47s001z002_c17s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster47_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c47s001z003_c45s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster47_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c47s001z004_c48s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster48_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster48_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c48s001z002_c18s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster48_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c48s001z003_c17s001z007_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster48_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c48s001z004_c47s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster48_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c48s001z005_c49s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster49_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster49_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c49s001z002_c19s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster49_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c49s001z003_c18s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster49_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c49s001z004_c48s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster49_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c49s001z005_c51s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone006_cluster49_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c49s001z006_c50s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster50_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster50_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c50s001z002_c46s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster50_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c50s001z003_c19s001z007_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster50_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c50s001z004_c49s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster51_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster51_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c51s001z002_c49s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster51_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c51s001z003_c53s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster52_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster52_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c52s001z002_c53s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster52_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c52s001z003_c54s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster53_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster53_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c53s001z002_c51s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster53_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c53s001z003_c52s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster53_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c53s001z004_c54s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone005_cluster53_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c53s001z005_c55s001z002_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster54_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster54_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c54s001z002_c53s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster54_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c54s001z003_c52s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone004_cluster54_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c54s001z004_c55s001z003_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="180" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster55_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster55_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c55s001z002_c53s001z005_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="45" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone003_cluster55_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c55s001z003_c54s001z004_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="360" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster56_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster56_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c56s001z002_c29s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="225" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster57_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster57_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c57s001z002_c30s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster58_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster58_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c58s001z002_c45s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="135" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+      <macro name="warexp_zone001_cluster59_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+        </connections>
+      </macro>
+      <macro name="warexp_zone002_cluster59_sector001_macro" class="zone">
+        <component ref="standardzone" />
+        <connections>
+          <connection name="warexp_gate_c59s001z002_c46s001z006_connection" ref="gates">
+            <offset>
+              <position x="0" y="500" z="0" />
+		      <rotation yaw="315" pitch="0" roll="0" />
+            </offset>
+            <macro ref="props_gates_orb_accelerator_01_macro" connection="space" />
+          </connection>
+        </connections>
+      </macro>
+</macros>

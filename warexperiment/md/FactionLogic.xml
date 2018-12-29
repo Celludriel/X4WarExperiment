@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+    <replace sel="//cue[@name='FactionLogicManagers']/conditions/check_value/@value">player.galaxy.macro.ismacro.{macro.warexp_galaxy_macro}</replace>
+    <replace sel="//cue[@name='FindFactionHeadquarters']/actions/do_elseif[@exact='faction.alliance']/find_cluster/@macro">macro.warexp_cluster03_macro</replace>
+    <replace sel="//cue[@name='SetUpNewHeadquarters']/actions/do_elseif[@exact='faction.alliance']/find_cluster/@macro">macro.warexp_cluster03_macro</replace>
+    <replace sel="//cue[@name='FindFactionHeadquarters']/actions/do_elseif[@exact='faction.teladi']/find_cluster/@macro">macro.warexp_cluster21_macro</replace>
+    <replace sel="//cue[@name='SetUpNewHeadquarters']/actions/do_elseif[@exact='faction.teladi']/find_cluster/@macro">macro.warexp_cluster21_macro</replace>
+    <replace sel="//cue[@name='FindFactionHeadquarters']/actions/do_elseif[@exact='faction.holyorder']/find_cluster/@macro">macro.warexp_cluster35_macro</replace>
+    <replace sel="//cue[@name='SetUpNewHeadquarters']/actions/do_elseif[@exact='faction.holyorder']/find_cluster/@macro">macro.warexp_cluster35_macro</replace>
+    <replace sel="//cue[@name='FindFactionHeadquarters']/actions/do_if[@exact='faction.argon']/find_cluster/@macro">macro.warexp_cluster40_macro</replace>
+    <replace sel="//cue[@name='SetUpNewHeadquarters']/actions/do_if[@exact='faction.argon']/find_cluster/@macro">macro.warexp_cluster40_macro</replace>
+    <replace sel="//cue[@name='FindFactionHeadquarters']/actions/do_elseif[@exact='faction.paranid']/find_cluster/@macro">macro.warexp_cluster54_macro</replace>
+    <replace sel="//cue[@name='SetUpNewHeadquarters']/actions/do_elseif[@exact='faction.paranid']/find_cluster/@macro">macro.warexp_cluster54_macro</replace>
+    <replace sel="//cue[@name='FindFactionHeadquarters']/actions/do_elseif[@exact='faction.ministry']/find_cluster/@macro">macro.warexp_cluster56_macro</replace>
+    <replace sel="//cue[@name='SetUpNewHeadquarters']/actions/do_elseif[@exact='faction.ministry']/find_cluster/@macro">macro.warexp_cluster56_macro</replace>
+    <replace sel="//cue[@name='FindFactionHeadquarters']/actions/do_elseif[@exact='faction.hatikvah']/find_sector/@macro">macro.warexp_cluster57_sector001_macro</replace>
+    <replace sel="//cue[@name='SetUpNewHeadquarters']/actions/do_elseif[@exact='faction.hatikvah']/find_sector/@macro">macro.warexp_cluster57_sector001_macro</replace>
+    <replace sel="//cue[@name='FindFactionHeadquarters']/actions/do_elseif[@exact='faction.scaleplate']/find_cluster/@macro">macro.warexp_cluster58_macro</replace>
+    <replace sel="//cue[@name='SetUpNewHeadquarters']/actions/do_elseif[@exact='faction.scaleplate']/find_cluster/@macro">macro.warexp_cluster58_macro</replace>
+    <replace sel="//cue[@name='FindFactionHeadquarters']/actions/do_elseif[@exact='faction.antigone']/find_cluster/@macro">macro.warexp_cluster59_macro</replace>
+    <replace sel="//cue[@name='SetUpNewHeadquarters']/actions/do_elseif[@exact='faction.antigone']/find_cluster/@macro">macro.warexp_cluster59_macro</replace>
+	
+	<replace sel="//cue[@name='ArgonFactionLogic_Manager']/param[@name='DebugChance']/@value">100</replace>
+	<replace sel="//cue[@name='ArgonFactionLogic_Manager']/param[@name='DebugChance2']/@value">100</replace>
+	
+	
+	<replace sel="//cue[@name='Manager_Delay']">
+		<cue name="Manager_Delay">
+          <delay min="0s" max="3s"/>
+          <cues>
+			<cue name="EvaluateGoals_Wait">			 		  
+			  <conditions>
+				<event_cue_completed cue="Manager_Delay"/>
+			  </conditions>
+			  <cues>
+				<cue name="EvaluateGoals" checkinterval="30s" instantiate="true">
+				  <actions>
+					<include_actions ref="UpdateData"/>
+					<debug_text text="'Triggering EvaluateGoals %1'.[$Faction.id]" chance="$DebugChance"/>
+					<!-- signal_cue_instantly cue="md.{'FactionWarManager_' + $Faction.id}.{'ManageWar'}" / -->
+					
+					<debug_text text="'md.FactionWarManager.Start %1'.[md.FactionWarManager.Start.state]" chance="$DebugChance"/>
+					<signal_cue_instantly cue="md.FactionWarManager.Start" param="[$Faction,$ClaimedSectors,$AdjacentSectors]" />
+				  </actions>
+				</cue>
+
+				<library name="UpdateData">
+				  <actions>
+					<set_value name="$Clusters" exact="[]"/>
+					<set_value name="$Zones" exact="[]"/>
+
+					<!--Populate $ClaimedSectors will all owned and contested sectors of this faction-->
+					<clear_group group="$ClaimedSectors"/>
+					<find_sector name="$Sectors" owner="$Faction" multiple="true"/>
+					<add_to_group groupname="$ClaimedSectors" list="$Sectors"/>
+					<find_sector groupname="$ClaimedSectors" contestedby="$Faction"/>
+
+					<do_all exact="$Sectors.count" counter="$UpdateData_Sector_Counter">
+					  <do_if value="not $Clusters.indexof.{$Sectors.{$UpdateData_Sector_Counter}.cluster}">
+						<append_to_list name="$Clusters" exact="$Sectors.{$UpdateData_Sector_Counter}.cluster"/>
+					  </do_if>
+					  <find_zone name="$Zones" append="true" space="$Sectors.{$UpdateData_Sector_Counter}" normalzone="true" multiple="true" />
+					</do_all>
+
+					<set_value name="$AdjacentSectors" exact="[]"/>
+					<do_all exact="$Sectors.count" counter="$UpdateData_Sector_Counter">
+					  <find_sector name="$AdjacentSectors_InCluster" space="$Sectors.{$UpdateData_Sector_Counter}.cluster" multiple="true">
+						<match owner="$Faction" negate="true"/>
+					  </find_sector>
+					  <do_all exact="$AdjacentSectors_InCluster.count" counter="$UpdateData_AdjacentSectors_IC_Counter">
+						<do_if value="not $AdjacentSectors.indexof.{$AdjacentSectors_InCluster.{$UpdateData_AdjacentSectors_IC_Counter}}">
+						  <append_to_list name="$AdjacentSectors" exact="$AdjacentSectors_InCluster.{$UpdateData_AdjacentSectors_IC_Counter}"/>
+						</do_if>
+					  </do_all>
+
+					  <find_gate name="$JumpGates" space="$Sectors.{$UpdateData_Sector_Counter}" active="true" multiple="true"/>
+					  <do_all exact="$JumpGates.count" counter="$UpdateData_JumpGate_Counter">
+						<do_if value="$JumpGates.{$UpdateData_JumpGate_Counter}.destination and $JumpGates.{$UpdateData_JumpGate_Counter}.destination.sector.owner != $Faction">
+						  <append_to_list name="$AdjacentSectors" exact="$JumpGates.{$UpdateData_JumpGate_Counter}.destination.sector"/>
+						</do_if>
+					  </do_all>
+					</do_all>
+
+					<debug_text text="$Faction.knownname + ' updating space data - Claimed Sectors: ' + $ClaimedSectors.count + ' - Adjacent Sectors: ' + $AdjacentSectors.count" chance="$DebugChance2"/>
+				  </actions>
+				</library>				
+			  </cues>
+			</cue>				
+		  </cues>
+		</cue>
+	</replace>
+</diff>

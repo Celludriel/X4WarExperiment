@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaults xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="libraries.xsd">
+  <dataset macro="warexp_cluster01_macro">
+    <properties>
+      <identification name="Sector 01" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster01_sector001_macro">
+    <properties>
+      <identification name="Sector 01" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster02_macro">
+    <properties>
+      <identification name="Sector 02" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster02_sector001_macro">
+    <properties>
+      <identification name="Sector 02" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster03_macro">
+    <properties>
+      <identification name="Sector 03" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster03_sector001_macro">
+    <properties>
+      <identification name="Sector 03" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster04_macro">
+    <properties>
+      <identification name="Sector 04" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster04_sector001_macro">
+    <properties>
+      <identification name="Sector 04" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster05_macro">
+    <properties>
+      <identification name="Sector 05" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster05_sector001_macro">
+    <properties>
+      <identification name="Sector 05" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster06_macro">
+    <properties>
+      <identification name="Sector 06" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster06_sector001_macro">
+    <properties>
+      <identification name="Sector 06" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster07_macro">
+    <properties>
+      <identification name="Sector 07" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster07_sector001_macro">
+    <properties>
+      <identification name="Sector 07" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster08_macro">
+    <properties>
+      <identification name="Sector 08" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster08_sector001_macro">
+    <properties>
+      <identification name="Sector 08" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster09_macro">
+    <properties>
+      <identification name="Sector 09" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster09_sector001_macro">
+    <properties>
+      <identification name="Sector 09" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster10_macro">
+    <properties>
+      <identification name="Sector 10" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster10_sector001_macro">
+    <properties>
+      <identification name="Sector 10" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster11_macro">
+    <properties>
+      <identification name="Sector 11" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster11_sector001_macro">
+    <properties>
+      <identification name="Sector 11" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster12_macro">
+    <properties>
+      <identification name="Sector 12" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster12_sector001_macro">
+    <properties>
+      <identification name="Sector 12" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster13_macro">
+    <properties>
+      <identification name="Sector 13" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster13_sector001_macro">
+    <properties>
+      <identification name="Sector 13" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster14_macro">
+    <properties>
+      <identification name="Sector 14" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster14_sector001_macro">
+    <properties>
+      <identification name="Sector 14" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster15_macro">
+    <properties>
+      <identification name="Sector 15" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster15_sector001_macro">
+    <properties>
+      <identification name="Sector 15" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster16_macro">
+    <properties>
+      <identification name="Sector 16" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster16_sector001_macro">
+    <properties>
+      <identification name="Sector 16" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster17_macro">
+    <properties>
+      <identification name="Sector 17" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster17_sector001_macro">
+    <properties>
+      <identification name="Sector 17" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster18_macro">
+    <properties>
+      <identification name="Sector 18" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster18_sector001_macro">
+    <properties>
+      <identification name="Sector 18" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster19_macro">
+    <properties>
+      <identification name="Sector 19" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster19_sector001_macro">
+    <properties>
+      <identification name="Sector 19" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster20_macro">
+    <properties>
+      <identification name="Sector 20" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster20_sector001_macro">
+    <properties>
+      <identification name="Sector 20" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster21_macro">
+    <properties>
+      <identification name="Sector 21" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster21_sector001_macro">
+    <properties>
+      <identification name="Sector 21" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster22_macro">
+    <properties>
+      <identification name="Sector 22" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster22_sector001_macro">
+    <properties>
+      <identification name="Sector 22" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster23_macro">
+    <properties>
+      <identification name="Sector 23" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster23_sector001_macro">
+    <properties>
+      <identification name="Sector 23" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster24_macro">
+    <properties>
+      <identification name="Sector 24" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster24_sector001_macro">
+    <properties>
+      <identification name="Sector 24" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster25_macro">
+    <properties>
+      <identification name="Sector 25" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster25_sector001_macro">
+    <properties>
+      <identification name="Sector 25" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster26_macro">
+    <properties>
+      <identification name="Sector 26" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster26_sector001_macro">
+    <properties>
+      <identification name="Sector 26" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster27_macro">
+    <properties>
+      <identification name="Sector 27" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster27_sector001_macro">
+    <properties>
+      <identification name="Sector 27" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster28_macro">
+    <properties>
+      <identification name="Sector 28" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster28_sector001_macro">
+    <properties>
+      <identification name="Sector 28" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster29_macro">
+    <properties>
+      <identification name="Sector 29" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster29_sector001_macro">
+    <properties>
+      <identification name="Sector 29" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster30_macro">
+    <properties>
+      <identification name="Sector 30" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster30_sector001_macro">
+    <properties>
+      <identification name="Sector 30" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster31_macro">
+    <properties>
+      <identification name="Sector 31" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster31_sector001_macro">
+    <properties>
+      <identification name="Sector 31" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster32_macro">
+    <properties>
+      <identification name="Sector 32" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster32_sector001_macro">
+    <properties>
+      <identification name="Sector 32" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster33_macro">
+    <properties>
+      <identification name="Sector 33" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster33_sector001_macro">
+    <properties>
+      <identification name="Sector 33" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster34_macro">
+    <properties>
+      <identification name="Sector 34" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster34_sector001_macro">
+    <properties>
+      <identification name="Sector 34" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster35_macro">
+    <properties>
+      <identification name="Sector 35" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster35_sector001_macro">
+    <properties>
+      <identification name="Sector 35" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster36_macro">
+    <properties>
+      <identification name="Sector 36" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster36_sector001_macro">
+    <properties>
+      <identification name="Sector 36" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster37_macro">
+    <properties>
+      <identification name="Sector 37" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster37_sector001_macro">
+    <properties>
+      <identification name="Sector 37" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster38_macro">
+    <properties>
+      <identification name="Sector 38" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster38_sector001_macro">
+    <properties>
+      <identification name="Sector 38" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster39_macro">
+    <properties>
+      <identification name="Sector 39" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster39_sector001_macro">
+    <properties>
+      <identification name="Sector 39" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster40_macro">
+    <properties>
+      <identification name="Sector 40" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster40_sector001_macro">
+    <properties>
+      <identification name="Sector 40" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster41_macro">
+    <properties>
+      <identification name="Sector 41" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster41_sector001_macro">
+    <properties>
+      <identification name="Sector 41" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster42_macro">
+    <properties>
+      <identification name="Sector 42" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster42_sector001_macro">
+    <properties>
+      <identification name="Sector 42" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster43_macro">
+    <properties>
+      <identification name="Sector 43" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster43_sector001_macro">
+    <properties>
+      <identification name="Sector 43" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster44_macro">
+    <properties>
+      <identification name="Sector 44" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster44_sector001_macro">
+    <properties>
+      <identification name="Sector 44" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster45_macro">
+    <properties>
+      <identification name="Sector 45" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster45_sector001_macro">
+    <properties>
+      <identification name="Sector 45" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster46_macro">
+    <properties>
+      <identification name="Sector 46" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster46_sector001_macro">
+    <properties>
+      <identification name="Sector 46" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster47_macro">
+    <properties>
+      <identification name="Sector 47" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster47_sector001_macro">
+    <properties>
+      <identification name="Sector 47" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster48_macro">
+    <properties>
+      <identification name="Sector 48" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster48_sector001_macro">
+    <properties>
+      <identification name="Sector 48" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster49_macro">
+    <properties>
+      <identification name="Sector 49" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster49_sector001_macro">
+    <properties>
+      <identification name="Sector 49" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster50_macro">
+    <properties>
+      <identification name="Sector 50" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster50_sector001_macro">
+    <properties>
+      <identification name="Sector 50" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster51_macro">
+    <properties>
+      <identification name="Sector 51" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster51_sector001_macro">
+    <properties>
+      <identification name="Sector 51" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster52_macro">
+    <properties>
+      <identification name="Sector 52" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster52_sector001_macro">
+    <properties>
+      <identification name="Sector 52" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster53_macro">
+    <properties>
+      <identification name="Sector 53" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster53_sector001_macro">
+    <properties>
+      <identification name="Sector 53" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster54_macro">
+    <properties>
+      <identification name="Sector 54" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster54_sector001_macro">
+    <properties>
+      <identification name="Sector 54" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster55_macro">
+    <properties>
+      <identification name="Sector 55" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster55_sector001_macro">
+    <properties>
+      <identification name="Sector 55" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster56_macro">
+    <properties>
+      <identification name="Sector 56" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster56_sector001_macro">
+    <properties>
+      <identification name="Sector 56" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster57_macro">
+    <properties>
+      <identification name="Sector 57" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster57_sector001_macro">
+    <properties>
+      <identification name="Sector 57" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster58_macro">
+    <properties>
+      <identification name="Sector 58" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster58_sector001_macro">
+    <properties>
+      <identification name="Sector 58" description="" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster59_macro">
+    <properties>
+      <identification name="Sector 59" description="" />
+      <sounds>
+        <music ref="music_cluster_02" />
+      </sounds>
+      <area sunlight="1" economy="0.75" security="0.75" />
+    </properties>
+  </dataset>
+  <dataset macro="warexp_cluster59_sector001_macro">
+    <properties>
+      <identification name="Sector 59" description="" />
+    </properties>
+  </dataset>
+</defaults>
