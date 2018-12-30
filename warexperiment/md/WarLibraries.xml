@@ -37,7 +37,7 @@
               <apply_loadout sequence="$ConstructionPlan" index="$l" loadout="$Loadouts.{$l}"/>
             </do_all>
             <add_build_to_expand_station object="$Station.buildstorage" buildobject="$Station" constructionplan="$ConstructionPlan" result="$BuildID"/>
-            <debug_text text="'Started construction of station ' + $Station.knownname + ' ' + $Station + ' - Build ID: ' + $BuildID" chance="$DebugChance"/>
+            <debug_text text="'Started construction of station ' + $Station.knownname + ' ' + $Station + ' - Build ID: ' + $BuildID" chance="$DebugChance"/>					
           </do_if>
         </do_if>
         <do_else>
@@ -46,16 +46,37 @@
         </do_else>
       </actions>
       <cues>
-        <cue name="FWM_Station_Management_Evaluation">
+        <cue name="FWM_Station_Management_Evaluation">		
 			<delay exact="60s"/>
-			<actions>
+			<actions>				
 				<do_all exact="$Station.buildstorage.resources.list.count" counter="$i">
 					<set_value name="$Ware" exact="$Station.buildstorage.resources.list.{$i}" />
-					<debug_text text="'%1 has %2 %3 neededsequenceresources %4'.[$Station.knownname,$Station.buildstorage.cargo.{$Ware}.count,$Ware,$Station.buildingprocessor.neededsequenceresources.{$Ware}.count]" chance="$DebugChance"/>
-				</do_all>
+					<debug_text text="'%1 has %2 %3 neededsequenceresources %4 buyprice %5'.[$Station.knownname,$Station.buildstorage.cargo.{$Ware}.count,$Ware,$Station.buildingprocessor.neededsequenceresources.{$Ware}.count,$Station.buildstorage.buyprice.{$Ware}]" chance="$DebugChance"/>
+					<set_value name="$Offers" exact="[]" />
+					<find_buy_offer tradepartner="player.container" usereservations="false" excludeempty="false" result="$Offers" multiple="true" buyer="$Station.buildstorage" wares="$Ware"  />
+					<do_all exact="$Offers.count" counter="$k">
+						<set_value name="$TradeOffer" exact="$Offers.{$k}" />
+						<debug_text text="'Buy offer %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Ware,$TradeOffer.price,$TradeOffer.unitprice,$TradeOffer.minprice,$TradeOffer.relativeprice]" chance="$DebugChance2"/>
+					</do_all>
+				</do_all>		
 				<reset_cue cue="FWM_Station_Management_Evaluation"/>
 			</actions>
         </cue>
+		<cue name="TradeCompletedBuildstorage" instantiate="true">
+		  <conditions>
+			<event_trade_completed buyer="$Station.buildstorage" />
+		  </conditions>
+		  <actions>
+			<set_value name="$Trade" exact="event.param" />
+			<set_value name="$Buyer" exact="$Trade.buyer" />
+			<set_value name="$Seller" exact="$Trade.seller" />
+			<set_value name="$Amount" exact="$Trade.transferredamount" />
+			<set_value name="$UnitPrice" exact="$Trade.unitprice" />
+			<set_value name="$Ware" exact="$Trade.ware" />
+			
+			<debug_text text="'Trade Completed %4: Buyer: %1 - Seller: %2 - Amount: %3 - UnitPrice: %5'.[$Buyer.knownname,$Seller.knownname,$Amount,$Ware,$UnitPrice]" chance="$DebugChance2" />
+		  </actions>
+		</cue>		
       </cues>
     </library>
   </cues>

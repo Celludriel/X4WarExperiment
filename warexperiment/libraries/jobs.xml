@@ -5030,7 +5030,7 @@
         <encounters id="lone_miner"/>
         <time interval="3600"/>
       </job>
-      <!-- job id="xenon_free_miner_m_mineral" name="{20204,1901}"  >
+      <job id="xenon_free_miner_m_mineral" name="{20204,1901}"  >
         <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
@@ -5368,7 +5368,7 @@
         </ship>
         <subordinates>
         </subordinates>
-      </job -->
+      </job>
 
       <!-- MASS TRAFFIC -->
       <!--argon sectors-->

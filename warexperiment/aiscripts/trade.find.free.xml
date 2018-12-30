@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<add sel="//find_sell_offer[@tradepartner='this.ship']/match_seller"><match mayattack="this.ship" negate="true"/></add>
+	<add sel="//find_buy_offer[@tradepartner='this.ship']/match_buyer"><match mayattack="this.ship" negate="true"/></add>
+	<replace sel="//do_if[@value='$tempoffer.buyer.isclass.buildstorage']">
+		<do_if value="$tempoffer.buyer.isclass.buildstorage">
+			<!-- Make buildstorage offers more likely to be chosen -->
+			<set_value name="$tradevalue" exact="[600000, $tradevalue + 600000].max"/>
+		</do_if>	
+	</replace>
+</diff>
