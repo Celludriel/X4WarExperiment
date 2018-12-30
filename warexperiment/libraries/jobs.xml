@@ -4,6 +4,7 @@
   <replace sel="/jobs">
     <jobs>
             <job id="argon_bio_trader_l" name="{20204,1301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -28,6 +29,7 @@
         </subordinates>
       </job>
       <job id="argon_bio_trader_m" name="{20204,1401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -49,6 +51,7 @@
         </subordinates>
       </job>
       <job id="argon_food_trader_s" name="{20204,1801}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="3"/>
@@ -70,6 +73,7 @@
         </subordinates>
       </job>
       <job id="argon_energycell_trader_l" name="{20204,101}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -94,6 +98,7 @@
         </subordinates>
       </job>
       <job id="argon_energycell_trader_m" name="{20204,201}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -118,6 +123,7 @@
         </subordinates>
       </job>
       <job id="argon_energycell_trader_s" name="{20204,201}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -139,6 +145,7 @@
         </subordinates>
       </job>
       <job id="argon_equipment_trader_l" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -163,6 +170,7 @@
         </subordinates>
       </job>
       <job id="argon_equipment_trader_m" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -184,6 +192,7 @@
         </subordinates>
       </job>
       <job id="argon_construction_trader_l" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -208,6 +217,7 @@
         </subordinates>
       </job>
       <job id="argon_construction_trader_m" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -229,6 +239,7 @@
         </subordinates>
       </job>
       <job id="argon_refinedgas_trader_l" name="{20204,501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -253,6 +264,7 @@
         </subordinates>
       </job>
       <job id="argon_refinedgas_trader_m" name="{20204,601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -277,6 +289,7 @@
         </subordinates>
       </job>
       <job id="argon_refinedmineral_trader_l" name="{20204,501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -301,6 +314,7 @@
         </subordinates>
       </job>
       <job id="argon_refinedmineral_trader_m" name="{20204,601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -325,6 +339,7 @@
         </subordinates>
       </job>
       <job id="argon_tech_trader_l" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -349,6 +364,7 @@
         </subordinates>
       </job>
       <job id="argon_tech_trader_m" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -370,6 +386,7 @@
         </subordinates>
       </job>
       <job id="argon_tech_trader_s" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -391,6 +408,7 @@
         </subordinates>
       </job>
       <job id="argon_water_trader_l" name="{20204,1501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -415,6 +433,7 @@
         </subordinates>
       </job>
       <job id="argon_water_trader_m" name="{20204,1601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -436,6 +455,7 @@
         </subordinates>
       </job>
       <job id="argon_free_miner_l_liquid" name="{20204,5701}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -494,6 +514,7 @@
         </subordinates>
       </job>
       <job id="argon_free_miner_l_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -523,6 +544,7 @@
         </subordinates>
       </job>
       <job id="argon_free_miner_m_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -552,6 +574,7 @@
         </subordinates>
       </job>
       <job id="argon_free_miner_s_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -581,6 +604,7 @@
         </subordinates>
       </job>
       <job id="argon_free_miner_l_ice" name="{20204,2001}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -610,6 +634,7 @@
         </subordinates>
       </job>
       <job id="argon_free_miner_m_ice" name="{20204,2001}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -639,6 +664,7 @@
         </subordinates>
       </job>
       <job id="argon_carrier_patrol_xl_center_galaxy" name="{20204,3201}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -660,6 +686,7 @@
         </subordinates>
       </job>
       <job id="argon_destroyer_patrol_l_sector" name="{20204,3301}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.cluster"/>
@@ -681,6 +708,7 @@
         </subordinates>
       </job>
       <job id="argon_destroyer_patrol_l_comp" name="{20204,3301}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -701,6 +729,7 @@
         </subordinates>
       </job>
       <job id="argon_frigate_patrol_m_sector_exp" name="{20204,2901}"  >
+        <modifiers  commandeerable="false"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
@@ -722,6 +751,7 @@
         </subordinates>
       </job>
       <job id="argon_dronecarrier_patrol_m_sector" name="{20204,5001}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
@@ -745,6 +775,7 @@
         </subordinates>
       </job>
       <job id="argon_fighter_patrol_s_zone" name="{20204,2901}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -766,6 +797,7 @@
         </subordinates>
       </job>
       <job id="argon_scout_patrol_s" name="{20204,2801}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Recon" default="true">
             </order>
@@ -785,6 +817,7 @@
         </subordinates>
       </job>
       <job id="argon_police_patrol_s" name="{20204,6101}"  >
+        <modifiers  commandeerable="false"  />
         <orders>
             <order order="Recon" default="true">
                 <param name="police" value="true"/>
@@ -805,6 +838,7 @@
         </subordinates>
       </job>
       <job id="argon_destroyer_escort_l" name="{20204,3301}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.invvshape"/>
@@ -826,6 +860,7 @@
         </subordinates>
       </job>
       <job id="argon_frigate_escort_m" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.dartvertical"/>
@@ -847,6 +882,7 @@
         </subordinates>
       </job>
       <job id="argon_fighter_escort_s_frigate" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -867,6 +903,7 @@
         </subordinates>
       </job>
       <job id="argon_fighter_escort_s_patrol" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -887,6 +924,7 @@
         </subordinates>
       </job>
       <job id="argon_miningfleet_m_solid_small" name="{20204,5601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -912,6 +950,7 @@
         </subordinates>
       </job>
       <job id="argon_miningfleet_m_liquid_small" name="{20204,5701}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -937,6 +976,7 @@
         </subordinates>
       </job>
       <job id="argon_miningfleet_ml_solid_large" name="{20204,5601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -962,6 +1002,7 @@
         </subordinates>
       </job>
       <job id="argon_miningfleet_ml_liquid_large" name="{20204,5701}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -987,6 +1028,7 @@
         </subordinates>
       </job>
       <job id="argon_fighter_escort_s_miningfleet" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -1007,6 +1049,7 @@
         </subordinates>
       </job>
       <job id="argon_construction_vessel_xl" name="{20204,5101}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="FindBuildTasks" default="true">
                 <param name="maxjumps" value="6"/>
@@ -1027,6 +1070,7 @@
         </subordinates>
       </job>
       <job id="argon_construction_vessel_xl_playeronly" name="{20204,5101}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="FindBuildTasks" default="true">
                 <param name="maxjumps" value="6"/>
@@ -1255,6 +1299,7 @@
         <time interval="3600"/>
       </job>
       <job id="paranid_bio_trader_l" name="{20204,1301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1279,6 +1324,7 @@
         </subordinates>
       </job>
       <job id="paranid_bio_trader_m" name="{20204,1401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -1300,6 +1346,7 @@
         </subordinates>
       </job>
       <job id="paranid_food_trader_s" name="{20204,1801}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="3"/>
@@ -1321,6 +1368,7 @@
         </subordinates>
       </job>
       <job id="paranid_energycell_trader_l" name="{20204,101}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1345,6 +1393,7 @@
         </subordinates>
       </job>
       <job id="paranid_energycell_trader_m" name="{20204,201}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1369,6 +1418,7 @@
         </subordinates>
       </job>
       <job id="paranid_energycell_trader_s" name="{20204,201}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -1390,6 +1440,7 @@
         </subordinates>
       </job>
       <job id="paranid_equipment_trader_l" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1414,6 +1465,7 @@
         </subordinates>
       </job>
       <job id="paranid_equipment_trader_m" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -1435,6 +1487,7 @@
         </subordinates>
       </job>
       <job id="paranid_construction_trader_l" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1459,6 +1512,7 @@
         </subordinates>
       </job>
       <job id="paranid_construction_trader_m" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -1480,6 +1534,7 @@
         </subordinates>
       </job>
       <job id="paranid_refinedgas_trader_l" name="{20204,501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1504,6 +1559,7 @@
         </subordinates>
       </job>
       <job id="paranid_refinedgas_trader_m" name="{20204,601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1528,6 +1584,7 @@
         </subordinates>
       </job>
       <job id="paranid_refinedmineral_trader_l" name="{20204,501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1552,6 +1609,7 @@
         </subordinates>
       </job>
       <job id="paranid_refinedmineral_trader_m" name="{20204,601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1576,6 +1634,7 @@
         </subordinates>
       </job>
       <job id="paranid_tech_trader_l" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1600,6 +1659,7 @@
         </subordinates>
       </job>
       <job id="paranid_tech_trader_m" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -1621,6 +1681,7 @@
         </subordinates>
       </job>
       <job id="paranid_tech_trader_s" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -1642,6 +1703,7 @@
         </subordinates>
       </job>
       <job id="paranid_water_trader_l" name="{20204,1501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1666,6 +1728,7 @@
         </subordinates>
       </job>
       <job id="paranid_water_trader_m" name="{20204,1601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -1687,6 +1750,7 @@
         </subordinates>
       </job>
       <job id="paranid_free_miner_l_liquid" name="{20204,5701}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1745,6 +1809,7 @@
         </subordinates>
       </job>
       <job id="paranid_free_miner_l_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1774,6 +1839,7 @@
         </subordinates>
       </job>
       <job id="paranid_free_miner_m_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1803,6 +1869,7 @@
         </subordinates>
       </job>
       <job id="paranid_free_miner_s_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1832,6 +1899,7 @@
         </subordinates>
       </job>
       <job id="paranid_free_miner_l_ice" name="{20204,2001}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1861,6 +1929,7 @@
         </subordinates>
       </job>
       <job id="paranid_free_miner_m_ice" name="{20204,2001}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -1890,6 +1959,7 @@
         </subordinates>
       </job>
       <job id="paranid_construction_vessel_xl" name="{20204,5101}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="FindBuildTasks" default="true">
                 <param name="maxjumps" value="6"/>
@@ -1910,6 +1980,7 @@
         </subordinates>
       </job>
       <job id="paranid_construction_vessel_xl_playeronly" name="{20204,5101}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="FindBuildTasks" default="true">
                 <param name="maxjumps" value="6"/>
@@ -1951,6 +2022,7 @@
         </subordinates>
       </job>
       <job id="paranid_carrier_patrol_xl_cluster" name="{20204,3201}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -1972,6 +2044,7 @@
         </subordinates>
       </job>
       <job id="paranid_destroyer_patrol_l_sector_exp" name="{20204,3301}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.cluster"/>
@@ -1990,6 +2063,7 @@
         </subordinates>
       </job>
       <job id="paranid_destroyer_patrol_l_comp" name="{20204,3301}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -2010,6 +2084,7 @@
         </subordinates>
       </job>
       <job id="paranid_fighter_patrol_s_zone" name="{20204,2901}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
@@ -2031,6 +2106,7 @@
         </subordinates>
       </job>
       <job id="paranid_dronecarrier_patrol_m_sector" name="{20204,2901}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
@@ -2055,6 +2131,7 @@
         </subordinates>
       </job>
       <job id="paranid_corvette_patrol_m_sector" name="{20204,2901}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
@@ -2075,6 +2152,7 @@
         </subordinates>
       </job>
       <job id="paranid_scout_patrol_s" name="{20204,2801}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Recon" default="true">
             </order>
@@ -2094,6 +2172,7 @@
         </subordinates>
       </job>
       <job id="paranid_police_patrol_s" name="{20204,2901}"  >
+        <modifiers  commandeerable="false"  />
         <orders>
             <order order="Recon" default="true">
                 <param name="police" value="true"/>
@@ -2114,6 +2193,7 @@
         </subordinates>
       </job>
       <job id="paranid_destroyer_escort_l" name="{20204,3301}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -2134,6 +2214,7 @@
         </subordinates>
       </job>
       <job id="paranid_frigate_escort_m" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.dartvertical"/>
@@ -2156,6 +2237,7 @@
         </subordinates>
       </job>
       <job id="paranid_fighter_escort_s_frigate" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -2176,6 +2258,7 @@
         </subordinates>
       </job>
       <job id="paranid_fighter_escort_s_patrol" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -2196,6 +2279,7 @@
         </subordinates>
       </job>
       <job id="paranid_miningfleet_m_solid_small" name="{20204,5601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2221,6 +2305,7 @@
         </subordinates>
       </job>
       <job id="paranid_miningfleet_m_liquid_small" name="{20204,5701}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2246,6 +2331,7 @@
         </subordinates>
       </job>
       <job id="paranid_miningfleet_ml_solid_large" name="{20204,5601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2271,6 +2357,7 @@
         </subordinates>
       </job>
       <job id="paranid_miningfleet_ml_liquid_large" name="{20204,5701}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2296,6 +2383,7 @@
         </subordinates>
       </job>
       <job id="paranid_fighter_escort_s_miningfleet" name="{20204,2601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -2480,6 +2568,7 @@
         <time interval="3600"/>
       </job>
       <job id="holyorder_bio_trader_l" name="{20204,1301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2504,6 +2593,7 @@
         </subordinates>
       </job>
       <job id="holyorder_bio_trader_m" name="{20204,1401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -2525,6 +2615,7 @@
         </subordinates>
       </job>
       <job id="holyorder_food_trader_s" name="{20204,1801}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="3"/>
@@ -2546,6 +2637,7 @@
         </subordinates>
       </job>
       <job id="holyorder_energycell_trader_l" name="{20204,101}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2570,6 +2662,7 @@
         </subordinates>
       </job>
       <job id="holyorder_energycell_trader_m" name="{20204,201}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2594,6 +2687,7 @@
         </subordinates>
       </job>
       <job id="holyorder_energycell_trader_s" name="{20204,201}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -2615,6 +2709,7 @@
         </subordinates>
       </job>
       <job id="holyorder_equipment_trader_l" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2639,6 +2734,7 @@
         </subordinates>
       </job>
       <job id="holyorder_equipment_trader_m" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -2660,6 +2756,7 @@
         </subordinates>
       </job>
       <job id="holyorder_construction_trader_l" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2684,6 +2781,7 @@
         </subordinates>
       </job>
       <job id="holyorder_construction_trader_m" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -2705,6 +2803,7 @@
         </subordinates>
       </job>
       <job id="holyorder_refinedgas_trader_l" name="{20204,501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2729,6 +2828,7 @@
         </subordinates>
       </job>
       <job id="holyorder_refinedgas_trader_m" name="{20204,601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2753,6 +2853,7 @@
         </subordinates>
       </job>
       <job id="holyorder_refinedmineral_trader_l" name="{20204,501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2777,6 +2878,7 @@
         </subordinates>
       </job>
       <job id="holyorder_refinedmineral_trader_m" name="{20204,601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2801,6 +2903,7 @@
         </subordinates>
       </job>
       <job id="holyorder_tech_trader_l" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2825,6 +2928,7 @@
         </subordinates>
       </job>
       <job id="holyorder_tech_trader_m" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -2846,6 +2950,7 @@
         </subordinates>
       </job>
       <job id="holyorder_tech_trader_s" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -2867,6 +2972,7 @@
         </subordinates>
       </job>
       <job id="holyorder_water_trader_l" name="{20204,1501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2891,6 +2997,7 @@
         </subordinates>
       </job>
       <job id="holyorder_water_trader_m" name="{20204,1601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -2912,6 +3019,7 @@
         </subordinates>
       </job>
       <job id="holyorder_free_miner_l_liquid" name="{20204,5701}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2970,6 +3078,7 @@
         </subordinates>
       </job>
       <job id="holyorder_free_miner_l_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -2999,6 +3108,7 @@
         </subordinates>
       </job>
       <job id="holyorder_free_miner_m_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3028,6 +3138,7 @@
         </subordinates>
       </job>
       <job id="holyorder_free_miner_s_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3057,6 +3168,7 @@
         </subordinates>
       </job>
       <job id="holyorder_free_miner_l_ice" name="{20204,2001}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3086,6 +3198,7 @@
         </subordinates>
       </job>
       <job id="holyorder_free_miner_m_ice" name="{20204,2001}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3115,6 +3228,7 @@
         </subordinates>
       </job>
       <job id="holyorder_construction_vessel_xl" name="{20204,5101}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="FindBuildTasks" default="true">
                 <param name="maxjumps" value="6"/>
@@ -3135,6 +3249,7 @@
         </subordinates>
       </job>
       <job id="holyorder_construction_vessel_xl_playeronly" name="{20204,5101}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="FindBuildTasks" default="true">
                 <param name="maxjumps" value="6"/>
@@ -3156,6 +3271,7 @@
         </subordinates>
       </job>
       <job id="holyorder_destroyer_patrol_l_cluster_exp" name="{20204,3301}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.cluster"/>
@@ -3178,6 +3294,7 @@
         </subordinates>
       </job>
       <job id="holyorder_destroyer_patrol_l_comp" name="{20204,3301}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -3198,6 +3315,7 @@
         </subordinates>
       </job>
       <job id="holyorder_fighter_patrol_s_zone" name="{20204,2901}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
@@ -3219,6 +3337,7 @@
         </subordinates>
       </job>
       <job id="holyorder_dronecarrier_patrol_m_sector" name="{20204,2901}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
@@ -3242,6 +3361,7 @@
         </subordinates>
       </job>
       <job id="holyorder_corvette_patrol_m_sector" name="{20204,2901}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
@@ -3263,6 +3383,7 @@
         </subordinates>
       </job>
       <job id="holyorder_scout_patrol_s" name="{20204,2801}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Recon" default="true">
             </order>
@@ -3282,6 +3403,7 @@
         </subordinates>
       </job>
       <job id="holyorder_police_patrol_s" name="{20204,2901}"  >
+        <modifiers  commandeerable="false"  />
         <orders>
             <order order="Recon" default="true">
                 <param name="police" value="true"/>
@@ -3302,6 +3424,7 @@
         </subordinates>
       </job>
       <job id="holyorder_destroyer_escort_l" name="{20204,3301}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -3323,6 +3446,7 @@
         </subordinates>
       </job>
       <job id="holyorder_frigate_escort_m" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.dartvertical"/>
@@ -3345,6 +3469,7 @@
         </subordinates>
       </job>
       <job id="holyorder_corvette_escort_m" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.dartvertical"/>
@@ -3367,6 +3492,7 @@
         </subordinates>
       </job>
       <job id="holyorder_fighter_escort_s_frigate" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -3387,6 +3513,7 @@
         </subordinates>
       </job>
       <job id="holyorder_fighter_escort_s_patrol" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -3407,6 +3534,7 @@
         </subordinates>
       </job>
       <job id="holyorder_miningfleet_m_solid_small" name="{20204,5601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3432,6 +3560,7 @@
         </subordinates>
       </job>
       <job id="holyorder_miningfleet_m_liquid_small" name="{20204,5701}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3457,6 +3586,7 @@
         </subordinates>
       </job>
       <job id="holyorder_miningfleet_ml_solid_large" name="{20204,5601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3482,6 +3612,7 @@
         </subordinates>
       </job>
       <job id="holyorder_miningfleet_ml_liquid_large" name="{20204,5701}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3507,6 +3638,7 @@
         </subordinates>
       </job>
       <job id="holyorder_fighter_escort_s_miningfleet" name="{20204,2601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -3691,6 +3823,7 @@
         <time interval="3600"/>
       </job>
       <job id="teladi_bio_trader_l" name="{20204,1301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3715,6 +3848,7 @@
         </subordinates>
       </job>
       <job id="teladi_bio_trader_m" name="{20204,1401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -3736,6 +3870,7 @@
         </subordinates>
       </job>
       <job id="teladi_food_trader_s" name="{20204,1801}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="3"/>
@@ -3757,6 +3892,7 @@
         </subordinates>
       </job>
       <job id="teladi_energycell_trader_l" name="{20204,101}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3781,6 +3917,7 @@
         </subordinates>
       </job>
       <job id="teladi_energycell_trader_m" name="{20204,201}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3805,6 +3942,7 @@
         </subordinates>
       </job>
       <job id="teladi_energycell_trader_s" name="{20204,201}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -3826,6 +3964,7 @@
         </subordinates>
       </job>
       <job id="teladi_equipment_trader_l" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3850,6 +3989,7 @@
         </subordinates>
       </job>
       <job id="teladi_equipment_trader_m" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -3871,6 +4011,7 @@
         </subordinates>
       </job>
       <job id="teladi_construction_trader_l" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3895,6 +4036,7 @@
         </subordinates>
       </job>
       <job id="teladi_construction_trader_m" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -3916,6 +4058,7 @@
         </subordinates>
       </job>
       <job id="teladi_refinedgas_trader_l" name="{20204,501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3940,6 +4083,7 @@
         </subordinates>
       </job>
       <job id="teladi_refinedgas_trader_m" name="{20204,601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3964,6 +4108,7 @@
         </subordinates>
       </job>
       <job id="teladi_refinedmineral_trader_l" name="{20204,501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -3988,6 +4133,7 @@
         </subordinates>
       </job>
       <job id="teladi_refinedmineral_trader_m" name="{20204,601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4012,6 +4158,7 @@
         </subordinates>
       </job>
       <job id="teladi_tech_trader_l" name="{20204,301}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4036,6 +4183,7 @@
         </subordinates>
       </job>
       <job id="teladi_tech_trader_m" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -4057,6 +4205,7 @@
         </subordinates>
       </job>
       <job id="teladi_tech_trader_s" name="{20204,401}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -4078,6 +4227,7 @@
         </subordinates>
       </job>
       <job id="teladi_water_trader_l" name="{20204,1501}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4102,6 +4252,7 @@
         </subordinates>
       </job>
       <job id="teladi_water_trader_m" name="{20204,1601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Middleman" default="true">
                 <param name="range" value="5"/>
@@ -4123,6 +4274,7 @@
         </subordinates>
       </job>
       <job id="teladi_free_miner_l_liquid" name="{20204,5701}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4181,6 +4333,7 @@
         </subordinates>
       </job>
       <job id="teladi_free_miner_l_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4210,6 +4363,7 @@
         </subordinates>
       </job>
       <job id="teladi_free_miner_m_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4239,6 +4393,7 @@
         </subordinates>
       </job>
       <job id="teladi_free_miner_s_mineral" name="{20204,5601}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4268,6 +4423,7 @@
         </subordinates>
       </job>
       <job id="teladi_free_miner_l_ice" name="{20204,2001}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4297,6 +4453,7 @@
         </subordinates>
       </job>
       <job id="teladi_free_miner_m_ice" name="{20204,2001}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4326,6 +4483,7 @@
         </subordinates>
       </job>
       <job id="teladi_construction_vessel_xl" name="{20204,5101}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="FindBuildTasks" default="true">
                 <param name="maxjumps" value="6"/>
@@ -4346,6 +4504,7 @@
         </subordinates>
       </job>
       <job id="teladi_construction_vessel_xl_playeronly" name="{20204,5101}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="FindBuildTasks" default="true">
                 <param name="maxjumps" value="6"/>
@@ -4387,6 +4546,7 @@
         </subordinates>
       </job>
       <job id="teladi_carrier_patrol_xl_cluster" name="{20204,3201}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -4408,6 +4568,7 @@
         </subordinates>
       </job>
       <job id="teladi_destroyer_patrol_l_border_cluster" name="{20204,3301}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.cluster"/>
@@ -4429,6 +4590,7 @@
         </subordinates>
       </job>
       <job id="teladi_fighter_patrol_s_zone_exp" name="{20204,2901}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
@@ -4450,6 +4612,7 @@
         </subordinates>
       </job>
       <job id="teladi_scout_patrol_s" name="{20204,2801}"  >
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Recon" default="true">
             </order>
@@ -4469,6 +4632,7 @@
         </subordinates>
       </job>
       <job id="teladi_destroyer_escort_l" name="{20204,3301}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -4490,6 +4654,7 @@
         </subordinates>
       </job>
       <job id="teladi_frigate_escort_m" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.dartvertical"/>
@@ -4512,6 +4677,7 @@
         </subordinates>
       </job>
       <job id="teladi_fighter_escort_s_frigate" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -4532,6 +4698,7 @@
         </subordinates>
       </job>
       <job id="teladi_fighter_escort_s_patrol" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -4552,6 +4719,7 @@
         </subordinates>
       </job>
       <job id="teladi_miningfleet_m_solid_small" name="{20204,5601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4577,6 +4745,7 @@
         </subordinates>
       </job>
       <job id="teladi_miningfleet_m_liquid_small" name="{20204,5701}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4602,6 +4771,7 @@
         </subordinates>
       </job>
       <job id="teladi_miningfleet_ml_solid_large" name="{20204,5601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4627,6 +4797,7 @@
         </subordinates>
       </job>
       <job id="teladi_miningfleet_ml_liquid_large" name="{20204,5701}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4652,6 +4823,7 @@
         </subordinates>
       </job>
       <job id="teladi_fighter_escort_s_miningfleet" name="{20204,2601}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.pointguard"/>
@@ -4858,7 +5030,8 @@
         <encounters id="lone_miner"/>
         <time interval="3600"/>
       </job>
-      <job id="xenon_free_miner_m_mineral" name="{20204,1901}"  >
+      <!-- job id="xenon_free_miner_m_mineral" name="{20204,1901}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4888,6 +5061,7 @@
         </subordinates>
       </job>
       <job id="xenon_free_trader_m_energy" name="{20204,4801}"  >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="TradeRoutine" default="true">
                 <param name="minbuy" value="0"/>
@@ -4912,6 +5086,7 @@
         </subordinates>
       </job>
       <job id="xenon_carrier_patrol_xl_border_cluster" name="{20204,3801}"  disabled="false">
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.cluster"/>
@@ -4933,6 +5108,7 @@
         </subordinates>
       </job>
       <job id="xenon_destroyer_patrol_xl_cluster" name="{20204,3801}"  disabled="false">
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
@@ -4954,6 +5130,7 @@
         </subordinates>
       </job>
       <job id="xenon_destroyer_patrol_xl_comp" name="{20204,3801}"  disabled="false">
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -4974,6 +5151,7 @@
         </subordinates>
       </job>
       <job id="xenon_fighter_patrol_s_zone" name="{20204,3401}"  disabled="false">
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -4995,6 +5173,7 @@
         </subordinates>
       </job>
       <job id="xenon_frigate_patrol_m_zone_everywhereelse" name="{20204,3401}"  disabled="false">
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -5017,6 +5196,7 @@
         </subordinates>
       </job>
       <job id="xenon_scout_patrol_s" name="{20204,2801}"  disabled="false">
+        <modifiers  commandeerable="true"  />
         <orders>
             <order order="Recon" default="true">
             </order>
@@ -5037,6 +5217,7 @@
         </subordinates>
       </job>
       <job id="xenon_fighter_s_deepspace_single" name="{20204,3401}"  disabled="false">
+        <modifiers  commandeerable="false"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -5058,6 +5239,7 @@
         <encounters id="xenon_s_lone"/>
       </job>
       <job id="xenon_fighter_s_deepspace_group" name="{20204,3401}"  disabled="false">
+        <modifiers  commandeerable="false"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.zone"/>
@@ -5080,6 +5262,7 @@
         <encounters id="xenon_s_group"/>
       </job>
       <job id="xenon_frigate_escort_m" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.dartvertical"/>
@@ -5102,6 +5285,7 @@
         </subordinates>
       </job>
       <job id="xenon_destroyer_escort_xl" name="{20204,3801}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.invvshape"/>
@@ -5123,6 +5307,7 @@
         </subordinates>
       </job>
       <job id="xenon_frigate_escort_m_2" name="{20204,3401}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
                 <param name="formation" value="formationshape.dartvertical"/>
@@ -5145,6 +5330,7 @@
         </subordinates>
       </job>
       <job id="xenon_fighter_escort_s_frigate" name="{20204,3401}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
             </order>
@@ -5164,6 +5350,7 @@
         </subordinates>
       </job>
       <job id="xenon_fighter_escort_s_patrol" name="{20204,2901}" startactive="false" >
+        <modifiers   subordinate="true" />
         <orders>
             <order order="Escort" default="true">
             </order>
@@ -5181,7 +5368,7 @@
         </ship>
         <subordinates>
         </subordinates>
-      </job>
+      </job -->
 
       <!-- MASS TRAFFIC -->
       <!--argon sectors-->

@@ -48,18 +48,21 @@
 				<debug_text text="'AlreadyInProgressForFaction: %1'.[$AlreadyInProgressForFaction]" chance="$DebugChance"/>
 				<do_if value="$AdjacentSectors.count gt 0 and $AlreadyInProgressForFaction == false">
 					<set_value name="$TargetSector" exact="$AdjacentSectors.{1}" />
-					<debug_text text="'TargetSector: %1 Owned by %2'.[$TargetSector.knownname, $TargetSector.owner.knownname]" chance="$DebugChance"/>
+					<debug_text text="'TargetSector: %1 Owned by %2'.[$TargetSector.knownname, $TargetSector.owner.id]" chance="$DebugChance"/>
 				</do_if>
 			</do_if>
 		  </actions>
+		  <cues>
+			<cue name="FWM_Build_Defense_Station" ref="md.WarLibraries.BuildStation">
+				<param name="TargetSector" value="$TargetSector"/>
+				<param name="Faction" value="$Faction"/>
+				<param name="StationTag" value="$StationTag"/>
+				<param name="StationType" value="$StationType"/>
+				<param name="SpaceToCommandeerShipsIn" value="$ClaimedSectors"/>
+				<param name="DebugChance" value="$DebugChance"/>	
+			</cue>		
+		  </cues>
 		</cue>
-		<cue name="FWM_Build_Defense_Station" ref="md.WarLibraries.BuildStation">
-			<param name="TargetSector" value="$TargetSector"/>
-			<param name="Faction" value="$Faction"/>
-			<param name="StationTag" value="$StationTag"/>
-			<param name="StationType" value="$StationType"/>
-			<param name="DebugChance" value="$DebugChance"/>	
-		</cue>		
 	  </cues>
 	</cue>	
   </cues>

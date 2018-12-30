@@ -196,7 +196,21 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_14" race="paranid" owner="holyorder" type="factory">
+		<station id="station_14" race="teladi" owner="teladi" type="tradingstation">
+		  <quotas>
+			<quota galaxy="1" zone="1" />
+		  </quotas>
+		  <location class="zone" macro="warexp_zone001_cluster24_sector001_macro">
+			<corerange min="1.2" max="1.6" />
+		  </location>
+		  <station>
+			<select faction="teladi" tags="[tradestation]" />
+			<loadout>
+			  <level exact="1.0" />
+			</loadout>
+		  </station>
+		</station>
+		<station id="station_15" race="paranid" owner="holyorder" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -210,7 +224,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_15" race="argon" owner="argon" type="factory">
+		<station id="station_16" race="argon" owner="argon" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -224,7 +238,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_16" race="paranid" owner="holyorder" type="factory">
+		<station id="station_17" race="paranid" owner="holyorder" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -238,7 +252,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_17" race="paranid" owner="holyorder" type="factory">
+		<station id="station_18" race="paranid" owner="holyorder" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -252,7 +266,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_18" race="paranid" owner="holyorder" type="factory">
+		<station id="station_19" race="paranid" owner="holyorder" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -266,7 +280,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_19" race="paranid" owner="holyorder" type="factory">
+		<station id="station_20" race="paranid" owner="holyorder" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -280,7 +294,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_20" race="paranid" owner="holyorder" type="factory">
+		<station id="station_21" race="paranid" owner="holyorder" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -294,7 +308,21 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_21" race="argon" owner="argon" type="factory">
+		<station id="station_22" race="paranid" owner="holyorder" type="tradingstation">
+		  <quotas>
+			<quota galaxy="1" zone="1" />
+		  </quotas>
+		  <location class="zone" macro="warexp_zone001_cluster37_sector001_macro">
+			<corerange min="1.2" max="1.6" />
+		  </location>
+		  <station>
+			<select faction="holyorder" tags="[tradestation]" />
+			<loadout>
+			  <level exact="1.0" />
+			</loadout>
+		  </station>
+		</station>
+		<station id="station_23" race="argon" owner="argon" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -308,7 +336,21 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_22" race="argon" owner="argon" type="factory">
+		<station id="station_24" race="argon" owner="argon" type="tradingstation">
+		  <quotas>
+			<quota galaxy="1" zone="1" />
+		  </quotas>
+		  <location class="zone" macro="warexp_zone001_cluster38_sector001_macro">
+			<corerange min="1.2" max="1.6" />
+		  </location>
+		  <station>
+			<select faction="argon" tags="[tradestation]" />
+			<loadout>
+			  <level exact="1.0" />
+			</loadout>
+		  </station>
+		</station>
+		<station id="station_25" race="argon" owner="argon" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -322,7 +364,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_23" race="argon" owner="argon" type="factory">
+		<station id="station_26" race="argon" owner="argon" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -336,7 +378,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_24" race="argon" owner="argon" type="factory">
+		<station id="station_27" race="argon" owner="argon" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -350,7 +392,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_25" race="argon" owner="argon" type="factory">
+		<station id="station_28" race="argon" owner="argon" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -364,7 +406,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_26" race="paranid" owner="holyorder" type="factory">
+		<station id="station_29" race="paranid" owner="holyorder" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -378,7 +420,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_27" race="argon" owner="argon" type="factory">
+		<station id="station_30" race="argon" owner="argon" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -392,7 +434,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_28" race="paranid" owner="paranid" type="factory">
+		<station id="station_31" race="paranid" owner="paranid" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -406,7 +448,21 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_29" race="paranid" owner="paranid" type="factory">
+		<station id="station_32" race="paranid" owner="paranid" type="tradingstation">
+		  <quotas>
+			<quota galaxy="1" zone="1" />
+		  </quotas>
+		  <location class="zone" macro="warexp_zone001_cluster51_sector001_macro">
+			<corerange min="1.2" max="1.6" />
+		  </location>
+		  <station>
+			<select faction="paranid" tags="[tradestation]" />
+			<loadout>
+			  <level exact="1.0" />
+			</loadout>
+		  </station>
+		</station>
+		<station id="station_33" race="paranid" owner="paranid" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -420,7 +476,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_30" race="paranid" owner="paranid" type="factory">
+		<station id="station_34" race="paranid" owner="paranid" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -434,7 +490,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_31" race="paranid" owner="paranid" type="factory">
+		<station id="station_35" race="paranid" owner="paranid" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -448,7 +504,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_32" race="paranid" owner="paranid" type="factory">
+		<station id="station_36" race="paranid" owner="paranid" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -462,7 +518,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_33" race="paranid" owner="paranid" type="factory">
+		<station id="station_37" race="paranid" owner="paranid" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -476,7 +532,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_34" race="argon" owner="paranid" type="factory">
+		<station id="station_38" race="argon" owner="paranid" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -490,7 +546,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_35" race="teladi" owner="ministry" type="factory">
+		<station id="station_39" race="teladi" owner="ministry" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -504,7 +560,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_36" race="argon" owner="hatikvah" type="tradingstation">
+		<station id="station_40" race="argon" owner="hatikvah" type="tradingstation">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -518,7 +574,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_37" race="paranid" owner="scaleplate" type="factory">
+		<station id="station_41" race="paranid" owner="scaleplate" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -532,7 +588,7 @@
 			</loadout>
 		  </station>
 		</station>
-		<station id="station_38" race="argon" owner="antigone" type="factory">
+		<station id="station_42" race="argon" owner="antigone" type="factory">
 		  <quotas>
 			<quota galaxy="1" zone="1" />
 		  </quotas>
@@ -616,7 +672,7 @@
         </product>
         <product id="arg_energycells" ware="energycells" owner="argon" type="factory">
           <quotas>
-            <quota galaxy="2"   />
+            <quota galaxy="10"   />
           </quotas>
           <location class="galaxy" macro="warexp_galaxy_macro" faction="[argon,hatikvah]" relation="self" comparison="ge">
             <economy max="0.75" maxbound="false" />
@@ -1003,7 +1059,7 @@
         </product>
         <product id="par_energycells" ware="energycells" owner="paranid" type="factory">
           <quotas>
-            <quota galaxy="2"   />
+            <quota galaxy="10"   />
           </quotas>
           <location class="galaxy" macro="warexp_galaxy_macro" faction="[paranid,alliance]" relation="self" comparison="ge">
             <sunlight min="1" max="3" />
@@ -1014,7 +1070,7 @@
         </product>
         <product id="hol_energycells" ware="energycells" owner="holyorder" type="factory">
           <quotas>
-            <quota galaxy="2"   />
+            <quota galaxy="10"   />
           </quotas>
           <location class="galaxy" macro="warexp_galaxy_macro" faction="[holyorder,alliance]" relation="self" comparison="ge">
             <sunlight min="1" max="3" />
@@ -1531,7 +1587,7 @@
         </product>
         <product id="tel_energycells" ware="energycells" owner="teladi" type="factory">
           <quotas>
-            <quota galaxy="18"   />
+            <quota galaxy="10"   />
           </quotas>
           <location class="galaxy" macro="warexp_galaxy_macro" faction="[teladi,scaleplate]" relation="self" comparison="ge">
             <economy max="0.75" maxbound="false" />
