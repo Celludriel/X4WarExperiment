@@ -52,7 +52,7 @@
         <cue name="FWM_Station_Management_Evaluation" instantiate="true">
 		  <delay exact="60s"/>
           <actions>
-			<debug_text text="'FWM_Station_Management_Evaluation'" chance="100"/>
+			<debug_text text="'FWM_Station_Management_Evaluation'" chance="$DebugChance"/>
             <do_all exact="$Station.buildstorage.resources.list.count" counter="$i">
               <set_value name="$Ware" exact="$Station.buildstorage.resources.list.{$i}"/>
               <debug_text text="'%1 has %2 %3 neededsequenceresources %4 buyprice %5'.[$Station.knownname,$Station.buildstorage.cargo.{$Ware}.count,$Ware,$Station.buildingprocessor.neededsequenceresources.{$Ware}.count,$Station.buildstorage.buyprice.{$Ware}]" chance="$DebugChance"/>
@@ -62,8 +62,11 @@
                 <set_value name="$TradeOffer" exact="$Offers.{$k}"/>
                 <debug_text text="'Buy offer %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Ware,$TradeOffer.price,$TradeOffer.unitprice,$TradeOffer.minprice,$TradeOffer.relativeprice]" chance="$DebugChance2"/>
               </do_all>
-            </do_all>			
-            <reset_cue cue="FWM_Station_Management_Evaluation"/>
+            </do_all>
+			<debug_text text="'Station state: %1'.[$Station.state]" chance="$DebugChance"/>
+			<do_if value="$Station.state != componentstate.operational">
+				<reset_cue cue="FWM_Station_Management_Evaluation"/>
+			</do_if>            
           </actions>
         </cue>
         <cue name="TradeCompleted" instantiate="true">
