@@ -11,6 +11,7 @@
 		<set_value name="$DebugChance2" exact="100" />
 	  </actions>
 	  <cues>
+		<cue name="FWM_Build_Defense_Station" ref="md.WarLibraries.BuildStation" />	
 		<cue name="FactionWarManagerEngineNotify" instantiate="true">
 			<conditions>
 				<event_cue_signalled/>
@@ -83,15 +84,14 @@
 					<do_if value="$AdjacentSectors.count gt 0 and $AlreadyInProgressForFaction == false">
 						<set_value name="$TargetSector" exact="$AdjacentSectors.{1}" />
 						<debug_text text="'TargetSector: %1 Owned by %2'.[$TargetSector.knownname, $TargetSector.owner.id]" chance="$DebugChance"/>
-						<signal_cue_instantly cue="FWM_Build_Defense_Station" param="[$TargetSector,$Faction,$StationTag,$StationType,$DebugChance]"/>							
+						<signal_cue_instantly cue="this.FWM_Build_Defense_Station" param="[$TargetSector,$Faction,$StationTag,$StationType,$DebugChance]"/>							
 					</do_if>
 				</do_if>
 				<reset_cue cue="Start"/>	
 			  </actions>
-			</cue>
-			<cue name="FWM_Build_Defense_Station" ref="md.WarLibraries.BuildStation" instantiate="true" />				
+			</cue>			
 		  </cues>
-		</cue>	
+		</cue>					 
 	  </cues>
 	</cue>	
   </cues>
