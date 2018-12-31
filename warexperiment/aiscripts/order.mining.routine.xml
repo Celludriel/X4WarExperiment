@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<add sel="(//find_buy_offer[@tradepartner='this.ship'])[1]"><match_buyer><match mayattack="this.ship" negate="true"/></match_buyer></add>
+	<add sel="(//find_buy_offer[@tradepartner='this.ship'])[2]/match_buyer"><match mayattack="this.ship" negate="true"/></add>
+</diff>

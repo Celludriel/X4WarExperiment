@@ -33,14 +33,14 @@
 				<event_cue_completed cue="Manager_Delay"/>
 			  </conditions>
 			  <cues>
-				<cue name="EvaluateGoals" checkinterval="30s" instantiate="true">
+				<cue name="EvaluateGoals" checkinterval="60s" instantiate="true">
 				  <actions>
 					<include_actions ref="UpdateData"/>
 					<debug_text text="'Triggering EvaluateGoals %1'.[$Faction.id]" chance="$DebugChance"/>
 					<!-- signal_cue_instantly cue="md.{'FactionWarManager_' + $Faction.id}.{'ManageWar'}" / -->
 					
-					<debug_text text="'md.FactionWarManager.Start %1'.[md.FactionWarManager.Start.state]" chance="$DebugChance"/>
-					<signal_cue_instantly cue="md.FactionWarManager.Start" param="[$Faction,$ClaimedSectors,$AdjacentSectors]" />
+					<debug_text text="'md.FactionWarManager.FactionWarManagerEngineNotify %1'.[md.FactionWarManager.FactionWarManagerEngineNotify.state]" chance="$DebugChance"/>
+					<signal_cue_instantly cue="md.FactionWarManager.FactionWarManagerEngineNotify" param="[$Faction,$ClaimedSectors,$AdjacentSectors]" />
 				  </actions>
 				</cue>
 

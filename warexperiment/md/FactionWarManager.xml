@@ -1,68 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mdscript name="FactionWarManager" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
-  <cues>  
-	<cue name="Start" instantiate="true" namespace="this">
+  <cues>    
+    <cue name="Init">
       <conditions>
-        <event_cue_signalled/>
+        <event_cue_signalled cue="md.Setup.Start" />
       </conditions>
 	  <actions>
-		<set_value name="$Faction" exact="event.param.{1}"/>
-		<set_value name="$ClaimedSectors" exact="event.param.{2}"/>
-		<set_value name="$AdjacentSectors" exact="event.param.{3}"/>
-		<set_value name="$TargetSector" exact="null"/>
-		<set_value name="$StationTag" exact="null"/>
-		<set_value name="$StationType" exact="''"/>
-		<set_value name="$DebugChance" exact="100"/>
-		
-		<debug_text text="'Manage War Triggering: %1'.[$Faction]" chance="$DebugChance"/>
-		<debug_text text="'Faction: %1 - ClaimedSectors: %2 - AdjacentSectors: %3'.[$Faction,$ClaimedSectors,$AdjacentSectors]" chance="$DebugChance"/>
+		<set_value name="$FactionQueue" exact="[]" />
+		<set_value name="$DebugChance" exact="100" />
+		<set_value name="$DebugChance2" exact="100" />
 	  </actions>
 	  <cues>
-	  	<cue name="FWM_Prepare_Expansion">
-		  <actions>
-		    <set_value name="$AlreadyInProgressForFaction" exact="false"/>
-			<set_value name="$StationTag" exact="tag.defence"/>
-			<set_value name="$StationType" exact="'factory'"/>					
-			<do_if value="$Faction.id == 'xenon'">
-				<set_value name="$StationType" exact="'defence'"/>
-			</do_if>
-			<set_value name="$DefenceStations" exact="[]"/>
-			
-			<do_if value="$AdjacentSectors.count gt 0">
-				<do_all exact="$AdjacentSectors.count" counter="$i" reverse="true">				
-					<find_station name="$DefenceStations" planneddefencestation="true" space="$AdjacentSectors.{$i}" checkoperational="false" multiple="true"/>
-					<find_station name="$AlreadyInProgressForFactionDefenseStations" owner="$Faction" planneddefencestation="true" space="$AdjacentSectors.{$i}" checkoperational="false" multiple="true"/>
-					<debug_text text="'Sector: %1 Owned by %2'.[$AdjacentSectors.{$i}.knownname, $AdjacentSectors.{$i}.owner.id]" chance="$DebugChance"/>
-					<debug_text text="'DefenceStations: %1'.[$DefenceStations.count]" chance="$DebugChance"/>
-					<do_if value="$AdjacentSectors.{$i}.owner.id != 'ownerless' or $DefenceStations.count gt 0">
-						<remove_value name="$AdjacentSectors.{$i}"/>
+		<cue name="FactionWarManagerEngineNotify" instantiate="true">
+			<conditions>
+				<event_cue_signalled/>
+			</conditions>		
+			<actions>
+				<debug_text text="'FactionWarManagerEngineNotify: %1'.[event.param]" chance="$DebugChance"/>
+				<append_to_list name="$FactionQueue" exact="event.param" />
+			</actions>
+		</cue>
+		<cue name="FactionWarManagerEngine">
+			<delay exact="2s"/>
+			<actions>
+				<debug_text text="'FactionWarManagerEngine Triggering %1 in queue'.[$FactionQueue.count]" chance="$DebugChance"/>
+				<do_if value="$FactionQueue.count gt 0">
+					<debug_text text="'Start %1'.[Start.state]" chance="$DebugChance"/>
+					<do_if value="Start.state" exact="cuestate.waiting">
+						<set_value name="$Event" exact="$FactionQueue.{1}" />
+						<remove_value name="$FactionQueue.{1}" />
+						<signal_cue_instantly cue="Start" param="$Event" />						
 					</do_if>
-					<do_if value="$AlreadyInProgressForFactionDefenseStations.count gt 0">
-						<do_all exact="$AlreadyInProgressForFactionDefenseStations.count" counter="$i" reverse="true">	
-							<debug_text text="'%2 Already Building In Progress in: %1'.[$AlreadyInProgressForFactionDefenseStations.{$i}.sector.knownname,$Faction.knownname]" chance="$DebugChance"/>
-						</do_all>
-						<set_value name="$AlreadyInProgressForFaction" exact="true"/>
-					</do_if>
-				</do_all>
-				<debug_text text="'AdjacentSectors Left: %1'.[$AdjacentSectors.count]" chance="$DebugChance"/>
-				<debug_text text="'AlreadyInProgressForFaction: %1'.[$AlreadyInProgressForFaction]" chance="$DebugChance"/>
-				<do_if value="$AdjacentSectors.count gt 0 and $AlreadyInProgressForFaction == false">
-					<set_value name="$TargetSector" exact="$AdjacentSectors.{1}" />
-					<debug_text text="'TargetSector: %1 Owned by %2'.[$TargetSector.knownname, $TargetSector.owner.id]" chance="$DebugChance"/>
 				</do_if>
-			</do_if>
+				<reset_cue cue="FactionWarManagerEngine"/>
+			</actions>
+		</cue>
+		<cue name="Start">
+		  <conditions>
+			<event_cue_signalled />
+		  </conditions>
+		  <actions>
+			<set_value name="$Faction" exact="event.param.{1}"/>
+			<set_value name="$ClaimedSectors" exact="event.param.{2}"/>
+			<set_value name="$AdjacentSectors" exact="event.param.{3}"/>
+			<set_value name="$TargetSector" exact="null"/>
+			<set_value name="$StationTag" exact="null"/>
+			<set_value name="$StationType" exact="''"/>
+			<set_value name="$DebugChance" exact="100"/>
+			
+			<debug_text text="'Manage War Triggering: %1'.[$Faction]" chance="$DebugChance"/>
+			<debug_text text="'Faction: %1 - ClaimedSectors: %2 - AdjacentSectors: %3'.[$Faction,$ClaimedSectors,$AdjacentSectors]" chance="$DebugChance"/>
 		  </actions>
 		  <cues>
-			<cue name="FWM_Build_Defense_Station" ref="md.WarLibraries.BuildStation">
-				<param name="TargetSector" value="$TargetSector"/>
-				<param name="Faction" value="$Faction"/>
-				<param name="StationTag" value="$StationTag"/>
-				<param name="StationType" value="$StationType"/>
-				<param name="SpaceToCommandeerShipsIn" value="$ClaimedSectors"/>
-				<param name="DebugChance" value="$DebugChance"/>	
-			</cue>		
+			<cue name="FWM_Prepare_Expansion">
+			  <actions>
+				<set_value name="$AlreadyInProgressForFaction" exact="false"/>
+				<set_value name="$StationTag" exact="tag.defence"/>
+				<set_value name="$StationType" exact="'factory'"/>					
+				<do_if value="$Faction.id == 'xenon'">
+					<set_value name="$StationType" exact="'defence'"/>
+				</do_if>
+				<set_value name="$DefenceStations" exact="[]"/>
+				
+				<do_if value="$AdjacentSectors.count gt 0">
+					<do_all exact="$AdjacentSectors.count" counter="$i" reverse="true">				
+						<find_station name="$DefenceStations" planneddefencestation="true" space="$AdjacentSectors.{$i}" checkoperational="false" multiple="true"/>
+						<find_station name="$AlreadyInProgressForFactionDefenseStations" owner="$Faction" planneddefencestation="true" space="$AdjacentSectors.{$i}" checkoperational="false" multiple="true"/>
+						<debug_text text="'Sector: %1 Owned by %2'.[$AdjacentSectors.{$i}.knownname, $AdjacentSectors.{$i}.owner.id]" chance="$DebugChance"/>
+						<debug_text text="'DefenceStations: %1'.[$DefenceStations.count]" chance="$DebugChance"/>
+						<do_if value="$AdjacentSectors.{$i}.owner.id != 'ownerless' or $DefenceStations.count gt 0">
+							<remove_value name="$AdjacentSectors.{$i}"/>
+						</do_if>
+						<do_if value="$AlreadyInProgressForFactionDefenseStations.count gt 0">
+							<do_all exact="$AlreadyInProgressForFactionDefenseStations.count" counter="$i" reverse="true">	
+								<debug_text text="'%2 Already Building In Progress in: %1'.[$AlreadyInProgressForFactionDefenseStations.{$i}.sector.knownname,$Faction.knownname]" chance="$DebugChance"/>
+							</do_all>
+							<set_value name="$AlreadyInProgressForFaction" exact="true"/>
+						</do_if>
+					</do_all>
+					<debug_text text="'AdjacentSectors Left: %1'.[$AdjacentSectors.count]" chance="$DebugChance"/>
+					<debug_text text="'AlreadyInProgressForFaction: %1'.[$AlreadyInProgressForFaction]" chance="$DebugChance"/>
+					<do_if value="$AdjacentSectors.count gt 0 and $AlreadyInProgressForFaction == false">
+						<set_value name="$TargetSector" exact="$AdjacentSectors.{1}" />
+						<debug_text text="'TargetSector: %1 Owned by %2'.[$TargetSector.knownname, $TargetSector.owner.id]" chance="$DebugChance"/>
+						<signal_cue_instantly cue="FWM_Build_Defense_Station" param="[$TargetSector,$Faction,$StationTag,$StationType,$DebugChance]"/>							
+					</do_if>
+				</do_if>
+				<reset_cue cue="Start"/>	
+			  </actions>
+			</cue>
+			<cue name="FWM_Build_Defense_Station" ref="md.WarLibraries.BuildStation" instantiate="true" />				
 		  </cues>
-		</cue>
+		</cue>	
 	  </cues>
 	</cue>	
   </cues>
