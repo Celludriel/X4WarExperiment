@@ -663,266 +663,6 @@
         <subordinates>
         </subordinates>
       </job>
-      <job id="argon_carrier_patrol_xl_center_galaxy" name="{20204,3201}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[military,carrier]" size="ship_xl" />
-        <quota galaxy="1"        />
-        <location class="galaxy" macro="Zone001_Cluster01_Sector001_macro" relation="self" comparison="exact"  faction="argon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[military,carrier]" size="ship_xl" />
-          <loadout>
-            <level min="0.7" max="1.0"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="argon_destroyer_escort_l" />
-        </subordinates>
-      </job>
-      <job id="argon_destroyer_patrol_l_sector" name="{20204,3301}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.cluster"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[factionlogic,military,destroyer]" size="ship_l" />
-        <quota galaxy="6"   sector="1"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="argon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[military,destroyer]" size="ship_l" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="argon_frigate_escort_m" />
-        </subordinates>
-      </job>
-      <job id="argon_destroyer_patrol_l_comp" name="{20204,3301}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[factionlogic,military,destroyer]" size="ship_l" />
-        <quota galaxy="3" maxgalaxy="12" cluster="3"      />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="argon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[military,destroyer]" size="ship_l" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="argon_frigate_patrol_m_sector_exp" name="{20204,2901}"  >
-        <modifiers  commandeerable="false"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.sector"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[factionlogic,military,frigate]" size="ship_m" />
-        <quota galaxy="44"   sector="1"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="argon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[military,frigate]" size="ship_m" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="argon_fighter_escort_s_frigate" />
-        </subordinates>
-      </job>
-      <job id="argon_dronecarrier_patrol_m_sector" name="{20204,5001}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.sector"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[factionlogic,military,frigate]" size="ship_m" />
-        <quota galaxy="12" maxgalaxy="24"  sector="3"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="argon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[military,frigate]" size="ship_m" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-          <units>
-            <unit category="unitcategory.defence" min="8" max="12" />
-          </units>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="argon_fighter_patrol_s_zone" name="{20204,2901}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[factionlogic,military,fighter]" size="ship_s" />
-        <quota galaxy="25" maxgalaxy="50"       />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="argon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[heavy,fighter]" size="ship_s" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="argon_fighter_escort_s_patrol" />
-        </subordinates>
-      </job>
-      <job id="argon_scout_patrol_s" name="{20204,2801}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Recon" default="true">
-            </order>
-        </orders>
-        <category faction="argon" tags="[factionlogic,military,scout]" size="ship_s" />
-        <quota galaxy="12" maxgalaxy="24" cluster="2"      />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="lt"  faction="argon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[scout]" size="ship_s" />
-          <loadout>
-            <level min="0.7" max="1.0"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="argon_police_patrol_s" name="{20204,6101}"  >
-        <modifiers  commandeerable="false"  />
-        <orders>
-            <order order="Recon" default="true">
-                <param name="police" value="true"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[factionlogic,military,police]" size="ship_s" />
-        <quota galaxy="60"   sector="1"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="[argon,antigone]" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[light,fighter]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="argon_destroyer_escort_l" name="{20204,3301}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.invvshape"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[military,destroyer]" size="ship_l" />
-        <quota      wing="2"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[military,destroyer]" size="ship_l" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="argon_frigate_escort_m" />
-        </subordinates>
-      </job>
-      <job id="argon_frigate_escort_m" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.dartvertical"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[military]" size="ship_m" />
-        <quota      wing="3"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[military,medium]" size="ship_m" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="argon_fighter_escort_s_frigate" />
-        </subordinates>
-      </job>
-      <job id="argon_fighter_escort_s_frigate" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="4"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[military,fighter,selection]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="argon_fighter_escort_s_patrol" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="3"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[military,fighter,light]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
       <job id="argon_miningfleet_m_solid_small" name="{20204,5601}" startactive="false" >
         <modifiers   subordinate="true" />
         <orders>
@@ -946,7 +686,6 @@
           <owner exact="argon" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="argon_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="argon_miningfleet_m_liquid_small" name="{20204,5701}" startactive="false" >
@@ -972,7 +711,6 @@
           <owner exact="argon" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="argon_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="argon_miningfleet_ml_solid_large" name="{20204,5601}" startactive="false" >
@@ -998,7 +736,6 @@
           <owner exact="argon" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="argon_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="argon_miningfleet_ml_liquid_large" name="{20204,5701}" startactive="false" >
@@ -1018,28 +755,6 @@
         <environment buildatshipyard="true"/>
         <ship>
           <select faction="argon" tags="[miner,liquid,mixed]"  />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="argon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="argon_fighter_escort_s_miningfleet" />
-        </subordinates>
-      </job>
-      <job id="argon_fighter_escort_s_miningfleet" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="argon" tags="[military,fighter,deepspace]" size="ship_s" />
-        <quota      wing="1" variation="1"  />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="argon" tags="[military,fighter,selection]" size="ship_s" />
           <loadout>
             <level min="0" max="0.7"/>
           </loadout>
@@ -2021,263 +1736,6 @@
         <subordinates>
         </subordinates>
       </job>
-      <job id="paranid_carrier_patrol_xl_cluster" name="{20204,3201}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[factionlogic,military,carrier]" size="ship_xl" />
-        <quota galaxy="1"        />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="paranid" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,carrier]" size="ship_xl" />
-          <loadout>
-            <level min="0.7" max="1.0"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="paranid_destroyer_escort_l" />
-        </subordinates>
-      </job>
-      <job id="paranid_destroyer_patrol_l_sector_exp" name="{20204,3301}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.cluster"/>
-            </order>
-        </orders>
-        <category faction="faction.player" tags="[]"  />
-        <quota galaxy="14"   sector="1"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="paranid" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,destroyer]" size="ship_l" />
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="paranid_frigate_escort_m" />
-        </subordinates>
-      </job>
-      <job id="paranid_destroyer_patrol_l_comp" name="{20204,3301}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[factionlogic,military,destroyer]" size="ship_l" />
-        <quota galaxy="3" maxgalaxy="12" cluster="3"      />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="paranid" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,destroyer]" size="ship_l" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="paranid_fighter_patrol_s_zone" name="{20204,2901}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.sector"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[factionlogic,military,fighter]" size="ship_s" />
-        <quota galaxy="27" maxgalaxy="54"       />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="paranid" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[fighter,heavy]" size="ship_s" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="paranid_fighter_escort_s_patrol" />
-        </subordinates>
-      </job>
-      <job id="paranid_dronecarrier_patrol_m_sector" name="{20204,2901}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.sector"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[factionlogic,military,frigate]" size="ship_m" />
-        <quota galaxy="7" maxgalaxy="14"  sector="3"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="paranid" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,frigate]" size="ship_m" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-          <units>
-            <unit category="unitcategory.defence" min="5" max="8" />
-          </units>
-        </ship>
-        <subordinates>
-          <subordinate job="paranid_fighter_escort_s_patrol" />
-        </subordinates>
-      </job>
-      <job id="paranid_corvette_patrol_m_sector" name="{20204,2901}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.sector"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[factionlogic,military,corvette]" size="ship_m" />
-        <quota galaxy="7"   sector="3"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="paranid" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,corvette]" size="ship_m" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="paranid_scout_patrol_s" name="{20204,2801}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Recon" default="true">
-            </order>
-        </orders>
-        <category faction="paranid" tags="[factionlogic,military,scout]" size="ship_s" />
-        <quota galaxy="6" maxgalaxy="12" cluster="2"      />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="lt"  faction="paranid" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,scout]"  />
-          <loadout>
-            <level min="0.7" max="1.0"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="paranid_police_patrol_s" name="{20204,2901}"  >
-        <modifiers  commandeerable="false"  />
-        <orders>
-            <order order="Recon" default="true">
-                <param name="police" value="true"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[factionlogic,police]" size="ship_s" />
-        <quota galaxy="60"   sector="1"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="ge"  faction="[paranid,alliance]" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[fighter,light]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="paranid_destroyer_escort_l" name="{20204,3301}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[military,destroyer]" size="ship_l" />
-        <quota      wing="6"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,destroyer]" size="ship_l" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="paranid_frigate_escort_m" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.dartvertical"/>
-                <param name="formationparam" value="2500m"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[military]" size="ship_m" />
-        <quota      wing="1"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,medium]" size="ship_m" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="paranid_fighter_escort_s_frigate" />
-        </subordinates>
-      </job>
-      <job id="paranid_fighter_escort_s_frigate" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="2"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,fighter,selection]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="paranid_fighter_escort_s_patrol" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="2"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,fighter,light]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
       <job id="paranid_miningfleet_m_solid_small" name="{20204,5601}" startactive="false" >
         <modifiers   subordinate="true" />
         <orders>
@@ -2301,7 +1759,6 @@
           <owner exact="paranid" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="paranid_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="paranid_miningfleet_m_liquid_small" name="{20204,5701}" startactive="false" >
@@ -2327,7 +1784,6 @@
           <owner exact="paranid" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="paranid_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="paranid_miningfleet_ml_solid_large" name="{20204,5601}" startactive="false" >
@@ -2353,7 +1809,6 @@
           <owner exact="paranid" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="paranid_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="paranid_miningfleet_ml_liquid_large" name="{20204,5701}" startactive="false" >
@@ -2373,28 +1828,6 @@
         <environment buildatshipyard="true"/>
         <ship>
           <select faction="paranid" tags="[miner,liquid,mixed]"  />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="paranid" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="paranid_fighter_escort_s_miningfleet" />
-        </subordinates>
-      </job>
-      <job id="paranid_fighter_escort_s_miningfleet" name="{20204,2601}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="paranid" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="1" variation="1"  />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="paranid" tags="[military,fighter,selection]" size="ship_s" />
           <loadout>
             <level min="0" max="0.7"/>
           </loadout>
@@ -2478,7 +1911,6 @@
         </ship>
         <subordinates>
           <subordinate job="paranid_miningfleet_m_solid_small" />
-          <subordinate job="paranid_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="mining_group_small"/>
         <time interval="600"/>
@@ -2506,7 +1938,6 @@
         </ship>
         <subordinates>
           <subordinate job="paranid_miningfleet_m_liquid_small" />
-          <subordinate job="paranid_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="lone_miner"/>
         <time interval="600"/>
@@ -2534,7 +1965,6 @@
         </ship>
         <subordinates>
           <subordinate job="paranid_miningfleet_ml_solid_large" />
-          <subordinate job="paranid_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="mining_group_large"/>
         <time interval="3600"/>
@@ -2562,7 +1992,6 @@
         </ship>
         <subordinates>
           <subordinate job="paranid_miningfleet_ml_liquid_large" />
-          <subordinate job="paranid_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="lone_miner"/>
         <time interval="3600"/>
@@ -3270,269 +2699,6 @@
         <subordinates>
         </subordinates>
       </job>
-      <job id="holyorder_destroyer_patrol_l_cluster_exp" name="{20204,3301}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.cluster"/>
-            </order>
-        </orders>
-        <category faction="faction.player" tags="[]"  />
-        <quota galaxy="13"   sector="1"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="holyorder" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,destroyer]" size="ship_l" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="holyorder_destroyer_escort_l" />
-          <subordinate job="holyorder_frigate_escort_m" />
-        </subordinates>
-      </job>
-      <job id="holyorder_destroyer_patrol_l_comp" name="{20204,3301}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[factionlogic,military,destroyer]" size="ship_l" />
-        <quota galaxy="3" maxgalaxy="12" cluster="3"      />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="holyorder" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,destroyer]" size="ship_l" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="holyorder_fighter_patrol_s_zone" name="{20204,2901}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.sector"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[factionlogic,military,fighter]" size="ship_s" />
-        <quota galaxy="40" maxgalaxy="80"       />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="holyorder" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[fighter,heavy]" size="ship_s" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="holyorder_fighter_escort_s_patrol" />
-        </subordinates>
-      </job>
-      <job id="holyorder_dronecarrier_patrol_m_sector" name="{20204,2901}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.sector"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[factionlogic,military,frigate]" size="ship_m" />
-        <quota galaxy="10" maxgalaxy="20"  sector="3"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="holyorder" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,frigate]" size="ship_m" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-          <units>
-            <unit category="unitcategory.defence" min="5" max="8" />
-          </units>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="holyorder_corvette_patrol_m_sector" name="{20204,2901}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.sector"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[factionlogic,military,corvette]" size="ship_m" />
-        <quota galaxy="5"   sector="1"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="holyorder" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,corvette]" size="ship_m" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="holyorder_corvette_escort_m" />
-        </subordinates>
-      </job>
-      <job id="holyorder_scout_patrol_s" name="{20204,2801}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Recon" default="true">
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[factionlogic,military,scout]" size="ship_s" />
-        <quota galaxy="6" maxgalaxy="12" cluster="2"      />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="lt"  faction="holyorder" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,scout]"  />
-          <loadout>
-            <level min="0.7" max="1.0"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="holyorder_police_patrol_s" name="{20204,2901}"  >
-        <modifiers  commandeerable="false"  />
-        <orders>
-            <order order="Recon" default="true">
-                <param name="police" value="true"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[factionlogic,police]" size="ship_s" />
-        <quota galaxy="60"   sector="1"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="holyorder" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[fighter,light]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="holyorder_destroyer_escort_l" name="{20204,3301}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[military,destroyer]" size="ship_l" />
-        <quota      wing="6"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,destroyer]" size="ship_l" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="holyorder_frigate_escort_m" />
-        </subordinates>
-      </job>
-      <job id="holyorder_frigate_escort_m" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.dartvertical"/>
-                <param name="formationparam" value="2500m"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[military]" size="ship_m" />
-        <quota      wing="1"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,medium]" size="ship_m" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="holyorder_fighter_escort_s_frigate" />
-        </subordinates>
-      </job>
-      <job id="holyorder_corvette_escort_m" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.dartvertical"/>
-                <param name="formationparam" value="2500m"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[military]" size="ship_m" />
-        <quota      wing="2"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,medium,corvette]" size="ship_m" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="holyorder_fighter_escort_s_frigate" />
-        </subordinates>
-      </job>
-      <job id="holyorder_fighter_escort_s_frigate" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="2"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,fighter,selection]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="holyorder_fighter_escort_s_patrol" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="2"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,fighter,light]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
       <job id="holyorder_miningfleet_m_solid_small" name="{20204,5601}" startactive="false" >
         <modifiers   subordinate="true" />
         <orders>
@@ -3556,7 +2722,6 @@
           <owner exact="holyorder" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="holyorder_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="holyorder_miningfleet_m_liquid_small" name="{20204,5701}" startactive="false" >
@@ -3582,7 +2747,6 @@
           <owner exact="holyorder" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="holyorder_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="holyorder_miningfleet_ml_solid_large" name="{20204,5601}" startactive="false" >
@@ -3608,7 +2772,6 @@
           <owner exact="holyorder" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="holyorder_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="holyorder_miningfleet_ml_liquid_large" name="{20204,5701}" startactive="false" >
@@ -3628,28 +2791,6 @@
         <environment buildatshipyard="true"/>
         <ship>
           <select faction="holyorder" tags="[miner,liquid,mixed]"  />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="holyorder" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="holyorder_fighter_escort_s_miningfleet" />
-        </subordinates>
-      </job>
-      <job id="holyorder_fighter_escort_s_miningfleet" name="{20204,2601}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="holyorder" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="1" variation="1"  />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="holyorder" tags="[military,fighter,selection]" size="ship_s" />
           <loadout>
             <level min="0" max="0.7"/>
           </loadout>
@@ -3733,7 +2874,6 @@
         </ship>
         <subordinates>
           <subordinate job="holyorder_miningfleet_m_solid_small" />
-          <subordinate job="holyorder_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="mining_group_small"/>
         <time interval="600"/>
@@ -3761,7 +2901,6 @@
         </ship>
         <subordinates>
           <subordinate job="holyorder_miningfleet_m_liquid_small" />
-          <subordinate job="holyorder_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="lone_miner"/>
         <time interval="600"/>
@@ -3789,7 +2928,6 @@
         </ship>
         <subordinates>
           <subordinate job="holyorder_miningfleet_ml_solid_large" />
-          <subordinate job="holyorder_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="mining_group_large"/>
         <time interval="3600"/>
@@ -3817,7 +2955,6 @@
         </ship>
         <subordinates>
           <subordinate job="holyorder_miningfleet_ml_liquid_large" />
-          <subordinate job="holyorder_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="lone_miner"/>
         <time interval="3600"/>
@@ -4545,179 +3682,6 @@
         <subordinates>
         </subordinates>
       </job>
-      <job id="teladi_carrier_patrol_xl_cluster" name="{20204,3201}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="teladi" tags="[factionlogic,military,carrier]" size="ship_xl" />
-        <quota galaxy="1"        />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="teladi" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="teladi" tags="[military,carrier]" size="ship_xl" />
-          <loadout>
-            <level min="0.7" max="1.0"/>
-          </loadout>
-          <owner exact="teladi" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="teladi_destroyer_escort_l" />
-        </subordinates>
-      </job>
-      <job id="teladi_destroyer_patrol_l_border_cluster" name="{20204,3301}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.cluster"/>
-            </order>
-        </orders>
-        <category faction="teladi" tags="[factionlogic,military,destroyer]" size="ship_l" />
-        <quota galaxy="6"   sector="1"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="[teladi,ministry]" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="teladi" tags="[military,destroyer]" size="ship_l" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="teladi" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="teladi_destroyer_escort_l" />
-        </subordinates>
-      </job>
-      <job id="teladi_fighter_patrol_s_zone_exp" name="{20204,2901}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.sector"/>
-            </order>
-        </orders>
-        <category faction="teladi" tags="[factionlogic,military,fighter]" size="ship_s" />
-        <quota galaxy="50" maxgalaxy="100"       />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="[teladi,ministry]" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="teladi" tags="[fighter,heavy]" size="ship_s" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="teladi" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="teladi_fighter_escort_s_patrol" />
-        </subordinates>
-      </job>
-      <job id="teladi_scout_patrol_s" name="{20204,2801}"  >
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Recon" default="true">
-            </order>
-        </orders>
-        <category faction="teladi" tags="[factionlogic,military,scout]" size="ship_s" />
-        <quota galaxy="12" maxgalaxy="24" cluster="2"      />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="lt"  faction="teladi" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="teladi" tags="[military,scout]"  />
-          <loadout>
-            <level min="0.7" max="1.0"/>
-          </loadout>
-          <owner exact="teladi" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="teladi_destroyer_escort_l" name="{20204,3301}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="teladi" tags="[military,destroyer]" size="ship_l" />
-        <quota      wing="3" variation="2"  />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="teladi" tags="[military,destroyer]" size="ship_l" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="teladi" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="teladi_frigate_escort_m" />
-        </subordinates>
-      </job>
-      <job id="teladi_frigate_escort_m" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.dartvertical"/>
-                <param name="formationparam" value="2500m"/>
-            </order>
-        </orders>
-        <category faction="teladi" tags="[military]" size="ship_m" />
-        <quota      wing="2" variation="1"  />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="teladi" tags="[military,medium]" size="ship_m" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="teladi" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="teladi_fighter_escort_s_frigate" />
-        </subordinates>
-      </job>
-      <job id="teladi_fighter_escort_s_frigate" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="teladi" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="4" variation="4"  />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="[teladi,ministry,antigone]" tags="[military,fighter,selection]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="teladi" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="teladi_fighter_escort_s_patrol" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="teladi" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="3" variation="3"  />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="[teladi,ministry,antigone]" tags="[military,fighter,light]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="teladi" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
       <job id="teladi_miningfleet_m_solid_small" name="{20204,5601}" startactive="false" >
         <modifiers   subordinate="true" />
         <orders>
@@ -4741,7 +3705,6 @@
           <owner exact="teladi" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="teladi_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="teladi_miningfleet_m_liquid_small" name="{20204,5701}" startactive="false" >
@@ -4767,7 +3730,6 @@
           <owner exact="teladi" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="teladi_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="teladi_miningfleet_ml_solid_large" name="{20204,5601}" startactive="false" >
@@ -4793,7 +3755,6 @@
           <owner exact="teladi" overridenpc="true"/>
         </ship>
         <subordinates>
-          <subordinate job="teladi_fighter_escort_s_miningfleet" />
         </subordinates>
       </job>
       <job id="teladi_miningfleet_ml_liquid_large" name="{20204,5701}" startactive="false" >
@@ -4813,28 +3774,6 @@
         <environment buildatshipyard="true"/>
         <ship>
           <select faction="teladi" tags="[miner,liquid,mixed]"  />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="teladi" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="teladi_fighter_escort_s_miningfleet" />
-        </subordinates>
-      </job>
-      <job id="teladi_fighter_escort_s_miningfleet" name="{20204,2601}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.pointguard"/>
-            </order>
-        </orders>
-        <category faction="teladi" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="1" variation="1"  />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="teladi" tags="[military,fighter,selection]" size="ship_s" />
           <loadout>
             <level min="0" max="0.7"/>
           </loadout>
@@ -4941,7 +3880,6 @@
         </ship>
         <subordinates>
           <subordinate job="teladi_miningfleet_m_solid_small" />
-          <subordinate job="teladi_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="mining_group_small"/>
         <time interval="600"/>
@@ -4969,7 +3907,6 @@
         </ship>
         <subordinates>
           <subordinate job="teladi_miningfleet_m_liquid_small" />
-          <subordinate job="teladi_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="lone_miner"/>
         <time interval="600"/>
@@ -4997,7 +3934,6 @@
         </ship>
         <subordinates>
           <subordinate job="teladi_miningfleet_ml_solid_large" />
-          <subordinate job="teladi_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="mining_group_large"/>
         <time interval="3600"/>
@@ -5025,12 +3961,11 @@
         </ship>
         <subordinates>
           <subordinate job="teladi_miningfleet_ml_liquid_large" />
-          <subordinate job="teladi_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="lone_miner"/>
         <time interval="3600"/>
       </job>
-      <!-- job id="xenon_free_miner_m_mineral" name="{20204,1901}"  >
+      <job id="xenon_free_miner_m_mineral" name="{20204,1901}"  >
         <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="MiningRoutine" default="true">
@@ -5085,290 +4020,27 @@
         <subordinates>
         </subordinates>
       </job>
-      <job id="xenon_carrier_patrol_xl_border_cluster" name="{20204,3801}"  disabled="false">
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.cluster"/>
-            </order>
-        </orders>
-        <category faction="xenon" tags="[factionlogic,military,carrier]" size="ship_xl" />
-        <quota galaxy="1"        />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="xenon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[military,carrier]" size="ship_xl" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="xenon_destroyer_escort_xl" />
-        </subordinates>
-      </job>
-      <job id="xenon_destroyer_patrol_xl_cluster" name="{20204,3801}"  disabled="false">
-        <modifiers  commandeerable="true"  />
+      <job id="argon_fighter_reinforcement_group" name="Argon Fighter Reinforcement" startactive="true" >
+        <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
                 <param name="range" value="class.sector"/>
             </order>
         </orders>
-        <category faction="xenon" tags="[factionlogic,military,destroyer]" size="ship_xl" />
-        <quota galaxy="14"  cluster="3"      />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="xenon" />
+        <category faction="argon" tags="[factionlogic,military,fighter,smallreinforcement]" size="ship_s" />
+        <quota maxgalaxy="59" />
+        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="exact"  faction="argon" />
         <environment buildatshipyard="true"/>
         <ship>
-          <select faction="xenon" tags="[military,destroyer]" size="ship_xl" />
+          <select faction="argon" tags="[military,fighter]" size="ship_s" />
           <loadout>
             <level min="0.4" max="1.0"/>
           </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="xenon_frigate_escort_m" />
-        </subordinates>
-      </job>
-      <job id="xenon_destroyer_patrol_xl_comp" name="{20204,3801}"  disabled="false">
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="xenon" tags="[factionlogic,military,destroyer]" size="ship_xl" />
-        <quota galaxy="3" maxgalaxy="12" cluster="3"      />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="xenon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[military,destroyer]" size="ship_xl" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
+          <owner exact="argon" overridenpc="true"/>
         </ship>
         <subordinates>
         </subordinates>
       </job>
-      <job id="xenon_fighter_patrol_s_zone" name="{20204,3401}"  disabled="false">
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="xenon" tags="[factionlogic,military,fighter]" size="ship_s" />
-        <quota galaxy="47" maxgalaxy="94"       />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="xenon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[fighter,heavy]" size="ship_s" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="xenon_fighter_escort_s_patrol" />
-        </subordinates>
-      </job>
-      <job id="xenon_frigate_patrol_m_zone_everywhereelse" name="{20204,3401}"  disabled="false">
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-                <param name="includeroute" value="true"/>
-            </order>
-        </orders>
-        <category faction="xenon" tags="[factionlogic,military,frigate]" size="ship_m" />
-        <quota galaxy="41"   sector="3"     />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="not"  faction="xenon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[military,medium]" size="ship_m" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="xenon_fighter_escort_s_patrol" />
-        </subordinates>
-      </job>
-      <job id="xenon_scout_patrol_s" name="{20204,2801}"  disabled="false">
-        <modifiers  commandeerable="true"  />
-        <orders>
-            <order order="Recon" default="true">
-            </order>
-        </orders>
-        <category faction="xenon" tags="[factionlogic,military,scout]" size="ship_s" />
-        <quota galaxy="8" maxgalaxy="16" cluster="2"      />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="lt"  faction="xenon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[scout]" size="ship_s" />
-          <loadout>
-            <level min="0.7" max="1.0"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="xenon_fighter_escort_s_patrol" />
-        </subordinates>
-      </job>
-      <job id="xenon_fighter_s_deepspace_single" name="{20204,3401}"  disabled="false">
-        <modifiers  commandeerable="false"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="xenon" tags="[military,fighter]" size="ship_s" />
-        <quota galaxy="15"        />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="xenon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[fighter,heavy]" size="ship_s" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-        <encounters id="xenon_s_lone"/>
-      </job>
-      <job id="xenon_fighter_s_deepspace_group" name="{20204,3401}"  disabled="false">
-        <modifiers  commandeerable="false"  />
-        <orders>
-            <order order="Patrol" default="true">
-                <param name="range" value="class.zone"/>
-            </order>
-        </orders>
-        <category faction="xenon" tags="[military,fighter]" size="ship_s" />
-        <quota galaxy="7"        />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="xenon" />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[fighter,heavy]" size="ship_s" />
-          <loadout>
-            <level min="0.4" max="1.0"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="xenon_fighter_escort_s_patrol" />
-        </subordinates>
-        <encounters id="xenon_s_group"/>
-      </job>
-      <job id="xenon_frigate_escort_m" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.dartvertical"/>
-                <param name="formationparam" value="2500m"/>
-            </order>
-        </orders>
-        <category faction="xenon" tags="[military]" size="ship_m" />
-        <quota      wing="2" variation="1"  />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[military,medium]" size="ship_m" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="xenon_fighter_escort_s_frigate" />
-        </subordinates>
-      </job>
-      <job id="xenon_destroyer_escort_xl" name="{20204,3801}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.invvshape"/>
-            </order>
-        </orders>
-        <category faction="xenon" tags="[military]" size="ship_xl" />
-        <quota      wing="2"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[military,destroyer]" size="ship_xl" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="xenon_frigate_escort_m_2" />
-        </subordinates>
-      </job>
-      <job id="xenon_frigate_escort_m_2" name="{20204,3401}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-                <param name="formation" value="formationshape.dartvertical"/>
-                <param name="formationparam" value="2500m"/>
-            </order>
-        </orders>
-        <category faction="xenon" tags="[military]" size="ship_m" />
-        <quota      wing="3"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[military,medium]" size="ship_m" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-          <subordinate job="xenon_fighter_escort_s_frigate" />
-        </subordinates>
-      </job>
-      <job id="xenon_fighter_escort_s_frigate" name="{20204,3401}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-            </order>
-        </orders>
-        <category faction="xenon" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="4"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[military,fighter,selection]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job>
-      <job id="xenon_fighter_escort_s_patrol" name="{20204,2901}" startactive="false" >
-        <modifiers   subordinate="true" />
-        <orders>
-            <order order="Escort" default="true">
-            </order>
-        </orders>
-        <category faction="xenon" tags="[military,fighter]" size="ship_s" />
-        <quota      wing="2"   />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="not"   />
-        <environment buildatshipyard="true"/>
-        <ship>
-          <select faction="xenon" tags="[military,fighter,light]" size="ship_s" />
-          <loadout>
-            <level min="0" max="0.7"/>
-          </loadout>
-          <owner exact="xenon" overridenpc="true"/>
-        </ship>
-        <subordinates>
-        </subordinates>
-      </job -->
 
       <!-- MASS TRAFFIC -->
       <!--argon sectors-->

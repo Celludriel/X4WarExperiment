@@ -7,8 +7,9 @@
       </conditions>
 	  <actions>
 		<set_value name="$FactionQueue" exact="[]" />
+		<set_value name="$ReinforcedClusters" exact="[]" />
 		<set_value name="$DebugChance" exact="100" />
-		<set_value name="$DebugChance2" exact="100" />
+		<set_value name="$DebugChance2" exact="0" />
 	  </actions>
 	  <cues>		
 		<cue name="FactionWarManagerEngineNotify" instantiate="true">
@@ -23,9 +24,9 @@
 		<cue name="FactionWarManagerEngine">
 			<delay exact="2s"/>
 			<actions>
-				<debug_text text="'FactionWarManagerEngine Triggering %1 in queue'.[$FactionQueue.count]" chance="$DebugChance"/>
+				<debug_text text="'FactionWarManagerEngine Triggering %1 in queue'.[$FactionQueue.count]" chance="$DebugChance2"/>
 				<do_if value="$FactionQueue.count gt 0">
-					<debug_text text="'Start %1'.[Start.state]" chance="$DebugChance"/>
+					<debug_text text="'Start %1'.[Start.state]" chance="$DebugChance2"/>
 					<do_if value="Start.state" exact="cuestate.waiting">
 						<set_value name="$Event" exact="$FactionQueue.{1}" />
 						<remove_value name="$FactionQueue.{1}" />
@@ -48,11 +49,68 @@
 			<set_value name="$StationType" exact="''"/>
 			<set_value name="$DebugChance" exact="100"/>
 			
-			<debug_text text="'Manage War Triggering: %1'.[$Faction]" chance="$DebugChance"/>
-			<debug_text text="'Faction: %1 - ClaimedSectors: %2 - AdjacentSectors: %3'.[$Faction,$ClaimedSectors,$AdjacentSectors]" chance="$DebugChance"/>
+			<debug_text text="'Manage War Triggering: %1'.[$Faction]" chance="$DebugChance2"/>
+			<debug_text text="'Faction: %1 - ClaimedSectors: %2 - AdjacentSectors: %3'.[$Faction,$ClaimedSectors,$AdjacentSectors]" chance="$DebugChance2"/>
 		  </actions>
 		  <cues>
-			<cue name="FWM_Prepare_Expansion">
+			<cue name="FMW_Evaluate_Cluster_Defence">
+				<actions>
+					<!-- find a way to count ships and establish a strength for each $ClaimedSectors -->
+					<do_all exact="$ClaimedSectors.count" counter="$i">
+						<find_requested_job_ship name="$PreviousRequested" requester="$ClaimedSectors.{$i}" multiple="true"/>
+						<do_all exact="$PreviousRequested.count" counter="$j">
+							<debug_text text="'Previous Request %1'.[$PreviousRequested.{$j}.idcode]" chance="$DebugChance"/>
+						</do_all>
+						<!-- do strength calculation here -->
+						<do_if value="$PreviousRequested.count == 0 and not $ReinforcedClusters.indexof.{$ClaimedSectors.{$i}}">
+							<!-- if strength < "a value to be determined" put cluster request a single reinforcement group for cluster -->
+							<debug_text text="'Find Suitable jobs for cluster defence for %1'.[$Faction.id]" chance="$DebugChance"/>
+							<get_suitable_job result="$ReinforcementList" multiple="true" faction="$Faction" tags="[tag.military]"/>
+							<do_all exact="$ReinforcementList.count" counter="$k">
+								<debug_text text="'Job found %1'.[$ReinforcementList.{$k}]" chance="$DebugChance"/>
+							</do_all>
+							<do_if value="$ReinforcementList.count gt 0">
+								<signal_cue_instantly cue="Request_Job_Ship" param="[$ClaimedSectors.{$i},$ReinforcementList.{1}]"/>							
+							</do_if>
+						</do_if>
+					</do_all>
+					<!-- if strength >= "a value to be determined" and cluster in reinforcment mode remove it from that mode -->
+				</actions>				
+			</cue>
+			<cue name="Request_Job_Ship" instantiate="true">
+				<conditions>
+					<event_cue_signalled/>
+				</conditions>
+				<actions>
+					<find_zone name="$Startzone" space="event.param.{1}" normalzone="true"/>
+					<request_job_ship name="$Requested_Job_Ship" job="event.param.{2}" requester="event.param.{1}" zone="$Startzone" />
+					<debug_text text="'Requested_Job_Ship: %1'.[$Requested_Job_Ship.idcode]" chance="$DebugChance"/>
+					<append_to_list name="$ReinforcedClusters" exact="event.param.{1}" />
+				</actions>
+				<cues>
+					<cue name="Requested_Job_Ship_Destroyed">
+						<conditions>
+							<event_object_destroyed object="$Requested_Job_Ship" />
+						</conditions>
+						<actions>
+							<set_value name="$DestroyedObject" exact="event.object"/>
+							<set_value name="$Killer" exact="event.param"/>
+							<set_value name="$Method" exact="event.param2"/>
+							<debug_text text="'%1 has been destroyed by %2 due to %3'.[$DestroyedObject.idcode,$Killer.idcode,$Method]" chance="$DebugChance"/>
+							<cancel_cue cue="Request_Job_Ship"/>
+						</actions>
+					</cue>
+					<cue name="Requested_Job_Ship_Built">
+					  <conditions>
+						<event_build_finished object="$Requested_Job_Ship"/>
+					  </conditions>
+					  <actions>
+						<set_requested_job_ship_timeout ship="$Requested_Job_Ship" timeout="player.age + 1h"/>
+					  </actions>
+					</cue>	
+				</cues>
+			</cue>
+			<cue name="FWM_Evaluate_Expansion">
 			  <actions>
 				<set_value name="$AlreadyInProgressForFaction" exact="false"/>
 				<set_value name="$StationTag" exact="tag.defence"/>
@@ -87,11 +145,21 @@
 					</do_if>
 				</do_if>
 			  </actions>
-			</cue>			
-			<cue name="FWM_Build_Defense_Station" ref="md.WarLibraries.BuildStation" instantiate="true" />					 		  
+			</cue>
+			<cue name="FWM_Build_Defense_Station" ref="md.WarLibraries.BuildStation" instantiate="true" />				 		  
 		  </cues>
 		</cue>			
-	  </cues>
+		<cue name="RequestedShipActivated" instantiate="true">
+			<conditions>
+				<event_job_ship_activated />
+				<check_value value="event.param.isoperational"/>
+			</conditions>
+			<actions>
+				<set_value name="$NewShip" exact="event.param"/>
+				<debug_text text="'%1 has been activated'.[$NewShip.idcode]" chance="$DebugChance"/>
+			</actions>
+		</cue>		
+	</cues>
 	</cue>	
   </cues>
 </mdscript>

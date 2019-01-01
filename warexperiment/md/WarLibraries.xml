@@ -55,7 +55,7 @@
 			<debug_text text="'FWM_Station_Management_Evaluation'" chance="$DebugChance"/>
             <do_all exact="$Station.buildstorage.resources.list.count" counter="$i">
               <set_value name="$Ware" exact="$Station.buildstorage.resources.list.{$i}"/>
-              <debug_text text="'%1 has %2 %3 neededsequenceresources %4 buyprice %5'.[$Station.knownname,$Station.buildstorage.cargo.{$Ware}.count,$Ware,$Station.buildingprocessor.neededsequenceresources.{$Ware}.count,$Station.buildstorage.buyprice.{$Ware}]" chance="$DebugChance"/>
+              <debug_text text="'%1 has %2 %3 neededsequenceresources %4 buyprice %5'.[$Station.knownname,$Station.buildstorage.cargo.{$Ware}.count,$Ware,$Station.buildingprocessor.neededsequenceresources.{$Ware}.count,$Station.buildstorage.buyprice.{$Ware}]" chance="$DebugChance2"/>
               <set_value name="$Offers" exact="[]"/>
               <find_buy_offer tradepartner="player.container" usereservations="false" excludeempty="false" result="$Offers" multiple="true" buyer="$Station.buildstorage" wares="$Ware"/>
               <do_all exact="$Offers.count" counter="$k">
@@ -63,7 +63,7 @@
                 <debug_text text="'Buy offer %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Ware,$TradeOffer.price,$TradeOffer.unitprice,$TradeOffer.minprice,$TradeOffer.relativeprice]" chance="$DebugChance2"/>
               </do_all>
             </do_all>
-			<debug_text text="'Station state: %1'.[$Station.state]" chance="$DebugChance"/>
+			<debug_text text="'Station state: %1'.[$Station.state]" chance="$DebugChance2"/>
 			<do_if value="$Station.state != componentstate.operational">
 				<reset_cue cue="FWM_Station_Management_Evaluation"/>
 			</do_if>            
@@ -75,7 +75,7 @@
           </conditions>
           <actions>
             <set_value name="$Trade" exact="event.param"/>
-            <debug_text text="'Trade Completed %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Trade.ware,$Trade.price,$Trade.unitprice,$Trade.minprice,$Trade.relativeprice]" chance="$DebugChance2"/>
+            <debug_text text="'Trade Completed %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Trade.ware,$Trade.price,$Trade.unitprice,$Trade.minprice,$Trade.relativeprice]" chance="$DebugChance"/>
           </actions>
         </cue>
         <cue name="TradeStarted" instantiate="true">
@@ -84,7 +84,7 @@
           </conditions>
           <actions>
             <set_value name="$Trade" exact="event.param"/>
-            <debug_text text="'Trade Started %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Trade.ware,$Trade.price,$Trade.unitprice,$Trade.minprice,$Trade.relativeprice]" chance="$DebugChance2"/>
+            <debug_text text="'Trade Started %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Trade.ware,$Trade.price,$Trade.unitprice,$Trade.minprice,$Trade.relativeprice]" chance="$DebugChance"/>
           </actions>
         </cue>
       </cues>
