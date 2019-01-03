@@ -924,7 +924,6 @@
         </ship>
         <subordinates>
           <subordinate job="argon_miningfleet_m_solid_small" />
-          <subordinate job="argon_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="mining_group_small"/>
         <time interval="600"/>
@@ -952,7 +951,6 @@
         </ship>
         <subordinates>
           <subordinate job="argon_miningfleet_m_liquid_small" />
-          <subordinate job="argon_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="lone_miner"/>
         <time interval="600"/>
@@ -980,7 +978,6 @@
         </ship>
         <subordinates>
           <subordinate job="argon_miningfleet_ml_solid_large" />
-          <subordinate job="argon_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="mining_group_large"/>
         <time interval="3600"/>
@@ -1008,7 +1005,6 @@
         </ship>
         <subordinates>
           <subordinate job="argon_miningfleet_ml_liquid_large" />
-          <subordinate job="argon_fighter_escort_s_miningfleet" />
         </subordinates>
         <encounters id="lone_miner"/>
         <time interval="3600"/>
@@ -4020,7 +4016,7 @@
         <subordinates>
         </subordinates>
       </job>
-      <job id="argon_fighter_reinforcement_group" name="Argon Fighter Reinforcement" startactive="true" >
+      <job id="argon_fighter_reinforcement_group" name="Argon Fighter Leader" startactive="true" >
         <modifiers rebuild="false" commandeerable="true"  />
         <orders>
             <order order="Patrol" default="true">
@@ -4031,6 +4027,7 @@
         <quota maxgalaxy="59" />
         <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="exact"  faction="argon" />
         <environment buildatshipyard="true"/>
+		<expirationtime min="31557600" max="31557600"/>
         <ship>
           <select faction="argon" tags="[military,fighter]" size="ship_s" />
           <loadout>
@@ -4039,7 +4036,29 @@
           <owner exact="argon" overridenpc="true"/>
         </ship>
         <subordinates>
+			<subordinate job="argon_fighter_subordinate"/>
         </subordinates>
+      </job>
+      <job id="argon_fighter_subordinate" name="Argon Fighter Wingman" startactive="false" >
+        <modifiers subordinate="true" />
+        <orders>
+		  <order order="Escort" default="true">
+			<param name="formation" value="formationshape.dartvertical"/>
+			<param name="formationparam" value="2500m"/>
+		  </order>
+        </orders>
+        <category faction="argon" tags="[military]" size="ship_s" />
+        <quota wing="4"/>
+        <location class="galaxy" macro="warexp_galaxy_macro"/>
+        <environment buildatshipyard="true"/>
+		<expirationtime min="31557600" max="31557600"/>
+        <ship>
+          <select faction="argon" tags="[military,fighter]" size="ship_s" />
+          <loadout>
+            <level min="0" max="0.7"/>
+          </loadout>
+          <owner exact="argon" overridenpc="true"/>
+        </ship>
       </job>
 
       <!-- MASS TRAFFIC -->

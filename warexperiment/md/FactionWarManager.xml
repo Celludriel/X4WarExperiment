@@ -105,7 +105,7 @@
 						<event_build_finished object="$Requested_Job_Ship"/>
 					  </conditions>
 					  <actions>
-						<set_requested_job_ship_timeout ship="$Requested_Job_Ship" timeout="player.age + 1h"/>
+						<debug_text text="'Setting lifetime for %1'.[$Requested_Job_Ship.idcode]" chance="$DebugChance"/>
 					  </actions>
 					</cue>	
 				</cues>
