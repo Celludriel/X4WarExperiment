@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<replace sel="//attention/actions">
+		<actions>
+			<label name="start"/>
+			<set_value name="$debugchance" exact="100"/>
+			<do_if value="not this.ship.isjobship">
+				<debug_text text="'Ship is not a job ship. Restocking subordinates not yet supported.'" chance="$debugchance"/>
+				<return/>
+			</do_if>
+
+			<debug_text text="'restock subordinates. init: ' + $init" chance="$debugchance"/>
+
+			<get_subordinate_macro name="$macros" commander="this.ship" init="$init" multiple="true"/>
+			<debug_text text="'no suitable subordinate job ships found. we need the following macros:'" chance="$debugchance"/>
+			<do_all exact="$macros.count" counter="$i" chance="$debugchance">
+				<debug_text text="' ' + $macros.{$i}"/>
+			</do_all>
+
+			<do_if value="not $macros.count">
+				<resume label="finish"/>
+			</do_if>
+
+			<set_value name="$clusterranges" exact="table[]"/>
+			<find_cluster_in_range name="$clusters" maxdistance="$jumps" multiple="true" object="this.ship"/>
+			<do_all exact="$clusters.count" counter="$i">
+				<set_value name="$distance" exact="this.cluster.gatedistance.{$clusters.{$i}}"/>
+				<do_if value="not $clusterranges.{$distance}?">
+					<set_value name="$clusterranges.{$distance}" exact="[$clusters.{$i}]"/>
+				</do_if>
+				<do_else>
+					<append_to_list name="$clusterranges.{$distance}" exact="$clusters.{$i}"/>
+				</do_else>
+			</do_all>
+			<remove_value name="$clusters"/>
+
+			<debug_text text="'looking for shipyards'" chance="$debugchance"/>
+			<do_all exact="$jumps + 1" counter="$i">
+				<do_if value="$clusterranges.{$i - 1}?">
+					<set_value name="$shipyards" exact="[]"/>
+					<do_all exact="$clusterranges.{$i - 1}.count" counter="$k">
+						<find_station name="$shipyards" space="$clusterranges.{$i - 1}.{$k}" canbuildships="true" append="true">
+							<match_content class="class.buildmodule"/>
+							<match_relation_to object="this.ship" relation="friend" comparison="ge"/>
+						</find_station>
+					</do_all>
+					<debug_text text="'found %s shipyards'.[$shipyards.count]" chance="$debugchance"/>
+					<shuffle_list list="$shipyards"/>
+
+					<do_all exact="$shipyards.count" counter="$k">
+						<do_all exact="$macros.count" counter="$o">
+							<set_value name="$buildmodules" exact="$shipyards.{$k}.buildmodules"/>
+							<do_all exact="$buildmodules.count" counter="$m">
+								<do_if value="not $buildmodules.{$m}.isbusy and $buildmodules.{$m}.canbuildmacro.{$macros.{$o}}">
+									<set_value name="$shipyard" exact="$shipyards.{$k}"/>
+									<debug_text text="'found shipyard %s %s %s with free build module'.[$shipyard.idcode, $shipyard.knownname, $shipyard]" chance="$debugchance"/>
+									<!--TODO @Owen @Klaus Workaround to clear counter variables-->
+									<remove_value name="$k"/>
+									<remove_value name="$m"/>
+									<remove_value name="$o"/>
+									<resume label="flyto"/>
+								</do_if>
+								<do_else>
+									<debug_text text="'shipyard %s %s %s has %s build modules. build module %s ruled out. buildmodule is busy: %s, can build macro: %s'.[$shipyards.{$k}.idcode, $shipyards.{$k}.knownname, $shipyards.{$k}, $buildmodules.count, $m, $buildmodules.{$m}.isbusy, $buildmodules.{$m}.canbuildmacro.{$macros.{$o}}]" chance="$debugchance"/>
+								</do_else>
+							</do_all>
+						</do_all>
+					</do_all>
+				</do_if>
+			</do_all>
+
+			<label name="flyto"/>
+
+			<do_if value="not $shipyard?">
+				<resume label="finish"/>
+			</do_if>
+
+			<remove_value name="$clusterranges"/>
+			<debug_text text="'Moving to shipyard ' + $shipyard.knownname + ' in ' + $shipyard.zone.knownname" chance="$debugchance"/>
+
+			<run_script name="'move.generic'">
+				<param name="destination" value="$shipyard"/>
+			</run_script>
+
+			<do_if value="not $shipyard.exists">
+				<resume label="finish"/>
+			</do_if>
+
+			<add_builds_to_replace_subordinates name="$builds" commander="this.ship" buildobject="$shipyard" init="$init"/>
+			<wait exact="1s" />
+			<debug_text text="'requesting %s builds from shipyard %s %s %s.'.[$builds.count, $shipyard.idcode, $shipyard.knownname, $shipyard]" chance="$debugchance"/>
+
+			<label name="wait"/>
+
+			<set_value name="$BuildingObjects" exact="[]" />
+			<do_all exact="$builds.count" counter="$i" reverse="true">
+				<do_if value="$builds.{$i}.exists and $builds.{$i}.isshipbuild">
+					<debug_text text="'adding buildobject %s.'.[$builds.{$i}.buildobject.idcode]" chance="$debugchance"/>
+					<append_to_list name="$BuildingObjects" exact="$builds.{$i}.buildobject" />
+				</do_if>
+			</do_all>
+
+			<debug_text text="'waiting for ' + $BuildingObjects.count + ' subordinates'" chance="$debugchance" />
+			
+			<do_all exact="$BuildingObjects.count" counter="$i" reverse="true">
+				<do_if value="$BuildingObjects.{$i}.isoperational">
+					<set_value name="$Ship" exact="$BuildingObjects.{$i}" />
+					<debug_text text="'build event ' + event.name + ' for object ' + $Ship.knownname" chance="$debugchance" />
+					<set_object_commander object="$Ship" commander="this.ship"/>
+					<debug_text text="this.ship.idcode + ' is taking command of ship ' + $Ship.idcode" chance="$debugchance"/>
+					<organise_job_ship_subordinates commander="this.ship"/>
+					<set_ship_expiration_time ship="$Ship" time="-1s"/>
+					<activate_job_ship_orders ship="$Ship"/>
+					<remove_value name="$BuildingObjects.{$i}"/>					
+				</do_if>
+			</do_all>
+			
+			<do_if value="$BuildingObjects.count gt 0">
+				<debug_text text="'%s at the shipyard. waiting for %s builds to finish.'.[this.ship.idcode, $BuildingObjects.count]" chance="$debugchance"/>
+				<wait exact="2s" />				
+				<resume label="wait"/>
+			</do_if>
+
+			<debug_text text="'all subordinates built'" chance="$debugchance" />
+			<label name="finish"/>
+		</actions>
+	</replace>
+</diff>

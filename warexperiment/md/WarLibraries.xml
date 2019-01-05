@@ -69,24 +69,6 @@
 			</do_if>            
           </actions>
         </cue>
-        <cue name="TradeCompleted" instantiate="true">
-          <conditions>
-            <event_trade_completed buyer="$Station.buildstorage"/>
-          </conditions>
-          <actions>
-            <set_value name="$Trade" exact="event.param"/>
-            <debug_text text="'Trade Completed %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Trade.ware,$Trade.price,$Trade.unitprice,$Trade.minprice,$Trade.relativeprice]" chance="$DebugChance"/>
-          </actions>
-        </cue>
-        <cue name="TradeStarted" instantiate="true">
-          <conditions>
-            <event_trade_started buyer="$Station.buildstorage"/>
-          </conditions>
-          <actions>
-            <set_value name="$Trade" exact="event.param"/>
-            <debug_text text="'Trade Started %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Trade.ware,$Trade.price,$Trade.unitprice,$Trade.minprice,$Trade.relativeprice]" chance="$DebugChance"/>
-          </actions>
-        </cue>
       </cues>
     </library>
   </cues>

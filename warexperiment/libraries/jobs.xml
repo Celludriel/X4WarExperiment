@@ -4047,7 +4047,7 @@
 			<param name="formationparam" value="2500m"/>
 		  </order>
         </orders>
-        <category faction="argon" tags="[military]" size="ship_s" />
+        <category faction="argon" tags="[military,wingman]" size="ship_s" />
         <quota wing="4"/>
         <location class="galaxy" macro="warexp_galaxy_macro"/>
         <environment buildatshipyard="true"/>
