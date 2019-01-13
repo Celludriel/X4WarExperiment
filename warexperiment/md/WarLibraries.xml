@@ -1,75 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mdscript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="WarLibraries" xsi:noNamespaceSchemaLocation="md.xsd">
-  <cues>
-    <library name="BuildStation" instantiate="true" >
-      <params>
-        <param name="Level" default="0.9"/>
-        <param name="Radius" default="5km"/>
-        <param name="MaxDistance" default="100km"/>
-        <param name="AllowYaxis" default="false"/>
-        <param name="DebugChance" default="100"/>
-        <param name="DebugChance2" default="0"/>
-      </params>
-		<conditions>
-			<event_cue_signalled/>
-		</conditions>
-      <actions>
-        <set_value name="$TargetSector" exact="event.param.{1}"/>
-        <set_value name="$Faction" exact="event.param.{2}"/>
-        <set_value name="$StationTag" exact="event.param.{3}"/>
-        <set_value name="$StationType" exact="event.param.{4}"/>
-        <set_value name="$DebugChance" exact="event.param.{5}"/>        
-		<debug_text text="'BuildStation: TargetSector %1, Faction %2, StationTag %3, StationType %4, DebugChance %5'.[$TargetSector.knownname, $Faction.id, $StationTag, $StationType, $DebugChance]" chance="100"/>
-        <do_if value="$TargetSector != null">
-          <set_value name="$Station" exact="null"/>
-          <set_value name="$StationMacro" exact="null"/>
-          <set_value name="$SafePosition" exact="null"/>
-          <set_value name="$ConstructionPlan" exact="null"/>
-          <set_value name="$Loadouts" exact="null"/>
-          <set_value name="$BuildID" exact="null"/>
-          <get_construction_plan result="$ConstructionPlan" faction="$Faction" tags="$StationTag"/>
-          <do_if value="$ConstructionPlan">
-            <get_module_set_macro result="$StationMacro" race="$Faction.primaryrace" type="$StationType"/>
-            <get_safe_pos result="$SafePosition" sector="$TargetSector" radius="$Radius" object="$TargetSector" max="$MaxDistance" allowyaxis="$AllowYaxis"/>
-            <create_station name="$Station" sector="$TargetSector" owner="$Faction" macro="$StationMacro">
-              <safepos value="$SafePosition"/>
-            </create_station>
-            <debug_text text="'Station exists after creation %1'.[$Station.exists]" chance="$DebugChance2"/>
-            <generate_loadout sequence="$ConstructionPlan" level="$Level" result="$Loadouts" faction="$Faction"/>
-            <do_all exact="$Loadouts.count" counter="$l">
-              <apply_loadout sequence="$ConstructionPlan" index="$l" loadout="$Loadouts.{$l}"/>
-            </do_all>
-            <add_build_to_expand_station object="$Station.buildstorage" buildobject="$Station" constructionplan="$ConstructionPlan" result="$BuildID"/>
-            <debug_text text="'Started construction of station ' + $Station.knownname + ' ' + $Station + ' - Build ID: ' + $BuildID" chance="$DebugChance"/>
-          </do_if>
-        </do_if>
-        <do_else>
-          <debug_text text="'No TargetSector given'" chance="$DebugChance2"/>
-          <cancel_cue cue="this"/>
-        </do_else>
-      </actions>
-      <cues>
-        <cue name="FWM_Station_Management_Evaluation" instantiate="true">
-		  <delay exact="60s"/>
-          <actions>
-			<debug_text text="'FWM_Station_Management_Evaluation'" chance="$DebugChance"/>
-            <do_all exact="$Station.buildstorage.resources.list.count" counter="$i">
-              <set_value name="$Ware" exact="$Station.buildstorage.resources.list.{$i}"/>
-              <debug_text text="'%1 has %2 %3 neededsequenceresources %4 buyprice %5'.[$Station.knownname,$Station.buildstorage.cargo.{$Ware}.count,$Ware,$Station.buildingprocessor.neededsequenceresources.{$Ware}.count,$Station.buildstorage.buyprice.{$Ware}]" chance="$DebugChance2"/>
-              <set_value name="$Offers" exact="[]"/>
-              <find_buy_offer tradepartner="player.container" usereservations="false" excludeempty="false" result="$Offers" multiple="true" buyer="$Station.buildstorage" wares="$Ware"/>
-              <do_all exact="$Offers.count" counter="$k">
-                <set_value name="$TradeOffer" exact="$Offers.{$k}"/>
-                <debug_text text="'Buy offer %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Ware,$TradeOffer.price,$TradeOffer.unitprice,$TradeOffer.minprice,$TradeOffer.relativeprice]" chance="$DebugChance2"/>
-              </do_all>
-            </do_all>
-			<debug_text text="'Station state: %1'.[$Station.state]" chance="$DebugChance2"/>
-			<do_if value="$Station.state != componentstate.operational">
-				<reset_cue cue="FWM_Station_Management_Evaluation"/>
-			</do_if>            
-          </actions>
-        </cue>
-      </cues>
-    </library>
-  </cues>
+	<cues>
+		<library name="BuildStation" instantiate="true" >
+			<params>
+				<param name="Level" default="0.9"/>
+				<param name="Radius" default="5km"/>
+				<param name="MaxDistance" default="100km"/>
+				<param name="AllowYaxis" default="false"/>
+				<param name="DebugChance" default="100"/>
+				<param name="DebugChance2" default="0"/>
+			</params>
+			<conditions>
+				<event_cue_signalled/>
+			</conditions>
+			<actions>
+				<set_value name="$TargetSector" exact="event.param.{1}"/>
+				<set_value name="$Faction" exact="event.param.{2}"/>
+				<set_value name="$StationTag" exact="event.param.{3}"/>
+				<set_value name="$StationType" exact="event.param.{4}"/>
+				<set_value name="$DebugChance" exact="event.param.{5}"/>        
+				<debug_text text="'BuildStation: TargetSector %1, Faction %2, StationTag %3, StationType %4, DebugChance %5'.[$TargetSector.knownname, $Faction.id, $StationTag, $StationType, $DebugChance]" chance="100"/>
+				<do_if value="$TargetSector != null">
+					<set_value name="$Station" exact="null"/>
+					<set_value name="$StationMacro" exact="null"/>
+					<set_value name="$SafePosition" exact="null"/>
+					<set_value name="$ConstructionPlan" exact="null"/>
+					<set_value name="$Loadouts" exact="null"/>
+					<set_value name="$BuildID" exact="null"/>
+					<get_construction_plan result="$ConstructionPlan" faction="$Faction" tags="$StationTag"/>
+					<do_if value="$ConstructionPlan">
+						<get_module_set_macro result="$StationMacro" race="$Faction.primaryrace" type="$StationType"/>
+						<get_safe_pos result="$SafePosition" sector="$TargetSector" radius="$Radius" object="$TargetSector" max="$MaxDistance" allowyaxis="$AllowYaxis"/>
+						<create_station name="$Station" sector="$TargetSector" owner="$Faction" macro="$StationMacro">
+							<safepos value="$SafePosition"/>
+						</create_station>
+						<debug_text text="'Station exists after creation %1'.[$Station.exists]" chance="$DebugChance2"/>
+						<generate_loadout sequence="$ConstructionPlan" level="$Level" result="$Loadouts" faction="$Faction"/>
+						<do_all exact="$Loadouts.count" counter="$l">
+							<apply_loadout sequence="$ConstructionPlan" index="$l" loadout="$Loadouts.{$l}"/>
+						</do_all>
+						<add_build_to_expand_station object="$Station.buildstorage" buildobject="$Station" constructionplan="$ConstructionPlan" result="$BuildID"/>
+						<debug_text text="'Started construction of station ' + $Station.knownname + ' ' + $Station + ' - Build ID: ' + $BuildID" chance="$DebugChance"/>
+					</do_if>
+				</do_if>
+				<do_else>
+					<debug_text text="'No TargetSector given'" chance="$DebugChance2"/>
+					<cancel_cue cue="this"/>
+				</do_else>
+			</actions>
+			<cues>
+				<cue name="FWM_Station_Management_Evaluation" instantiate="true">
+					<delay exact="60s"/>
+					<actions>
+						<debug_text text="'FWM_Station_Management_Evaluation'" chance="$DebugChance"/>
+						<do_all exact="$Station.buildstorage.resources.list.count" counter="$i">
+							<set_value name="$Ware" exact="$Station.buildstorage.resources.list.{$i}"/>
+							<debug_text text="'%1 has %2 %3 neededsequenceresources %4 buyprice %5'.[$Station.knownname,$Station.buildstorage.cargo.{$Ware}.count,$Ware,$Station.buildingprocessor.neededsequenceresources.{$Ware}.count,$Station.buildstorage.buyprice.{$Ware}]" chance="$DebugChance2"/>
+							<set_value name="$Offers" exact="[]"/>
+							<find_buy_offer tradepartner="player.container" usereservations="false" excludeempty="false" result="$Offers" multiple="true" buyer="$Station.buildstorage" wares="$Ware"/>
+							<do_all exact="$Offers.count" counter="$k">
+								<set_value name="$TradeOffer" exact="$Offers.{$k}"/>
+								<debug_text text="'Buy offer %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Ware,$TradeOffer.price,$TradeOffer.unitprice,$TradeOffer.minprice,$TradeOffer.relativeprice]" chance="$DebugChance2"/>
+							</do_all>
+						</do_all>
+						<debug_text text="'Station state: %1'.[$Station.state]" chance="$DebugChance2"/>
+						<do_if value="$Station.state != componentstate.operational">
+							<reset_cue cue="FWM_Station_Management_Evaluation"/>
+						</do_if>            
+					</actions>
+				</cue>
+			</cues>
+		</library>
+
+		<!--
+		input: 
+			$AdjacentSectorTarget: [Sector you want the adjacent sectors for]
+		output:
+			$AdjacentSectorsForSector: [Resulting array of the found sectors]			
+		-->	
+		<library name="FindAdjacentSectorsForSector">
+			<actions>
+				<set_value name="$AdjacentSectorsForSector" exact="[]"/>
+				<find_sector name="$AdjacentSectors_InCluster" space="$AdjacentSectorTarget.cluster" multiple="true" />
+				<do_all exact="$AdjacentSectors_InCluster.count" counter="$UpdateData_AdjacentSectors_IC_Counter">
+					<do_if value="not $AdjacentSectorsForSector.indexof.{$AdjacentSectors_InCluster.{$UpdateData_AdjacentSectors_IC_Counter}}">
+						<append_to_list name="$AdjacentSectorsForSector" exact="$AdjacentSectors_InCluster.{$UpdateData_AdjacentSectors_IC_Counter}"/>
+					</do_if>
+				</do_all>
+
+				<find_gate name="$JumpGates" space="$AdjacentSectorTarget" active="true" multiple="true"/>
+				<do_all exact="$JumpGates.count" counter="$UpdateData_JumpGate_Counter">
+					<do_if value="$JumpGates.{$UpdateData_JumpGate_Counter}.destination">
+						<append_to_list name="$AdjacentSectorsForSector" exact="$JumpGates.{$UpdateData_JumpGate_Counter}.destination.sector"/>
+					</do_if>
+				</do_all>
+			</actions>
+		</library>
+
+		<!--
+		input:
+			$SectorToGetExpectedMilitaryJobs: [Sector you want to get the expected military jobs for]
+		output:
+			$CalculatedExpectedMilitaryJobs: [The expected military jobs for the sector]
+		-->
+		<library name="GetExpectedMilitaryJobsForSector">
+			<actions>
+				<set_value name="$SecurityForSector" exact="$SectorToGetExpectedMilitaryJobs.security" />
+				<set_value name="$CalculatedExpectedMilitaryJobs" exact="[tag.fighterwing]" />
+				<set_value name="$AdjacentSectorTarget" exact="$SectorToGetExpectedMilitaryJobs" />
+				<include_actions ref="md.WarLibraries.FindAdjacentSectorsForSector"/>
+				<do_all exact="$AdjacentSectorsForSector.count" counter="$AdjacentSectorsForSectorCounter" >
+					<get_factions_by_relation result="$AdjecentSectorForSectoryEnemyCount" object="$AdjacentSectorsForSector.{$AdjacentSectorsForSectorCounter}" relation="killmilitary" />
+					<get_factions_by_relation result="$AdjecentSectorForSectoryNeutralCount" object="$AdjacentSectorsForSector.{$AdjacentSectorsForSectorCounter}" relation="neutral" />
+					<do_if value="$AdjecentSectorForSectoryEnemyCount.count gt 0">
+						<set_value name="$CalculatedExpectedMilitaryJobs" exact="[tag.cruiser,tag.fighterwing]" />					
+						<break />
+					</do_if>
+					<do_elseif value="$AdjecentSectorForSectoryNeutralCount.count gt 0">
+						<set_value name="$CalculatedExpectedMilitaryJobs" exact="[tag.destroyer,tag.fighterwing]" />					
+						<break />
+					</do_elseif>					
+				</do_all>
+				<do_if value="$SecurityForSector gt 0.49f">
+					<set_value name="$CalculatedExpectedMilitaryJobs" exact="[tag.destroyer,tag.fighterwing]" />										
+				</do_if>								
+				<do_if value="$SecurityForSector gt 0.74f">
+					<set_value name="$CalculatedExpectedMilitaryJobs" exact="[tag.carrier,tag.fighterwing]" />										
+				</do_if>				
+			</actions>	
+		</library>
+	</cues>
 </mdscript>

@@ -76,11 +76,12 @@
 			</do_if>
 
 			<remove_value name="$clusterranges"/>
+			<!-- disabling move to see if it works without moving
 			<debug_text text="'Moving to shipyard ' + $shipyard.knownname + ' in ' + $shipyard.zone.knownname" chance="$debugchance"/>
 
 			<run_script name="'move.generic'">
 				<param name="destination" value="$shipyard"/>
-			</run_script>
+			</run_script> -->
 
 			<do_if value="not $shipyard.exists">
 				<resume label="finish"/>

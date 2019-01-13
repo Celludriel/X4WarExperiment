@@ -4023,7 +4023,7 @@
                 <param name="range" value="class.sector"/>
             </order>
         </orders>
-        <category faction="argon" tags="[factionlogic,military,fighter,smallreinforcement]" size="ship_s" />
+        <category faction="argon" tags="[factionlogic,military,fighter,fighterwing]" size="ship_s" />
         <quota maxgalaxy="59" />
         <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="exact"  faction="argon" />
         <environment buildatshipyard="true"/>

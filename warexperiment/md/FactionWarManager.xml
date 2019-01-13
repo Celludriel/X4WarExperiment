@@ -8,6 +8,7 @@
 	  <actions>
 		<set_value name="$FactionQueue" exact="[]" />
 		<set_value name="$ReinforcedClusters" exact="[]" />
+		<set_value name="$SectorData" exact="table[]" />		
 		<set_value name="$ActivatedShips" exact="[]" />
 		<set_value name="$DebugChance" exact="100" />
 		<set_value name="$DebugChance2" exact="0" />
@@ -47,50 +48,75 @@
 			<set_value name="$AdjacentSectors" exact="event.param.{3}"/>
 			<set_value name="$TargetSector" exact="null"/>
 			<set_value name="$StationTag" exact="null"/>
-			<set_value name="$StationType" exact="''"/>
+			<set_value name="$StationType" exact="''"/>			
 			<set_value name="$DebugChance" exact="100"/>
 			
 			<debug_text text="'Manage War Triggering: %1'.[$Faction]" chance="$DebugChance2"/>
 			<debug_text text="'Faction: %1 - ClaimedSectors: %2 - AdjacentSectors: %3'.[$Faction,$ClaimedSectors,$AdjacentSectors]" chance="$DebugChance2"/>
+
+			<debug_text text="'Current SectorData: %1'.[$SectorData]" chance="$DebugChance"/>
+			<do_all exact="$ClaimedSectors.count" counter="$i">		
+				<set_value name="$SectorToGetExpectedMilitaryJobs" exact="$ClaimedSectors.{$i}" />
+				<include_actions ref="md.WarLibraries.GetExpectedMilitaryJobsForSector"/>
+				<debug_text text="'Faction: %1 - Sector: %2 - Wanted Jobs: %3'.[$Faction.id,$ClaimedSectors.{$i}.knownname,$CalculatedExpectedMilitaryJobs]" chance="$DebugChance2"/>
+								
+				<do_if value="@$SectorData.{'$'+$ClaimedSectors.{$i}.knownname} == null">
+					<debug_text text="'Init SectorData sector %1'.[$ClaimedSectors.{$i}.knownname]" chance="$DebugChance"/>
+					<set_value name="$SectorData.{'$'+$ClaimedSectors.{$i}.knownname}" exact="table[]" />
+				</do_if>
+				<set_value name="$SectorData.{'$'+$ClaimedSectors.{$i}.knownname}.{'$ExpectedMilitaryJobs'}" exact="$CalculatedExpectedMilitaryJobs" />
+				<do_if value="@$SectorData.{'$'+$ClaimedSectors.{$i}.knownname}.{'$OrderedShips'} == null">
+					<debug_text text="'Init SectorData ordered ships for sector %1'.[$ClaimedSectors.{$i}.knownname]" chance="$DebugChance"/>
+					<set_value name="$SectorData.{'$'+$ClaimedSectors.{$i}.knownname}.{'$OrderedShips'}" exact="[]" />
+				</do_if>
+			</do_all>
 		  </actions>
 		  <cues>
 			<cue name="FMW_Evaluate_Cluster_Defence">
 				<actions>
-					<!-- find a way to count ships and establish a strength for each $ClaimedSectors -->
+					<debug_text text="'Starting FMW_Evaluate_Cluster_Defence for Faction %1'.[$Faction.id]" chance="$DebugChance"/>
+					<debug_text text="'Current SectorData situation %1'.[$SectorData]" chance="$DebugChance"/>
 					<do_all exact="$ClaimedSectors.count" counter="$i">
-
-						<find_ship name="$SectorShips" space="$ClaimedSectors.{$i}" class="[class.ship_xl, class.ship_l, class.ship_m, class.ship_s]" jobtags="[tag.smallreinforcement,tag.wingman]" multiple="true">
-						  <match_any>
-							<match owner="$Faction"/>
-						  </match_any>
-						</find_ship>
-						<debug_text text="'Faction: %1 - Found %2 ships in sector %3'.[$Faction.id,$SectorShips.count,$ClaimedSectors.{$i}.knownname]" chance="$DebugChance"/>
-
-						<find_requested_job_ship name="$PreviousRequested" requester="$ClaimedSectors.{$i}" multiple="true"/>
-						<do_all exact="$PreviousRequested.count" counter="$j">
-							<debug_text text="'Previous Request %1'.[$PreviousRequested.{$j}.idcode]" chance="$DebugChance2"/>
-						</do_all>
-						<!-- do strength calculation here -->
-						<do_if value="$PreviousRequested.count == 0 and not $ReinforcedClusters.indexof.{$ClaimedSectors.{$i}}">
-							<!-- if strength < "a value to be determined" put cluster request a single reinforcement group for cluster -->
-							<debug_text text="'Find Suitable jobs for cluster defence for %1'.[$Faction.id]" chance="$DebugChance"/>
-							<get_suitable_job result="$ReinforcementList" multiple="true" faction="$Faction" tags="[tag.smallreinforcement]"/>
-							<do_all exact="$ReinforcementList.count" counter="$k">
-								<debug_text text="'Job found %1'.[$ReinforcementList.{$k}]" chance="$DebugChance"/>
-							</do_all>
-							<do_if value="$ReinforcementList.count gt 0">
-								<signal_cue_instantly cue="Request_Job_Ship" param="[$ClaimedSectors.{$i},$ReinforcementList.{1}]"/>							
+						<!-- Name sector for readability -->
+						<set_value name="$Sector" exact="$ClaimedSectors.{$i}" />
+						<debug_text text="'Evaluating Sector %1'.[$Sector.knownname]" chance="$DebugChance"/>
+						<!-- Get the required defense for this sector -->
+						<set_value name="$RequiredDefense" exact="$SectorData.{'$'+$Sector.knownname}.{'$ExpectedMilitaryJobs'}" />
+						<debug_text text="'RequiredDefense: %1'.[$RequiredDefense]" chance="$DebugChance"/>
+						<!-- Get the current ordered ships for this sector -->
+						<set_value name="$OrderedShips" exact="$SectorData.{'$'+$Sector.knownname}.{'$OrderedShips'}" />
+						<debug_text text="'OrderedShips: %1'.[$OrderedShips]" chance="$DebugChance"/>
+						<!-- Check if these required job ships are in the sector, if not and there isn't an order going yet, order some from a shipyard -->
+						<do_all exact="$RequiredDefense.count" counter="$j">
+							<set_value name="$RequiredTag" exact="$RequiredDefense.{$j}" />
+							<debug_text text="'Checking for tag: %1'.[$RequiredTag]" chance="$DebugChance"/>
+							<find_ship name="$ShipsInSector" space="$Sector" owner="$Faction" jobtags="[$RequiredTag]" checkoperational="true" validjobship="true" commandeerable="true" />
+							<debug_text text="'Ships found in sector %1'.[$ShipsInSector]" chance="$DebugChance"/>
+							<do_if value="$ShipsInSector == null">
+								<!-- check if somewere in the OrderedShips list is a ship with this required defense tag -->
+								<set_value name="$ShipInOrderList" exact="false" />
+								<do_all exact="$OrderedShips.count" counter="$k">
+									<do_if value="$OrderedShips.{$k}.{'$Tag'} == $RequiredTag">
+										<set_value name="$ShipInOrderList" exact="true" />
+										<break />
+									</do_if>
+								</do_all>
+								<debug_text text="'Ship with tag in order list: %1'.[$ShipInOrderList]" chance="$DebugChance"/>
+								<!-- if no order has been found you can request one -->
+								<do_if value="not $ShipInOrderList">
+									<signal_cue_instantly cue="Request_Job_Ship" param="[$Sector,$RequiredTag]" />
+								</do_if>
 							</do_if>
-						</do_if>
+						</do_all>
+						
+						<!-- Do cleanup of ordered ships, if ordered ship is operational and in sector remove it from the ordered ship list -->
+						<do_all exact="$OrderedShips.count" counter="$j" reverse="true" >
+							<set_value name="$Ship" exact="$OrderedShips.{$j}.{'$Ship'}" />
+							<do_if value="$Ship.isoperational and $Ship.sector == $Sector">
+								<remove_value name="$OrderedShips.{$j}" />
+							</do_if>
+						</do_all>
 					</do_all>
-
-					<do_all exact="$ActivatedShips.count" counter="$k">
-						<set_value name="$Ship" exact="$ActivatedShips.{$k}" />
-						<do_if value="$Ship.exists">
-							<debug_text text="'Ship %1 exists: %2, isoperational: %3, iswreck: %4, state: %5, cluster: %6, position: %7, dock: %8, ship.parent.knownname: %9'.[$Ship.idcode,$Ship.exists,$Ship.isoperational,$Ship.iswreck,$Ship.state,$Ship.cluster.knownname,$Ship.position,$Ship.dock,$Ship.parent.knownname ,$Ship.parent.parent.knownname ,$Ship.parent.parent.parent.knownname]" chance="$DebugChance2"/>
-						</do_if>
-					</do_all>
-					<!-- if strength >= "a value to be determined" and cluster in reinforcment mode remove it from that mode -->
 				</actions>				
 			</cue>
 			<cue name="FWM_Evaluate_Expansion">
@@ -122,6 +148,7 @@
 					<debug_text text="'AdjacentSectors Left: %1'.[$AdjacentSectors.count]" chance="$DebugChance"/>
 					<debug_text text="'AlreadyInProgressForFaction: %1'.[$AlreadyInProgressForFaction]" chance="$DebugChance"/>
 					<do_if value="$AdjacentSectors.count gt 0 and $AlreadyInProgressForFaction == false">
+						<shuffle_list list="$AdjacentSectors" />
 						<set_value name="$TargetSector" exact="$AdjacentSectors.{1}" />
 						<debug_text text="'TargetSector: %1 Owned by %2'.[$TargetSector.knownname, $TargetSector.owner.id]" chance="$DebugChance"/>
 						<signal_cue_instantly cue="FWM_Build_Defense_Station" param="[$TargetSector,$Faction,$StationTag,$StationType,$DebugChance]"/>							
@@ -135,11 +162,19 @@
 					<event_cue_signalled/>
 				</conditions>
 				<actions>
-					<find_zone name="$Startzone" space="event.param.{1}" normalzone="true"/>
-					<request_job_ship name="$Requested_Job_Ship" job="event.param.{2}" requester="event.param.{1}" zone="$Startzone" />
-					<append_to_list name="$ActivatedShips" exact="$Requested_Job_Ship" />
-					<debug_text text="'Requested_Job_Ship: %1'.[$Requested_Job_Ship.idcode]" chance="$DebugChance"/>
-					<append_to_list name="$ReinforcedClusters" exact="event.param.{1}" />
+					<set_value name="$Sector" exact="event.param.{1}" />
+					<set_value name="$Tag" exact="event.param.{2}" />				
+					<get_suitable_job result="$Jobs" faction="$Faction" tags="[$Tag]" multiple="true" />
+					<debug_text text="'Found suitable jobs: %1'.[$Jobs]" chance="$DebugChance"/>
+					<do_if value="$Jobs.count gt 0">
+						<shuffle_list list="$Jobs" />
+						<find_zone name="$Startzone" space="$Sector" normalzone="true"/>
+						<debug_text text="'Zone to order ship to: %1'.[$Startzone.knownname]" chance="$DebugChance"/>
+						<request_job_ship name="$Requested_Job_Ship" job="$Jobs.{1}" requester="$Sector" zone="$Startzone" />
+						<debug_text text="'Requested ship %1 for job %2'.[$Requested_Job_Ship,$Jobs.{1}]" chance="$DebugChance"/>
+						<append_to_list name="$SectorData.{'$'+$Sector.knownname}.{'$OrderedShips'}" exact="table[{'$Tag'}=$Tag,{'$Ship'}=$Requested_Job_Ship]" />
+						<debug_text text="'New SectorData situation %1'.[$SectorData]" chance="$DebugChance"/>
+					</do_if>
 				</actions>
 			</cue>
 		  </cues>
