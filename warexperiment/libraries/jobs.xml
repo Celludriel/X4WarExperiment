@@ -4016,17 +4016,17 @@
         <subordinates>
         </subordinates>
       </job>
-      <job id="argon_fighter_reinforcement_group" name="Argon Fighter Leader" startactive="true" >
-        <modifiers rebuild="false" commandeerable="true"  />
+      <job id="argon_fighter_defence_group" name="Argon Fighter Leader" startactive="true" >
+        <modifiers rebuild="false" commandeerable="false"  />
         <orders>
-            <order order="Patrol" default="true">
+            <order order="ResupplyPatrol" default="true">
                 <param name="range" value="class.sector"/>
             </order>
         </orders>
         <category faction="argon" tags="[factionlogic,military,fighter,fighterwing]" size="ship_s" />
         <quota maxgalaxy="59" />
-        <location class="galaxy" macro="warexp_galaxy_macro" relation="member" comparison="exact"  faction="argon" />
-        <environment buildatshipyard="true"/>
+        <location class="galaxy" macro="warexp_galaxy_macro" relation="self" comparison="exact"  faction="argon" />
+        <environment buildatshipyard="true" />
 		<expirationtime min="31557600" max="31557600"/>
         <ship>
           <select faction="argon" tags="[military,fighter]" size="ship_s" />
@@ -4036,11 +4036,11 @@
           <owner exact="argon" overridenpc="true"/>
         </ship>
         <subordinates>
-			<subordinate job="argon_fighter_subordinate"/>
+			<subordinate job="argon_fighter_defence_subordinate"/>
         </subordinates>
       </job>
-      <job id="argon_fighter_subordinate" name="Argon Fighter Wingman" startactive="false" >
-        <modifiers subordinate="true" />
+      <job id="argon_fighter_defence_subordinate" name="Argon Fighter Wingman" startactive="false" >
+        <modifiers subordinate="true" commandeerable="false" />
         <orders>
 		  <order order="Escort" default="true">
 			<param name="formation" value="formationshape.dartvertical"/>
@@ -4048,9 +4048,9 @@
 		  </order>
         </orders>
         <category faction="argon" tags="[military,wingman]" size="ship_s" />
-        <quota wing="4"/>
+        <quota wing="4" />
         <location class="galaxy" macro="warexp_galaxy_macro"/>
-        <environment buildatshipyard="true"/>
+        <environment buildatshipyard="true" />
 		<expirationtime min="31557600" max="31557600"/>
         <ship>
           <select faction="argon" tags="[military,fighter]" size="ship_s" />

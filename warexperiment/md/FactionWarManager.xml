@@ -90,13 +90,13 @@
 						<do_all exact="$RequiredDefense.count" counter="$j">
 							<set_value name="$RequiredTag" exact="$RequiredDefense.{$j}" />
 							<debug_text text="'Checking for tag: %1'.[$RequiredTag]" chance="$DebugChance"/>
-							<find_ship name="$ShipsInSector" space="$Sector" owner="$Faction" jobtags="[$RequiredTag]" checkoperational="true" validjobship="true" commandeerable="true" />
+							<find_ship name="$ShipsInSector" space="$Sector" owner="$Faction" jobtags="[$RequiredTag]" checkoperational="true" validjobship="true" commandeerable="false" />
 							<debug_text text="'Ships found in sector %1'.[$ShipsInSector]" chance="$DebugChance"/>
 							<do_if value="$ShipsInSector == null">
 								<!-- check if somewere in the OrderedShips list is a ship with this required defense tag -->
 								<set_value name="$ShipInOrderList" exact="false" />
 								<do_all exact="$OrderedShips.count" counter="$k">
-									<do_if value="$OrderedShips.{$k}.{'$Tag'} == $RequiredTag">
+									<do_if value="$OrderedShips.{$k}.{'$Tag'} == [$RequiredTag]">
 										<set_value name="$ShipInOrderList" exact="true" />
 										<break />
 									</do_if>
@@ -104,7 +104,7 @@
 								<debug_text text="'Ship with tag in order list: %1'.[$ShipInOrderList]" chance="$DebugChance"/>
 								<!-- if no order has been found you can request one -->
 								<do_if value="not $ShipInOrderList">
-									<signal_cue_instantly cue="Request_Job_Ship" param="[$Sector,$RequiredTag]" />
+									<signal_cue_instantly cue="Request_Job_Ship_For_Tags" param="[$Sector,[$RequiredTag]]" />
 								</do_if>
 							</do_if>
 						</do_all>
@@ -150,36 +150,213 @@
 					<do_if value="$AdjacentSectors.count gt 0 and $AlreadyInProgressForFaction == false">
 						<shuffle_list list="$AdjacentSectors" />
 						<set_value name="$TargetSector" exact="$AdjacentSectors.{1}" />
-						<debug_text text="'TargetSector: %1 Owned by %2'.[$TargetSector.knownname, $TargetSector.owner.id]" chance="$DebugChance"/>
-						<signal_cue_instantly cue="FWM_Build_Defense_Station" param="[$TargetSector,$Faction,$StationTag,$StationType,$DebugChance]"/>							
+						<debug_text text="'TargetSector: 1 Owned by %2'.[$TargetSector.knownname, $TargetSector.owner.id]" chance="$DebugChance"/>
+						<signal_cue_instantly cue="FWM_Build_Defense_Station" param="[$TargetSector,$Faction,$StationTag,$StationType,$DebugChance]"/>						
 					</do_if>
 				</do_if>
 			  </actions>
 			</cue>
+			<cue name="FWM_Evaluate_Sector_Exploitation">
+				<actions>
+					<do_all exact="$ClaimedSectors.count" counter="$i">
+						<!-- count all factories in sector if < then 6 and no station is building in the sector 
+							start a cue that will build them one by one -->
+						<set_value name="$Found_Station_Under_Construction" exact="false" />
+						
+						<find_object name="$FoundObjects" space="$ClaimedSectors.{$i}" multiple="true">
+						  <match_content min="1" checkoperational="false" />
+						</find_object>						
+						
+						<do_all exact="$FoundObjects.count" counter="$j">
+							<do_if value="$FoundObjects.{$j}.class == class.buildstorage and $FoundObjects.{$j}.base.class == class.object">
+								<debug_text text="'%1: station class %2 - idcode %3 - isproductionclass %4'.[$ClaimedSectors.{$i}.knownname,$FoundObjects.{$j}.base.class,
+									$FoundObjects.{$j}.idcode,$FoundObjects.{$j}.isclass.{class.production}]" chance="$DebugChance"/>
+								<set_value name="$Found_Station_Under_Construction" exact="true" />
+							</do_if>
+						</do_all> 
+						
+						<find_station name="$OperationalStations" space="$ClaimedSectors.{$i}" multiple="true">
+						  <match_content min="1" class="class.production" checkoperational="true"/>
+						</find_station>
+						
+						<do_if value="$OperationalStations.count lt 6 and not $Found_Station_Under_Construction">
+							<set_value name="$UsableWareFaction" exact="$Faction" />
+							<set_value name="$UsableWareFactionSpecific" exact="false" />
+							<include_actions ref="md.WarLibraries.GetUsableWareForFaction" />
+							<signal_cue_instantly cue="Request_Factory" param="[$ClaimedSectors.{$i}, $UsableWareForFaction, null, $Faction]"/>
+						</do_if>
+					</do_all>
+				</actions>
+			</cue>			
 			<cue name="FWM_Build_Defense_Station" ref="md.WarLibraries.BuildStation" instantiate="true" />				 		  
-			<cue name="Request_Job_Ship" instantiate="true">
+			<cue name="Request_Job_Ship_For_Tags" instantiate="true">
 				<conditions>
 					<event_cue_signalled/>
 				</conditions>
 				<actions>
 					<set_value name="$Sector" exact="event.param.{1}" />
-					<set_value name="$Tag" exact="event.param.{2}" />				
-					<get_suitable_job result="$Jobs" faction="$Faction" tags="[$Tag]" multiple="true" />
+					<set_value name="$Tags" exact="event.param.{2}" />				
+					<set_value name="this.$Requested_Job_Ship" exact="null" />				
+					<get_suitable_job result="$Jobs" faction="$Faction" tags="$Tags" multiple="true" />
 					<debug_text text="'Found suitable jobs: %1'.[$Jobs]" chance="$DebugChance"/>
 					<do_if value="$Jobs.count gt 0">
 						<shuffle_list list="$Jobs" />
 						<find_zone name="$Startzone" space="$Sector" normalzone="true"/>
 						<debug_text text="'Zone to order ship to: %1'.[$Startzone.knownname]" chance="$DebugChance"/>
-						<request_job_ship name="$Requested_Job_Ship" job="$Jobs.{1}" requester="$Sector" zone="$Startzone" />
-						<debug_text text="'Requested ship %1 for job %2'.[$Requested_Job_Ship,$Jobs.{1}]" chance="$DebugChance"/>
-						<append_to_list name="$SectorData.{'$'+$Sector.knownname}.{'$OrderedShips'}" exact="table[{'$Tag'}=$Tag,{'$Ship'}=$Requested_Job_Ship]" />
+						<request_job_ship name="this.$Requested_Job_Ship" job="$Jobs.{1}" requester="$Sector" zone="$Startzone" />
+						<debug_text text="'Requested ship %1 for job %2'.[this.$Requested_Job_Ship.idcode,$Jobs.{1}]" chance="$DebugChance"/>
+						<append_to_list name="$SectorData.{'$'+$Sector.knownname}.{'$OrderedShips'}" exact="table[{'$Tag'}=$Tags,{'$Ship'}=this.$Requested_Job_Ship]" />
 						<debug_text text="'New SectorData situation %1'.[$SectorData]" chance="$DebugChance"/>
 					</do_if>
+					<do_else>
+						<cancel_cue cue="Request_Job_Ship_For_Tags"/>
+					</do_else>
 				</actions>
+				<cues>
+					<cue name="Requested_Job_Ship_Built" checkinterval="2s">
+						<delay exact="5s"/>
+						<conditions>
+							<check_value value="parent.$Requested_Job_Ship.isoperational" />
+						</conditions>
+						<actions>
+							<debug_text text="'%1 Current orders %2'.[parent.$Requested_Job_Ship.idcode, parent.$Requested_Job_Ship.orders]" chance="$DebugChance"/>
+							<do_all exact="parent.$Requested_Job_Ship.orders.count" counter="$orderCounter">
+								<debug_text text="'order %1'.[parent.$Requested_Job_Ship.orders.{$orderCounter}.id]" chance="$DebugChance"/>
+							</do_all>
+							<create_order object="parent.$Requested_Job_Ship" id="'RestockSubordinates'" immediate="true" />
+							<create_order object="parent.$Requested_Job_Ship" id="'Resupply'" />
+							<create_order object="parent.$Requested_Job_Ship" id="'MoveGeneric'">
+								<param name="destination" value="parent.$Requested_Job_Ship.jobmainzone"/>
+								<param name="position" value="position.[0m, 0m, 0m]"/>
+							</create_order>							
+							<debug_text text="'%1 Final orders %2'.[parent.$Requested_Job_Ship.idcode, parent.$Requested_Job_Ship.orders]" chance="$DebugChance"/>
+							<do_all exact="parent.$Requested_Job_Ship.orders.count" counter="$orderCounter">
+								<debug_text text="'order %1'.[parent.$Requested_Job_Ship.orders.{$orderCounter}.id]" chance="$DebugChance"/>
+							</do_all>
+						 </actions>
+					</cue>				
+				</cues>
 			</cue>
+			<cue name="Request_Factory" instantiate="true" namespace="this">
+			  <conditions>
+				<event_cue_signalled/>
+			  </conditions>
+			  <actions>
+				<set_value name="$DebugChance" exact="100"/>
+				<set_value name="$GeneratorDebugChance" exact="0"/>
+				<set_value name="$RequestSector" exact="event.param.{1}"/>
+				<set_value name="$Ware" exact="event.param.{2}"/>
+				<set_value name="$Faction" exact="event.param.{4}"/>
+				<set_value name="$Zone" exact="null"/>
+
+				<set_value name="$Station" exact="null"/>
+
+				<do_if value="$Ware.tags.indexof.{tag.minable}">
+				  <debug_text text="player.age + ': Sector ' + $RequestSector + ' ' + $RequestSector.knownname + ' disregarding factory request for minable ware: ' + $Ware" chance="$DebugChance"/>
+				</do_if>
+				<do_else>
+				  <do_if value="@event.param.{3}">
+					<set_value name="$Zone" exact="event.param.{3}"/>
+				  </do_if>
+				  <do_else>
+					<find_zone name="$Zone" space="$RequestSector">
+					  <match_content class="class.station" owner="$Faction"/>
+					</find_zone>
+					<do_if value="not $Zone">
+					  <find_zone name="$Zone" space="$RequestSector">
+						<match_content class="class.station"/>
+					  </find_zone>
+					</do_if>
+				  </do_else>
+
+				  <debug_text text="player.age + ': Sector ' + $RequestSector + ' ' + $RequestSector.knownname + ' requested a factory for ' + $Ware" chance="$DebugChance"/>
+
+				  <do_if value="$Zone">
+					<!--Only request a small factory at first.-->
+					<set_value name="$ProductionLimit" exact="1"/>
+					<create_factory name="$Station" modules="$Modules" zone="$Zone" race="$Faction.primaryrace" owner="$Faction">
+					  <compatibilities>
+						<limits production="$ProductionLimit"/>
+					  </compatibilities>
+					  <select ware="$Ware" race="$Faction.primaryrace"/>
+					  <safepos max="300km" allowyaxis="false" includeplotbox="true"/>
+					</create_factory>
+				  </do_if>
+				</do_else>
+
+				<do_if value="$Station">
+				  <debug_text text="player.age + ': Factory ' + $Station.idcode + ' was placed in ' + $Station.zone.knownname + ' to help produce ' + $Ware" chance="$DebugChance"/>
+				</do_if>
+				<do_else>
+				  <cancel_cue cue="Request_Factory"/>
+				</do_else>
+			  </actions>
+			  <cues>
+				<cue name="Request_Factory_Finalise" ref="md.FinaliseStations.NewStation_GenerateFactory">
+				  <param name="Station" value="$Station" comment="Existing and bare station, already placed in universe"/>
+				  <param name="PlannedModules" value="$Modules" comment="List of module macros"/>
+				  <param name="ModuleSet" value="$Station.modulesets.{1}" comment="Module set to be used"/>
+				  <param name="AddBuild" value="true" comment="Add a build task for the station on its build storage?"/>
+				  <param name="ReportCue" value="Request_Factory_Finalised" comment="Cue to be signalled when this library wants to inform the caller"/>
+				  <param name="DebugOutput" value="$GeneratorDebugChance == 100"/>
+				</cue>
+
+				<cue name="Request_Factory_Finalised">
+				  <conditions>
+					<event_cue_signalled/>
+				  </conditions>
+				  <actions>
+					<debug_text text="player.age + ': Factory ' + $Station.knownname + ' ' + $Station + ' has finished finalising its construction plan.'" chance="$DebugChance"/>
+				  </actions>
+				</cue>
+
+				<cue name="Request_Factory_Disregarded">
+				  <conditions>
+					<event_object_signalled object="$Station" param="'factionlogic_econ_disregard'" param2="'$request_factory'"/>
+				  </conditions>
+				  <actions>
+					<debug_text text="' Station construction of ' + $Station.knownname + ' ' + $Station + ' for ware ' + $Ware + ' was disregarded by economic faction logic'" chance="$DebugChance"/>
+					<cancel_cue cue="Request_Factory"/>
+				  </actions>
+				</cue>
+
+				<cue name="Request_Factory_Construction_Started" checkinterval="10s">
+				  <conditions>
+					<check_any>
+					  <check_object object="$Station">
+						<match_child class="class.module" state="componentstate.operational" min="1"/>
+					  </check_object>
+					  <check_value value="@$Station.buildingmodule.isbuilding"/>
+					</check_any>
+				  </conditions>
+				  <actions>
+					<debug_text text="'Factory construction started: %1'.[player.age]" chance="$DebugChance"/>					
+				  </actions>
+				</cue>
+
+				<cue name="Request_Factory_Destroyed">
+				  <conditions>
+					<event_object_destroyed object="$Station"/>
+				  </conditions>
+				  <actions>
+					<debug_text text="player.age + ': Factory ' + $Station.knownname + ' ' + $Station + ' was destroyed.'" chance="$DebugChance"/>
+					<cancel_cue cue="Request_Factory"/>
+				  </actions>
+				</cue>
+
+				<cue name="Request_Factory_Finished">
+				  <conditions>
+					<event_build_finished object="$Station.buildstorage"/>
+				  </conditions>
+				  <actions>
+					<debug_text text="player.age + ': Factory ' + $Station.knownname + ' ' + $Station + ' has finished building.'" chance="$DebugChance"/>
+					<cancel_cue cue="Request_Factory"/>
+				  </actions>
+				</cue>
+			  </cues>
+			</cue>      		  
 		  </cues>
-		</cue>			
-	
+		</cue>				
 	</cues>
 	</cue>	
   </cues>

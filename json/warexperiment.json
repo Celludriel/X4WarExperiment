@@ -1922,7 +1922,7 @@
     {
       "id": "arg_energycells",
       "ware": "energycells",
-      "galaxyQuota": 10,
+      "galaxyQuota": 2,
       "clusterQuota": 0,
       "sectorQuota": 0,
       "zoneQuota": 0,
@@ -2407,6 +2407,510 @@
       }
     },
     {
+      "id": "ant_advancedcomposites",
+      "ware": "advancedcomposites",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_advancedelectronics",
+      "ware": "advancedelectronics",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_antimatterconverters",
+      "ware": "antimatterconverters",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_claytronics",
+      "ware": "claytronics",
+      "galaxyQuota": 4,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_energycells",
+      "ware": "energycells",
+      "galaxyQuota": 8,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.6",
+        "maxBound": false,
+        "sunlightMin": "1",
+        "sunlightMax": "3",
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_engineparts",
+      "ware": "engineparts",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_foodrations",
+      "ware": "foodrations",
+      "galaxyQuota": 8,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_graphene",
+      "ware": "graphene",
+      "galaxyQuota": 4,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [
+          "methane"
+        ],
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_hullparts",
+      "ware": "hullparts",
+      "galaxyQuota": 12,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_meat",
+      "ware": "meat",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.25",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_medicalsupplies",
+      "ware": "medicalsupplies",
+      "galaxyQuota": 16,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_microchips",
+      "ware": "microchips",
+      "galaxyQuota": 6,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_missilecomponents",
+      "ware": "missilecomponents",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_plasmaconductors",
+      "ware": "plasmaconductors",
+      "galaxyQuota": 4,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.5",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_quantumtubes",
+      "ware": "quantumtubes",
+      "galaxyQuota": 4,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.5",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_refinedmetals",
+      "ware": "refinedmetals",
+      "galaxyQuota": 6,
+      "clusterQuota": 0,
+      "sectorQuota": 4,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [
+          "ore"
+        ],
+        "economyMax": "0.5",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_scanningarrays",
+      "ware": "scanningarrays",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.5",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_siliconwafers",
+      "ware": "siliconwafers",
+      "galaxyQuota": 4,
+      "clusterQuota": 0,
+      "sectorQuota": 2,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [
+          "silicon"
+        ],
+        "economyMax": "0.5",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_smartchips",
+      "ware": "smartchips",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_spacefuel",
+      "ware": "spacefuel",
+      "galaxyQuota": 6,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE",
+          "HATIKVAH"
+        ],
+        "wares": [],
+        "economyMax": "0.5",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_spices",
+      "ware": "spices",
+      "galaxyQuota": 6,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.25",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_superfluidcoolant",
+      "ware": "superfluidcoolant",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [
+          "helium"
+        ],
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_turretcomponents",
+      "ware": "turretcomponents",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_water",
+      "ware": "water",
+      "galaxyQuota": 4,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [
+          "ice"
+        ],
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_weaponcomponents",
+      "ware": "weaponcomponents",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.75",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
+      "id": "ant_wheat",
+      "ware": "wheat",
+      "galaxyQuota": 2,
+      "clusterQuota": 0,
+      "sectorQuota": 0,
+      "zoneQuota": 0,
+      "race": "ARGON",
+      "owner": "ANTIGONE",
+      "locationInfo": {
+        "spawnLocations": [
+          "ANTIGONE"
+        ],
+        "wares": [],
+        "economyMax": "0.25",
+        "maxBound": false,
+        "solitary": false
+      }
+    },
+    {
       "id": "par_advancedcomposites",
       "ware": "advancedcomposites",
       "galaxyQuota": 2,
@@ -2641,7 +3145,7 @@
     {
       "id": "par_energycells",
       "ware": "energycells",
-      "galaxyQuota": 10,
+      "galaxyQuota": 2,
       "clusterQuota": 0,
       "sectorQuota": 0,
       "zoneQuota": 0,
@@ -2662,7 +3166,7 @@
     {
       "id": "hol_energycells",
       "ware": "energycells",
-      "galaxyQuota": 10,
+      "galaxyQuota": 2,
       "clusterQuota": 0,
       "sectorQuota": 0,
       "zoneQuota": 0,
@@ -3641,7 +4145,7 @@
     {
       "id": "tel_energycells",
       "ware": "energycells",
-      "galaxyQuota": 10,
+      "galaxyQuota": 18,
       "clusterQuota": 0,
       "sectorQuota": 0,
       "zoneQuota": 0,
@@ -4181,9 +4685,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -4198,7 +4702,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -4223,8 +4727,8 @@
       "basket": "bio",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4254,9 +4758,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -4284,8 +4788,8 @@
       "basket": "bio",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4315,9 +4819,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -4345,8 +4849,8 @@
       "basket": "food",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4376,9 +4880,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -4393,7 +4897,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -4418,8 +4922,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4449,9 +4953,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -4466,7 +4970,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -4491,8 +4995,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4522,9 +5026,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -4552,8 +5056,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4583,9 +5087,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -4600,7 +5104,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -4625,8 +5129,8 @@
       "basket": "equipment",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4656,9 +5160,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -4686,8 +5190,8 @@
       "basket": "equipment",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4717,9 +5221,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -4734,7 +5238,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -4759,8 +5263,8 @@
       "basket": "construction_stations",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4790,9 +5294,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -4820,8 +5324,8 @@
       "basket": "construction_stations",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4851,9 +5355,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -4868,7 +5372,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -4893,8 +5397,8 @@
       "basket": "refined_gas",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4924,9 +5428,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -4941,7 +5445,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -4966,8 +5470,8 @@
       "basket": "refined_gas",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -4997,9 +5501,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -5014,7 +5518,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -5039,8 +5543,8 @@
       "basket": "refined_mineral",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -5070,9 +5574,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -5087,7 +5591,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -5112,8 +5616,8 @@
       "basket": "refined_mineral",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -5143,9 +5647,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -5160,7 +5664,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -5185,8 +5689,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -5216,9 +5720,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -5246,8 +5750,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -5277,9 +5781,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -5307,8 +5811,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -5338,9 +5842,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -5355,7 +5859,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -5380,8 +5884,8 @@
       "basket": "water",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -5411,9 +5915,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -5441,8 +5945,8 @@
       "basket": "water",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "ARGON"
@@ -5473,9 +5977,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -5515,8 +6019,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "ARGON"
@@ -5551,9 +6055,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -5593,8 +6097,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "ARGON"
@@ -5631,9 +6135,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -5673,8 +6177,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "ARGON"
@@ -5711,9 +6215,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -5753,8 +6257,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "ARGON"
@@ -5791,9 +6295,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "SMALL"
       },
@@ -5833,8 +6337,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "ARGON"
@@ -5871,9 +6375,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -5913,8 +6417,8 @@
       "basket": "ice",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "ARGON"
@@ -5951,9 +6455,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -5993,8 +6497,8 @@
       "basket": "ice",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "ARGON"
@@ -6028,9 +6532,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "MEDIUM"
       },
@@ -6070,8 +6574,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "ARGON"
@@ -6082,7 +6586,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "argon_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "argon_miningfleet_m_liquid_small",
@@ -6099,9 +6605,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "MEDIUM"
       },
@@ -6141,8 +6647,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "ARGON"
@@ -6153,7 +6659,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "argon_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "argon_miningfleet_ml_solid_large",
@@ -6170,9 +6678,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -6211,9 +6719,9 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "ARGON"
@@ -6223,7 +6731,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "argon_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "argon_miningfleet_ml_liquid_large",
@@ -6240,9 +6750,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -6281,13 +6791,74 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "ARGON"
         ],
+        "levelMin": "0",
+        "levelMax": "0.7",
+        "overridenpc": true,
+        "units": []
+      },
+      "subordinates": [
+        "argon_fighter_escort_s_miningfleet"
+      ]
+    },
+    {
+      "id": "argon_fighter_escort_s_miningfleet",
+      "name": "{20204,2901}",
+      "startActive": false,
+      "subordinate": true,
+      "buildatshipyard": true,
+      "jobLocation": {
+        "locationClass": "galaxy",
+        "comparison": "not",
+        "relation": "member",
+        "factions": []
+      },
+      "jobCategory": {
+        "faction": "ARGON",
+        "tags": [
+          "military",
+          "fighter",
+          "deepspace"
+        ],
+        "shipSize": "SMALL"
+      },
+      "jobQuota": {
+        "galaxy": 0,
+        "maxGalaxy": 0,
+        "cluster": 0,
+        "sector": 0,
+        "wing": 1,
+        "variation": 1,
+        "station": 0
+      },
+      "orders": [
+        {
+          "order": "Escort",
+          "defaultOrder": true,
+          "parameters": [
+            {
+              "name": "formation",
+              "value": "formationshape.pointguard"
+            }
+          ]
+        }
+      ],
+      "ship": {
+        "tags": [
+          "military",
+          "fighter",
+          "selection"
+        ],
+        "factions": [
+          "ARGON"
+        ],
+        "size": "SMALL",
         "levelMin": "0",
         "levelMax": "0.7",
         "overridenpc": true,
@@ -6311,8 +6882,8 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "BUILDER"
+          "factionlogic",
+          "builder"
         ],
         "shipSize": "XLARGE"
       },
@@ -6339,7 +6910,7 @@
       ],
       "ship": {
         "tags": [
-          "BUILDER"
+          "builder"
         ],
         "factions": [
           "ARGON"
@@ -6368,8 +6939,8 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "BUILDER"
+          "factionlogic",
+          "builder"
         ],
         "shipSize": "XLARGE"
       },
@@ -6400,7 +6971,7 @@
       ],
       "ship": {
         "tags": [
-          "BUILDER"
+          "builder"
         ],
         "factions": [
           "ARGON"
@@ -6452,7 +7023,7 @@
       ],
       "ship": {
         "tags": [
-          "RESUPPLIER"
+          "resupplier"
         ],
         "factions": [
           "ARGON"
@@ -6479,8 +7050,8 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "SCOUT",
-          "DEEPSPACE"
+          "scout",
+          "deepspace"
         ],
         "shipSize": "SMALL"
       },
@@ -6513,7 +7084,7 @@
       "encounters": "resource_scout",
       "ship": {
         "tags": [
-          "SCOUT"
+          "scout"
         ],
         "factions": [
           "ARGON"
@@ -6542,9 +7113,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -6585,9 +7156,9 @@
       "time": "1",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "ARGON"
@@ -6615,9 +7186,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -6658,9 +7229,9 @@
       "time": "1",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "ARGON"
@@ -6688,9 +7259,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -6731,9 +7302,9 @@
       "time": "600",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "ARGON"
@@ -6764,9 +7335,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -6807,9 +7378,9 @@
       "time": "600",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "ARGON"
@@ -6840,9 +7411,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "LARGE"
       },
@@ -6884,8 +7455,8 @@
       "time": "3600",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "ARGON"
@@ -6917,9 +7488,9 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "LARGE"
       },
@@ -6961,8 +7532,8 @@
       "time": "3600",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "ARGON"
@@ -6995,9 +7566,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -7012,7 +7583,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -7037,8 +7608,8 @@
       "basket": "bio",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7068,9 +7639,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -7098,8 +7669,8 @@
       "basket": "bio",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7129,9 +7700,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -7159,8 +7730,8 @@
       "basket": "food",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7190,9 +7761,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -7207,7 +7778,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -7232,8 +7803,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7263,9 +7834,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -7280,7 +7851,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -7305,8 +7876,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7336,9 +7907,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -7366,8 +7937,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7397,9 +7968,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -7414,7 +7985,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -7439,8 +8010,8 @@
       "basket": "equipment",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7470,9 +8041,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -7500,8 +8071,8 @@
       "basket": "equipment",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7531,9 +8102,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -7548,7 +8119,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -7573,8 +8144,8 @@
       "basket": "construction_stations",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7604,9 +8175,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -7634,8 +8205,8 @@
       "basket": "construction_stations",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7665,9 +8236,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -7682,7 +8253,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -7707,8 +8278,8 @@
       "basket": "refined_gas",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7738,9 +8309,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -7755,7 +8326,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -7780,8 +8351,8 @@
       "basket": "refined_gas",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7811,9 +8382,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -7828,7 +8399,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -7853,8 +8424,8 @@
       "basket": "refined_mineral",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7884,9 +8455,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -7901,7 +8472,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -7926,8 +8497,8 @@
       "basket": "refined_mineral",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -7957,9 +8528,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -7974,7 +8545,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -7999,8 +8570,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -8030,9 +8601,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -8060,8 +8631,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -8091,9 +8662,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -8121,8 +8692,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -8152,9 +8723,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -8169,7 +8740,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -8194,8 +8765,8 @@
       "basket": "water",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -8225,9 +8796,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -8255,8 +8826,8 @@
       "basket": "water",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "PARANID"
@@ -8287,9 +8858,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -8329,8 +8900,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "PARANID"
@@ -8365,9 +8936,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -8407,8 +8978,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "PARANID"
@@ -8445,9 +9016,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -8487,8 +9058,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "PARANID"
@@ -8525,9 +9096,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -8567,8 +9138,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "PARANID"
@@ -8605,9 +9176,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "SMALL"
       },
@@ -8647,8 +9218,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "PARANID"
@@ -8685,9 +9256,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -8727,8 +9298,8 @@
       "basket": "ice",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "PARANID"
@@ -8765,9 +9336,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -8807,8 +9378,8 @@
       "basket": "ice",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "PARANID"
@@ -8843,8 +9414,8 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "BUILDER"
+          "factionlogic",
+          "builder"
         ],
         "shipSize": "XLARGE"
       },
@@ -8871,7 +9442,7 @@
       ],
       "ship": {
         "tags": [
-          "BUILDER"
+          "builder"
         ],
         "factions": [
           "PARANID"
@@ -8900,8 +9471,8 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FACTIONLOGIC",
-          "BUILDER"
+          "factionlogic",
+          "builder"
         ],
         "shipSize": "XLARGE"
       },
@@ -8932,7 +9503,7 @@
       ],
       "ship": {
         "tags": [
-          "BUILDER"
+          "builder"
         ],
         "factions": [
           "PARANID"
@@ -8984,7 +9555,7 @@
       ],
       "ship": {
         "tags": [
-          "RESUPPLIER"
+          "resupplier"
         ],
         "factions": [
           "PARANID"
@@ -9011,9 +9582,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "MEDIUM"
       },
@@ -9053,8 +9624,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "PARANID"
@@ -9065,7 +9636,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "paranid_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "paranid_miningfleet_m_liquid_small",
@@ -9082,9 +9655,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "MEDIUM"
       },
@@ -9124,8 +9697,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "PARANID"
@@ -9136,7 +9709,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "paranid_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "paranid_miningfleet_ml_solid_large",
@@ -9153,9 +9728,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -9194,9 +9769,9 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "PARANID"
@@ -9206,7 +9781,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "paranid_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "paranid_miningfleet_ml_liquid_large",
@@ -9223,9 +9800,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -9264,13 +9841,73 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "PARANID"
         ],
+        "levelMin": "0",
+        "levelMax": "0.7",
+        "overridenpc": true,
+        "units": []
+      },
+      "subordinates": [
+        "paranid_fighter_escort_s_miningfleet"
+      ]
+    },
+    {
+      "id": "paranid_fighter_escort_s_miningfleet",
+      "name": "{20204,2601}",
+      "startActive": false,
+      "subordinate": true,
+      "buildatshipyard": true,
+      "jobLocation": {
+        "locationClass": "galaxy",
+        "comparison": "not",
+        "relation": "member",
+        "factions": []
+      },
+      "jobCategory": {
+        "faction": "PARANID",
+        "tags": [
+          "military",
+          "fighter"
+        ],
+        "shipSize": "SMALL"
+      },
+      "jobQuota": {
+        "galaxy": 0,
+        "maxGalaxy": 0,
+        "cluster": 0,
+        "sector": 0,
+        "wing": 1,
+        "variation": 1,
+        "station": 0
+      },
+      "orders": [
+        {
+          "order": "Escort",
+          "defaultOrder": true,
+          "parameters": [
+            {
+              "name": "formation",
+              "value": "formationshape.pointguard"
+            }
+          ]
+        }
+      ],
+      "ship": {
+        "tags": [
+          "military",
+          "fighter",
+          "selection"
+        ],
+        "factions": [
+          "PARANID"
+        ],
+        "size": "SMALL",
         "levelMin": "0",
         "levelMax": "0.7",
         "overridenpc": true,
@@ -9294,9 +9931,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -9337,9 +9974,9 @@
       "time": "1",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "PARANID"
@@ -9367,9 +10004,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -9410,9 +10047,9 @@
       "time": "1",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "PARANID"
@@ -9440,9 +10077,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -9483,9 +10120,9 @@
       "time": "600",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "PARANID"
@@ -9496,7 +10133,8 @@
         "units": []
       },
       "subordinates": [
-        "paranid_miningfleet_m_solid_small"
+        "paranid_miningfleet_m_solid_small",
+        "paranid_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -9515,9 +10153,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -9558,9 +10196,9 @@
       "time": "600",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "PARANID"
@@ -9571,7 +10209,8 @@
         "units": []
       },
       "subordinates": [
-        "paranid_miningfleet_m_liquid_small"
+        "paranid_miningfleet_m_liquid_small",
+        "paranid_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -9590,9 +10229,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "LARGE"
       },
@@ -9634,8 +10273,8 @@
       "time": "3600",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "PARANID"
@@ -9647,7 +10286,8 @@
         "units": []
       },
       "subordinates": [
-        "paranid_miningfleet_ml_solid_large"
+        "paranid_miningfleet_ml_solid_large",
+        "paranid_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -9666,9 +10306,9 @@
       "jobCategory": {
         "faction": "PARANID",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "LARGE"
       },
@@ -9710,8 +10350,8 @@
       "time": "3600",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "PARANID"
@@ -9723,7 +10363,8 @@
         "units": []
       },
       "subordinates": [
-        "paranid_miningfleet_ml_liquid_large"
+        "paranid_miningfleet_ml_liquid_large",
+        "paranid_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -9743,9 +10384,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -9760,7 +10401,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -9785,8 +10426,8 @@
       "basket": "bio",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -9816,9 +10457,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -9846,8 +10487,8 @@
       "basket": "bio",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -9877,9 +10518,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -9907,8 +10548,8 @@
       "basket": "food",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -9938,9 +10579,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -9955,7 +10596,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -9980,8 +10621,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10011,9 +10652,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -10028,7 +10669,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -10053,8 +10694,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10084,9 +10725,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -10114,8 +10755,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10145,9 +10786,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -10162,7 +10803,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -10187,8 +10828,8 @@
       "basket": "equipment",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10218,9 +10859,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -10248,8 +10889,8 @@
       "basket": "equipment",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10279,9 +10920,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -10296,7 +10937,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -10321,8 +10962,8 @@
       "basket": "construction_stations",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10352,9 +10993,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -10382,8 +11023,8 @@
       "basket": "construction_stations",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10413,9 +11054,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -10430,7 +11071,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -10455,8 +11096,8 @@
       "basket": "refined_gas",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10486,9 +11127,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -10503,7 +11144,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -10528,8 +11169,8 @@
       "basket": "refined_gas",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10559,9 +11200,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -10576,7 +11217,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -10601,8 +11242,8 @@
       "basket": "refined_mineral",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10632,9 +11273,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -10649,7 +11290,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -10674,8 +11315,8 @@
       "basket": "refined_mineral",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10705,9 +11346,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -10722,7 +11363,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -10747,8 +11388,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10778,9 +11419,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -10808,8 +11449,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10839,9 +11480,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -10869,8 +11510,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10900,9 +11541,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -10917,7 +11558,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -10942,8 +11583,8 @@
       "basket": "water",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -10973,9 +11614,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -11003,8 +11644,8 @@
       "basket": "water",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "HOLYORDER"
@@ -11035,9 +11676,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -11077,8 +11718,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "HOLYORDER"
@@ -11113,9 +11754,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -11155,8 +11796,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "HOLYORDER"
@@ -11193,9 +11834,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -11235,8 +11876,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "HOLYORDER"
@@ -11273,9 +11914,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -11315,8 +11956,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "HOLYORDER"
@@ -11353,9 +11994,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "SMALL"
       },
@@ -11395,8 +12036,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "HOLYORDER"
@@ -11433,9 +12074,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -11475,8 +12116,8 @@
       "basket": "ice",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "HOLYORDER"
@@ -11513,9 +12154,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -11555,8 +12196,8 @@
       "basket": "ice",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "HOLYORDER"
@@ -11591,8 +12232,8 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "BUILDER"
+          "factionlogic",
+          "builder"
         ],
         "shipSize": "XLARGE"
       },
@@ -11619,7 +12260,7 @@
       ],
       "ship": {
         "tags": [
-          "BUILDER"
+          "builder"
         ],
         "factions": [
           "HOLYORDER"
@@ -11648,8 +12289,8 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FACTIONLOGIC",
-          "BUILDER"
+          "factionlogic",
+          "builder"
         ],
         "shipSize": "XLARGE"
       },
@@ -11680,7 +12321,7 @@
       ],
       "ship": {
         "tags": [
-          "BUILDER"
+          "builder"
         ],
         "factions": [
           "HOLYORDER"
@@ -11708,9 +12349,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "MEDIUM"
       },
@@ -11750,8 +12391,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "HOLYORDER"
@@ -11762,7 +12403,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "holyorder_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "holyorder_miningfleet_m_liquid_small",
@@ -11779,9 +12422,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "MEDIUM"
       },
@@ -11821,8 +12464,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "HOLYORDER"
@@ -11833,7 +12476,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "holyorder_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "holyorder_miningfleet_ml_solid_large",
@@ -11850,9 +12495,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -11891,9 +12536,9 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "HOLYORDER"
@@ -11903,7 +12548,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "holyorder_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "holyorder_miningfleet_ml_liquid_large",
@@ -11920,9 +12567,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -11961,13 +12608,73 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "HOLYORDER"
         ],
+        "levelMin": "0",
+        "levelMax": "0.7",
+        "overridenpc": true,
+        "units": []
+      },
+      "subordinates": [
+        "holyorder_fighter_escort_s_miningfleet"
+      ]
+    },
+    {
+      "id": "holyorder_fighter_escort_s_miningfleet",
+      "name": "{20204,2601}",
+      "startActive": false,
+      "subordinate": true,
+      "buildatshipyard": true,
+      "jobLocation": {
+        "locationClass": "galaxy",
+        "comparison": "not",
+        "relation": "member",
+        "factions": []
+      },
+      "jobCategory": {
+        "faction": "HOLYORDER",
+        "tags": [
+          "military",
+          "fighter"
+        ],
+        "shipSize": "SMALL"
+      },
+      "jobQuota": {
+        "galaxy": 0,
+        "maxGalaxy": 0,
+        "cluster": 0,
+        "sector": 0,
+        "wing": 1,
+        "variation": 1,
+        "station": 0
+      },
+      "orders": [
+        {
+          "order": "Escort",
+          "defaultOrder": true,
+          "parameters": [
+            {
+              "name": "formation",
+              "value": "formationshape.pointguard"
+            }
+          ]
+        }
+      ],
+      "ship": {
+        "tags": [
+          "military",
+          "fighter",
+          "selection"
+        ],
+        "factions": [
+          "HOLYORDER"
+        ],
+        "size": "SMALL",
         "levelMin": "0",
         "levelMax": "0.7",
         "overridenpc": true,
@@ -11991,9 +12698,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -12034,9 +12741,9 @@
       "time": "1",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "HOLYORDER"
@@ -12064,9 +12771,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -12107,9 +12814,9 @@
       "time": "1",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "HOLYORDER"
@@ -12137,9 +12844,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -12180,9 +12887,9 @@
       "time": "600",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "HOLYORDER"
@@ -12193,7 +12900,8 @@
         "units": []
       },
       "subordinates": [
-        "holyorder_miningfleet_m_solid_small"
+        "holyorder_miningfleet_m_solid_small",
+        "holyorder_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -12212,9 +12920,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -12255,9 +12963,9 @@
       "time": "600",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "HOLYORDER"
@@ -12268,7 +12976,8 @@
         "units": []
       },
       "subordinates": [
-        "holyorder_miningfleet_m_liquid_small"
+        "holyorder_miningfleet_m_liquid_small",
+        "holyorder_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -12287,9 +12996,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "LARGE"
       },
@@ -12331,8 +13040,8 @@
       "time": "3600",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "HOLYORDER"
@@ -12344,7 +13053,8 @@
         "units": []
       },
       "subordinates": [
-        "holyorder_miningfleet_ml_solid_large"
+        "holyorder_miningfleet_ml_solid_large",
+        "holyorder_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -12363,9 +13073,9 @@
       "jobCategory": {
         "faction": "HOLYORDER",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "LARGE"
       },
@@ -12407,8 +13117,8 @@
       "time": "3600",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "HOLYORDER"
@@ -12420,7 +13130,8 @@
         "units": []
       },
       "subordinates": [
-        "holyorder_miningfleet_ml_liquid_large"
+        "holyorder_miningfleet_ml_liquid_large",
+        "holyorder_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -12440,9 +13151,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -12457,7 +13168,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -12482,8 +13193,8 @@
       "basket": "bio",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -12513,9 +13224,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -12543,8 +13254,8 @@
       "basket": "bio",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -12574,9 +13285,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -12604,8 +13315,8 @@
       "basket": "food",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -12635,9 +13346,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -12652,7 +13363,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -12677,8 +13388,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -12708,9 +13419,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -12725,7 +13436,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -12750,8 +13461,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -12781,9 +13492,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -12811,8 +13522,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -12842,9 +13553,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -12859,7 +13570,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -12884,8 +13595,8 @@
       "basket": "equipment",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -12915,9 +13626,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -12945,8 +13656,8 @@
       "basket": "equipment",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -12976,9 +13687,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -12993,7 +13704,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -13018,8 +13729,8 @@
       "basket": "construction_stations",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13049,9 +13760,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -13079,8 +13790,8 @@
       "basket": "construction_stations",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13110,9 +13821,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -13127,7 +13838,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -13152,8 +13863,8 @@
       "basket": "refined_gas",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13183,9 +13894,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -13200,7 +13911,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -13225,8 +13936,8 @@
       "basket": "refined_gas",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13256,9 +13967,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -13273,7 +13984,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -13298,8 +14009,8 @@
       "basket": "refined_mineral",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13329,9 +14040,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -13346,7 +14057,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -13371,8 +14082,8 @@
       "basket": "refined_mineral",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13402,9 +14113,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -13419,7 +14130,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -13444,8 +14155,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13475,9 +14186,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -13505,8 +14216,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13536,9 +14247,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "SMALL"
       },
@@ -13566,8 +14277,8 @@
       "basket": "tech",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13597,9 +14308,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "LARGE"
       },
@@ -13614,7 +14325,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -13639,8 +14350,8 @@
       "basket": "water",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13670,9 +14381,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -13700,8 +14411,8 @@
       "basket": "water",
       "ship": {
         "tags": [
-          "TRADER",
-          "CONTAINER"
+          "trader",
+          "container"
         ],
         "factions": [
           "TELADI"
@@ -13732,9 +14443,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -13774,8 +14485,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "TELADI"
@@ -13810,9 +14521,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -13852,8 +14563,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "TELADI"
@@ -13890,9 +14601,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -13932,8 +14643,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "TELADI"
@@ -13970,9 +14681,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -14012,8 +14723,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "TELADI"
@@ -14050,9 +14761,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "SMALL"
       },
@@ -14092,8 +14803,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "TELADI"
@@ -14130,9 +14841,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "LARGE"
       },
@@ -14172,8 +14883,8 @@
       "basket": "ice",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "TELADI"
@@ -14210,9 +14921,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "MINER"
+          "factionlogic",
+          "freighter",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -14252,8 +14963,8 @@
       "basket": "ice",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "TELADI"
@@ -14288,8 +14999,8 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "BUILDER"
+          "factionlogic",
+          "builder"
         ],
         "shipSize": "XLARGE"
       },
@@ -14316,7 +15027,7 @@
       ],
       "ship": {
         "tags": [
-          "BUILDER"
+          "builder"
         ],
         "factions": [
           "TELADI"
@@ -14345,8 +15056,8 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FACTIONLOGIC",
-          "BUILDER"
+          "factionlogic",
+          "builder"
         ],
         "shipSize": "XLARGE"
       },
@@ -14377,7 +15088,7 @@
       ],
       "ship": {
         "tags": [
-          "BUILDER"
+          "builder"
         ],
         "factions": [
           "TELADI"
@@ -14429,7 +15140,7 @@
       ],
       "ship": {
         "tags": [
-          "RESUPPLIER"
+          "resupplier"
         ],
         "factions": [
           "TELADI"
@@ -14456,9 +15167,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "MEDIUM"
       },
@@ -14498,8 +15209,8 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "TELADI"
@@ -14510,7 +15221,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "teladi_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "teladi_miningfleet_m_liquid_small",
@@ -14527,9 +15240,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "MEDIUM"
       },
@@ -14569,8 +15282,8 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "TELADI"
@@ -14581,7 +15294,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "teladi_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "teladi_miningfleet_ml_solid_large",
@@ -14598,9 +15313,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -14639,9 +15354,9 @@
       "basket": "minerals",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "TELADI"
@@ -14651,7 +15366,9 @@
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
+      "subordinates": [
+        "teladi_fighter_escort_s_miningfleet"
+      ]
     },
     {
       "id": "teladi_miningfleet_ml_liquid_large",
@@ -14668,9 +15385,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -14709,13 +15426,73 @@
       "basket": "gases",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "TELADI"
         ],
+        "levelMin": "0",
+        "levelMax": "0.7",
+        "overridenpc": true,
+        "units": []
+      },
+      "subordinates": [
+        "teladi_fighter_escort_s_miningfleet"
+      ]
+    },
+    {
+      "id": "teladi_fighter_escort_s_miningfleet",
+      "name": "{20204,2601}",
+      "startActive": false,
+      "subordinate": true,
+      "buildatshipyard": true,
+      "jobLocation": {
+        "locationClass": "galaxy",
+        "comparison": "not",
+        "relation": "member",
+        "factions": []
+      },
+      "jobCategory": {
+        "faction": "TELADI",
+        "tags": [
+          "military",
+          "fighter"
+        ],
+        "shipSize": "SMALL"
+      },
+      "jobQuota": {
+        "galaxy": 0,
+        "maxGalaxy": 0,
+        "cluster": 0,
+        "sector": 0,
+        "wing": 1,
+        "variation": 1,
+        "station": 0
+      },
+      "orders": [
+        {
+          "order": "Escort",
+          "defaultOrder": true,
+          "parameters": [
+            {
+              "name": "formation",
+              "value": "formationshape.pointguard"
+            }
+          ]
+        }
+      ],
+      "ship": {
+        "tags": [
+          "military",
+          "fighter",
+          "selection"
+        ],
+        "factions": [
+          "TELADI"
+        ],
+        "size": "SMALL",
         "levelMin": "0",
         "levelMax": "0.7",
         "overridenpc": true,
@@ -14739,7 +15516,7 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "SCOUT"
+          "scout"
         ]
       },
       "jobQuota": {
@@ -14771,7 +15548,7 @@
       "encounters": "resource_scout",
       "ship": {
         "tags": [
-          "SCOUT"
+          "scout"
         ],
         "factions": [
           "TELADI"
@@ -14799,9 +15576,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -14842,9 +15619,9 @@
       "time": "1",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "TELADI"
@@ -14872,9 +15649,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -14915,9 +15692,9 @@
       "time": "1",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "TELADI"
@@ -14945,9 +15722,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -14988,9 +15765,9 @@
       "time": "600",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID",
-          "MIXED"
+          "miner",
+          "solid",
+          "mixed"
         ],
         "factions": [
           "TELADI"
@@ -15001,7 +15778,8 @@
         "units": []
       },
       "subordinates": [
-        "teladi_miningfleet_m_solid_small"
+        "teladi_miningfleet_m_solid_small",
+        "teladi_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -15020,9 +15798,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ]
       },
       "jobQuota": {
@@ -15063,9 +15841,9 @@
       "time": "600",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID",
-          "MIXED"
+          "miner",
+          "liquid",
+          "mixed"
         ],
         "factions": [
           "TELADI"
@@ -15076,7 +15854,8 @@
         "units": []
       },
       "subordinates": [
-        "teladi_miningfleet_m_liquid_small"
+        "teladi_miningfleet_m_liquid_small",
+        "teladi_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -15095,9 +15874,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "LARGE"
       },
@@ -15139,8 +15918,8 @@
       "time": "3600",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "TELADI"
@@ -15152,7 +15931,8 @@
         "units": []
       },
       "subordinates": [
-        "teladi_miningfleet_ml_solid_large"
+        "teladi_miningfleet_ml_solid_large",
+        "teladi_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -15171,9 +15951,9 @@
       "jobCategory": {
         "faction": "TELADI",
         "tags": [
-          "FREIGHTER",
-          "MINER",
-          "DEEPSPACE"
+          "freighter",
+          "miner",
+          "deepspace"
         ],
         "shipSize": "LARGE"
       },
@@ -15215,8 +15995,8 @@
       "time": "3600",
       "ship": {
         "tags": [
-          "MINER",
-          "LIQUID"
+          "miner",
+          "liquid"
         ],
         "factions": [
           "TELADI"
@@ -15228,7 +16008,8 @@
         "units": []
       },
       "subordinates": [
-        "teladi_miningfleet_ml_liquid_large"
+        "teladi_miningfleet_ml_liquid_large",
+        "teladi_fighter_escort_s_miningfleet"
       ]
     },
     {
@@ -15249,8 +16030,8 @@
       "jobCategory": {
         "faction": "XENON",
         "tags": [
-          "FACTIONLOGIC",
-          "MINER"
+          "factionlogic",
+          "miner"
         ],
         "shipSize": "MEDIUM"
       },
@@ -15290,8 +16071,8 @@
       "basket": "minerals_xenon",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "XENON"
@@ -15327,9 +16108,9 @@
       "jobCategory": {
         "faction": "XENON",
         "tags": [
-          "FACTIONLOGIC",
-          "FREIGHTER",
-          "TRADER"
+          "factionlogic",
+          "freighter",
+          "trader"
         ],
         "shipSize": "MEDIUM"
       },
@@ -15344,7 +16125,7 @@
       },
       "orders": [
         {
-          "order": "TradeRoutine",
+          "order": "traderoutine",
           "defaultOrder": true,
           "parameters": [
             {
@@ -15369,8 +16150,8 @@
       "basket": "energycells",
       "ship": {
         "tags": [
-          "MINER",
-          "SOLID"
+          "miner",
+          "solid"
         ],
         "factions": [
           "XENON"
@@ -15384,11 +16165,11 @@
       "subordinates": []
     },
     {
-      "id": "argon_fighter_reinforcement_group",
-      "name": "Argon Fighter Reinforcement",
-      "startActive": false,
+      "id": "argon_fighter_defence_group",
+      "name": "Argon Fighter Leader",
+      "startActive": true,
       "rebuild": false,
-      "commandeerable": true,
+      "commandeerable": false,
       "buildatshipyard": true,
       "jobLocation": {
         "locationClass": "galaxy",
@@ -15401,24 +16182,25 @@
       "jobCategory": {
         "faction": "ARGON",
         "tags": [
-          "FACTIONLOGIC",
-          "MILITARY",
-          "FIGHTER"
+          "factionlogic",
+          "military",
+          "fighter",
+          "fighterwing"
         ],
         "shipSize": "SMALL"
       },
       "jobQuota": {
         "galaxy": 0,
-        "maxGalaxy": 0,
+        "maxGalaxy": 59,
         "cluster": 0,
-        "sector": 0,
-        "wing": 5,
+        "sector": 1,
+        "wing": 0,
         "variation": 0,
         "station": 0
       },
       "orders": [
         {
-          "order": "Patrol",
+          "order": "ResupplyPatrol",
           "defaultOrder": true,
           "parameters": [
             {
@@ -15430,19 +16212,261 @@
       ],
       "ship": {
         "tags": [
-          "MILITARY",
-          "FIGHTER"
+          "military",
+          "fighter"
         ],
-        "factions": [
-          "ARGON"
-        ],
+        "factions": ["ARGON"],
         "size": "SMALL",
         "levelMin": "0.4",
         "levelMax": "1.0",
         "overridenpc": true,
         "units": []
       },
-      "subordinates": []
-    }
+      "subordinates": [
+        "argon_fighter_defence_subordinate"
+      ]
+    },
+    {
+      "id": "argon_fighter_defence_subordinate",
+      "name": "Argon Fighter Wingman",
+      "startActive": false,
+      "commandeerable": false,
+      "buildatshipyard": true,
+	  "subordinate": true,
+      "jobLocation": {
+        "locationClass": "galaxy"
+      },
+      "jobCategory": {
+        "faction": "ARGON",
+        "tags": [
+          "wingman",
+          "military"
+        ],
+        "shipSize": "SMALL"
+      },
+      "jobQuota": {
+        "galaxy": 0,
+        "maxGalaxy": 0,
+        "cluster": 0,
+        "sector": 0,
+        "wing": 4,
+        "variation": 0,
+        "station": 0
+      },
+      "orders": [
+        {
+          "order": "Escort",
+          "defaultOrder": true,
+          "parameters": [
+            {
+              "name": "formation",
+              "value": "formationshape.dartvertical"
+            },            
+			{
+              "name": "formationparam",
+              "value": "2500m"
+            }
+          ]
+        }
+      ],
+      "ship": {
+        "tags": [
+          "military",
+          "fighter"
+        ],
+        "factions": ["ARGON"],
+        "size": "SMALL",
+        "levelMin": "0",
+        "levelMax": "0.7",
+        "overridenpc": true,
+        "units": []
+      }
+    },
+    {
+      "id": "argon_destroyer_defence_group",
+      "name": "Argon Destroyer Leader",
+      "startActive": true,
+      "rebuild": false,
+      "commandeerable": false,
+      "buildatshipyard": true,
+      "jobLocation": {
+        "locationClass": "galaxy",
+        "comparison": "exact",
+        "relation": "member",
+        "factions": [
+          "ARGON"
+        ]
+      },
+      "jobCategory": {
+        "faction": "ARGON",
+        "tags": [
+          "factionlogic",
+          "military",
+          "destroyer",
+          "destroyerwing"
+        ],
+        "shipSize": "MEDIUM"
+      },
+      "jobQuota": {
+        "galaxy": 0,
+        "maxGalaxy": 59,
+        "cluster": 0,
+        "sector": 0,
+        "wing": 0,
+        "variation": 0,
+        "station": 0
+      },
+      "orders": [
+        {
+          "order": "ResupplyPatrol",
+          "defaultOrder": true,
+          "parameters": [
+            {
+              "name": "range",
+              "value": "class.sector"
+            }
+          ]
+        }
+      ],
+      "ship": {
+        "tags": [
+          "military",
+          "fighter"
+        ],
+        "factions": ["ARGON"],
+        "size": "MEDIUM",
+        "levelMin": "0.4",
+        "levelMax": "1.0",
+        "overridenpc": true,
+        "units": []
+      },
+      "subordinates": [
+        "argon_fighter_defence_subordinate"
+      ]
+    },
+    {
+      "id": "argon_cruiser_defence_group",
+      "name": "Argon Cruiser Leader",
+      "startActive": true,
+      "rebuild": false,
+      "commandeerable": false,
+      "buildatshipyard": true,
+      "jobLocation": {
+        "locationClass": "galaxy",
+        "comparison": "exact",
+        "relation": "member",
+        "factions": [
+          "ARGON"
+        ]
+      },
+      "jobCategory": {
+        "faction": "ARGON",
+        "tags": [
+          "factionlogic",
+          "military",
+          "cruiser",
+          "cruiserwing"
+        ],
+        "shipSize": "LARGE"
+      },
+      "jobQuota": {
+        "galaxy": 0,
+        "maxGalaxy": 59,
+        "cluster": 0,
+        "sector": 0,
+        "wing": 0,
+        "variation": 0,
+        "station": 0
+      },
+      "orders": [
+        {
+          "order": "ResupplyPatrol",
+          "defaultOrder": true,
+          "parameters": [
+            {
+              "name": "range",
+              "value": "class.sector"
+            }
+          ]
+        }
+      ],
+      "ship": {
+        "tags": [
+          "military",
+          "fighter"
+        ],
+        "factions": ["ARGON"],
+        "size": "LARGE",
+        "levelMin": "0.4",
+        "levelMax": "1.0",
+        "overridenpc": true,
+        "units": []
+      },
+      "subordinates": [
+        "argon_fighter_defence_subordinate"
+      ]
+    },    
+	{
+      "id": "argon_carrier_defence_group",
+      "name": "Argon Carrier Leader",
+      "startActive": true,
+      "rebuild": false,
+      "commandeerable": false,
+      "buildatshipyard": true,
+      "jobLocation": {
+        "locationClass": "galaxy",
+        "comparison": "exact",
+        "relation": "member",
+        "factions": [
+          "ARGON"
+        ]
+      },
+      "jobCategory": {
+        "faction": "ARGON",
+        "tags": [
+          "factionlogic",
+          "military",
+          "carrier",
+          "carrierwing"
+        ],
+        "shipSize": "XLARGE"
+      },
+      "jobQuota": {
+        "galaxy": 0,
+        "maxGalaxy": 59,
+        "cluster": 0,
+        "sector": 0,
+        "wing": 0,
+        "variation": 0,
+        "station": 0
+      },
+      "orders": [
+        {
+          "order": "ResupplyPatrol",
+          "defaultOrder": true,
+          "parameters": [
+            {
+              "name": "range",
+              "value": "class.sector"
+            }
+          ]
+        }
+      ],
+      "ship": {
+        "tags": [
+          "military",
+          "fighter"
+        ],
+        "factions": ["ARGON"],
+        "size": "XLARGE",
+        "levelMin": "0.4",
+        "levelMax": "1.0",
+        "overridenpc": true,
+        "units": []
+      },
+      "subordinates": [
+        "argon_fighter_defence_subordinate"
+      ]
+    },		
   ]
 }

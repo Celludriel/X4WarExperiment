@@ -672,7 +672,7 @@
         </product>
         <product id="arg_energycells" ware="energycells" owner="argon" type="factory">
           <quotas>
-            <quota galaxy="10"   />
+            <quota galaxy="2"   />
           </quotas>
           <location class="galaxy" macro="warexp_galaxy_macro" faction="[argon,hatikvah]" relation="self" comparison="ge">
             <economy max="0.75" maxbound="false" />
@@ -935,6 +935,295 @@
             <select ware="wheat" race="argon" faction="argon"/>
           </module>
         </product>
+        <product id="ant_advancedcomposites" ware="advancedcomposites" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="advancedcomposites" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_advancedelectronics" ware="advancedelectronics" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="advancedelectronics" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_antimatterconverters" ware="antimatterconverters" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="antimatterconverters" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_claytronics" ware="claytronics" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="4"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="claytronics" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_energycells" ware="energycells" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="8"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.6" maxbound="false" />
+            <sunlight min="1" max="3" />
+          </location>
+          <module>
+            <select ware="energycells" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_engineparts" ware="engineparts" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="engineparts" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_foodrations" ware="foodrations" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="8"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="foodrations" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_graphene" ware="graphene" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="4"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <region ware="methane" max="80000" />
+          </location>
+          <module>
+            <select ware="graphene" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_hullparts" ware="hullparts" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="12"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="hullparts" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_meat" ware="meat" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.25" maxbound="false" />
+          </location>
+          <module>
+            <select ware="meat" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_medicalsupplies" ware="medicalsupplies" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="16"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="medicalsupplies" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_microchips" ware="microchips" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="6"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="microchips" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_missilecomponents" ware="missilecomponents" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="missilecomponents" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_plasmaconductors" ware="plasmaconductors" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="4"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.5" maxbound="false" />
+          </location>
+          <module>
+            <select ware="plasmaconductors" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_quantumtubes" ware="quantumtubes" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="4"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.5" maxbound="false" />
+          </location>
+          <module>
+            <select ware="quantumtubes" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_refinedmetals" ware="refinedmetals" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="6"  sector="4" />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.5" maxbound="false" />
+            <region ware="ore" max="80000" />
+          </location>
+          <module>
+            <select ware="refinedmetals" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_scanningarrays" ware="scanningarrays" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.5" maxbound="false" />
+          </location>
+          <module>
+            <select ware="scanningarrays" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_siliconwafers" ware="siliconwafers" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="4"  sector="2" />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.5" maxbound="false" />
+            <region ware="silicon" max="80000" />
+          </location>
+          <module>
+            <select ware="siliconwafers" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_smartchips" ware="smartchips" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="smartchips" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_spacefuel" ware="spacefuel" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="6"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone,hatikvah]" relation="self" comparison="ge">
+            <economy max="0.5" maxbound="false" />
+          </location>
+          <module>
+            <select ware="spacefuel" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_spices" ware="spices" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="6"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.25" maxbound="false" />
+          </location>
+          <module>
+            <select ware="spices" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_superfluidcoolant" ware="superfluidcoolant" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <region ware="helium" max="80000" />
+          </location>
+          <module>
+            <select ware="superfluidcoolant" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_turretcomponents" ware="turretcomponents" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="turretcomponents" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_water" ware="water" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="4"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <region ware="ice" max="80000" />
+          </location>
+          <module>
+            <select ware="water" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_weaponcomponents" ware="weaponcomponents" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.75" maxbound="false" />
+          </location>
+          <module>
+            <select ware="weaponcomponents" race="argon" faction="antigone"/>
+          </module>
+        </product>
+        <product id="ant_wheat" ware="wheat" owner="antigone" type="factory">
+          <quotas>
+            <quota galaxy="2"   />
+          </quotas>
+          <location class="galaxy" macro="warexp_galaxy_macro" faction="[antigone]" relation="self" comparison="ge">
+            <economy max="0.25" maxbound="false" />
+          </location>
+          <module>
+            <select ware="wheat" race="argon" faction="antigone"/>
+          </module>
+        </product>
         <product id="par_advancedcomposites" ware="advancedcomposites" owner="paranid" type="factory">
           <quotas>
             <quota galaxy="2"   />
@@ -1059,7 +1348,7 @@
         </product>
         <product id="par_energycells" ware="energycells" owner="paranid" type="factory">
           <quotas>
-            <quota galaxy="10"   />
+            <quota galaxy="2"   />
           </quotas>
           <location class="galaxy" macro="warexp_galaxy_macro" faction="[paranid,alliance]" relation="self" comparison="ge">
             <sunlight min="1" max="3" />
@@ -1070,7 +1359,7 @@
         </product>
         <product id="hol_energycells" ware="energycells" owner="holyorder" type="factory">
           <quotas>
-            <quota galaxy="10"   />
+            <quota galaxy="2"   />
           </quotas>
           <location class="galaxy" macro="warexp_galaxy_macro" faction="[holyorder,alliance]" relation="self" comparison="ge">
             <sunlight min="1" max="3" />
@@ -1587,7 +1876,7 @@
         </product>
         <product id="tel_energycells" ware="energycells" owner="teladi" type="factory">
           <quotas>
-            <quota galaxy="10"   />
+            <quota galaxy="18"   />
           </quotas>
           <location class="galaxy" macro="warexp_galaxy_macro" faction="[teladi,scaleplate]" relation="self" comparison="ge">
             <economy max="0.75" maxbound="false" />

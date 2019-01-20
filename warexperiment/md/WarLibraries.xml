@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mdscript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="WarLibraries" xsi:noNamespaceSchemaLocation="md.xsd">
 	<cues>
+		<!--
+		params: 
+			param.[1]: Sector to build station in
+			param.[2]: Faction the station belongs too
+			param.[3]: Station tag
+			param.[4]: Type of station
+			param.[5]: Debug chance			
+		-->
 		<library name="BuildStation" instantiate="true" >
 			<params>
 				<param name="Level" default="0.9"/>
 				<param name="Radius" default="5km"/>
 				<param name="MaxDistance" default="100km"/>
 				<param name="AllowYaxis" default="false"/>
-				<param name="DebugChance" default="100"/>
+				<param name="DebugChance" default="0"/>
 				<param name="DebugChance2" default="0"/>
 			</params>
 			<conditions>
@@ -48,28 +56,6 @@
 					<cancel_cue cue="this"/>
 				</do_else>
 			</actions>
-			<cues>
-				<cue name="FWM_Station_Management_Evaluation" instantiate="true">
-					<delay exact="60s"/>
-					<actions>
-						<debug_text text="'FWM_Station_Management_Evaluation'" chance="$DebugChance"/>
-						<do_all exact="$Station.buildstorage.resources.list.count" counter="$i">
-							<set_value name="$Ware" exact="$Station.buildstorage.resources.list.{$i}"/>
-							<debug_text text="'%1 has %2 %3 neededsequenceresources %4 buyprice %5'.[$Station.knownname,$Station.buildstorage.cargo.{$Ware}.count,$Ware,$Station.buildingprocessor.neededsequenceresources.{$Ware}.count,$Station.buildstorage.buyprice.{$Ware}]" chance="$DebugChance2"/>
-							<set_value name="$Offers" exact="[]"/>
-							<find_buy_offer tradepartner="player.container" usereservations="false" excludeempty="false" result="$Offers" multiple="true" buyer="$Station.buildstorage" wares="$Ware"/>
-							<do_all exact="$Offers.count" counter="$k">
-								<set_value name="$TradeOffer" exact="$Offers.{$k}"/>
-								<debug_text text="'Buy offer %1: price: %2 - unitprice: %3 - minprice: %4 - relativeprice: %5'.[$Ware,$TradeOffer.price,$TradeOffer.unitprice,$TradeOffer.minprice,$TradeOffer.relativeprice]" chance="$DebugChance2"/>
-							</do_all>
-						</do_all>
-						<debug_text text="'Station state: %1'.[$Station.state]" chance="$DebugChance2"/>
-						<do_if value="$Station.state != componentstate.operational">
-							<reset_cue cue="FWM_Station_Management_Evaluation"/>
-						</do_if>            
-					</actions>
-				</cue>
-			</cues>
 		</library>
 
 		<!--
@@ -128,6 +114,87 @@
 					<set_value name="$CalculatedExpectedMilitaryJobs" exact="[tag.carrier,tag.fighterwing]" />										
 				</do_if>				
 			</actions>	
+		</library>
+		
+		<!--
+		input:
+			$UsableWareFaction: [Faction to get usable ware for],
+			$UsableWareFactionSpecific: [Boolean for getting only a faction specific ware]
+		output:
+			$UsableWareForFaction: [The usable ware for faction]		
+		-->
+		<library name="GetUsableWareForFaction">
+			<actions>
+				<set_value name="$UsableWareForFaction" exact="ware.energycells" />
+				<set_value name="$Wares_Common_Types" exact="[
+					ware.advancedcomposites, ware.advancedelectronics, ware.antimattercells, ware.antimatterconverters, ware.claytronics,
+					ware.dronecomponents, ware.energycells, ware.engineparts, ware.fieldcoils, ware.graphene, ware.hullparts, ware.medicalsupplies,
+					ware.microchips, ware.missilecomponents, ware.plasmaconductors, ware.quantumtubes, ware.scanningarrays, ware.shieldcomponents,
+					ware.siliconwafers, ware.spices, ware.superfluidcoolant, ware.turretcomponents, ware.weaponcomponents, ware.water, ware.smartchips]" />
+				
+				<set_value name="$Wares_Argon_Types" exact="[ware.foodrations,ware.meat,ware.refinedmetals,ware.spacefuel,ware.wheat]" />
+				<set_value name="$Wares_Hatikvah_Types" exact="[ware.spacefuel]" />
+				<set_value name="$Wares_ScalePlate_Types" exact="[ware.majadust,ware.spaceweed]" />
+				<set_value name="$Wares_Paranid_Types" exact="[ware.refinedmetals,ware.majasnails,ware.sojabeans,ware.sojahusk]" />
+				<set_value name="$Wares_Teladi_Types" exact="[ware.nostropoil,ware.spaceweed,ware.sunriseflowers,ware.teladianium,ware.swampplant]" />
+				<set_value name="$Wares_Xenon_Types" exact="[ware.energycells]" />
+				
+				<do_if value="$UsableWareFactionSpecific">
+					<do_if value="$UsableWareFaction.id == 'argon' or $UsableWareFaction.id == 'antigone'">
+						<shuffle_list list="$Wares_Argon_Types" />
+						<set_value name="$UsableWareForFaction" exact="$Wares_Argon_Types.{1}" />
+					</do_if>
+					<do_elseif value="$UsableWareFaction.id == 'paranid' or $UsableWareFaction.id == 'holyorder'">
+						<shuffle_list list="$Wares_Paranid_Types" />
+						<set_value name="$UsableWareForFaction" exact="$Wares_Paranid_Types.{1}" />
+					</do_elseif>
+					<do_elseif value="$UsableWareFaction.id == 'hatikvah'">
+						<set_value name="$UsableWareForFaction" exact="$Wares_Hatikvah_Types.{1}" />
+					</do_elseif>
+					<do_elseif value="$UsableWareFaction.id == 'teladi'">
+						<shuffle_list list="$Wares_Teladi_Types" />
+						<set_value name="$UsableWareForFaction" exact="$Wares_Teladi_Types.{1}" />
+					</do_elseif>
+					<do_elseif value="$UsableWareFaction.id == 'scaleplate'">
+						<shuffle_list list="$Wares_ScalePlate_Types" />
+						<set_value name="$UsableWareForFaction" exact="$Wares_ScalePlate_Types.{1}" />
+					</do_elseif>
+					<do_elseif value="$UsableWareFaction.id == 'xenon'">
+						<set_value name="$UsableWareForFaction" exact="$Wares_Xenon_Types.{1}" />
+					</do_elseif>
+				</do_if>
+				<do_else>
+					<do_if value="$UsableWareFaction.id == 'argon' or $UsableWareFaction.id == 'antigone'">
+						<append_to_list name="$Wares_Common_Types" exact="$Wares_Argon_Types" />
+						<shuffle_list list="$Wares_Common_Types" />
+						<set_value name="$UsableWareForFaction" exact="$Wares_Common_Types.{1}" />
+					</do_if>
+					<do_elseif value="$UsableWareFaction.id == 'paranid' or $UsableWareFaction.id == 'holyorder'">
+						<append_to_list name="$Wares_Common_Types" exact="$Wares_Paranid_Types" />
+						<shuffle_list list="$Wares_Common_Types" />
+						<set_value name="$UsableWareForFaction" exact="$Wares_Common_Types.{1}" />
+					</do_elseif>
+					<do_elseif value="$UsableWareFaction.id == 'hatikvah'">
+						<append_to_list name="$Wares_Common_Types" exact="$Wares_Hatikvah_Types" />
+						<shuffle_list list="$Wares_Common_Types" />
+						<set_value name="$UsableWareForFaction" exact="$Wares_Common_Types.{1}" />
+					</do_elseif>
+					<do_elseif value="$UsableWareFaction.id == 'teladi'">
+						<append_to_list name="$Wares_Common_Types" exact="$Wares_Teladi_Types" />
+						<shuffle_list list="$Wares_Common_Types" />
+						<set_value name="$UsableWareForFaction" exact="$Wares_Common_Types.{1}" />
+					</do_elseif>
+					<do_elseif value="$UsableWareFaction.id == 'scaleplate'">
+						<append_to_list name="$Wares_Common_Types" exact="$Wares_ScalePlate_Types" />
+						<shuffle_list list="$Wares_Common_Types" />
+						<set_value name="$UsableWareForFaction" exact="$Wares_Common_Types.{1}" />
+					</do_elseif>
+					<do_elseif value="$UsableWareFaction.id == 'xenon'">
+						<set_value name="$UsableWareForFaction" exact="$Wares_Xenon_Types.{1}" />
+					</do_elseif>		
+				</do_else>
+				<debug_text text="'UsableWareForFaction: %1'.[$UsableWareForFaction]" chance="100" />
+			</actions>
 		</library>
 	</cues>
 </mdscript>

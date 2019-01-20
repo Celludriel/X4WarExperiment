@@ -9,7 +9,7 @@
 				<return/>
 			</do_if>
 
-			<debug_text text="'restock subordinates. init: ' + $init" chance="$debugchance"/>
+			<debug_text text="this.ship.idcode + ' restock subordinates. init: ' + $init" chance="$debugchance"/>
 
 			<get_subordinate_macro name="$macros" commander="this.ship" init="$init" multiple="true"/>
 			<debug_text text="'no suitable subordinate job ships found. we need the following macros:'" chance="$debugchance"/>
@@ -18,6 +18,7 @@
 			</do_all>
 
 			<do_if value="not $macros.count">
+				<debug_text text="'%s: No macros found'.[this.ship.idcode]" chance="$debugchance"/>
 				<resume label="finish"/>
 			</do_if>
 
@@ -72,18 +73,19 @@
 			<label name="flyto"/>
 
 			<do_if value="not $shipyard?">
+				<debug_text text="'%s: No valid shipyard found'.[this.ship.idcode]" chance="$debugchance"/>			
 				<resume label="finish"/>
 			</do_if>
 
 			<remove_value name="$clusterranges"/>
-			<!-- disabling move to see if it works without moving
 			<debug_text text="'Moving to shipyard ' + $shipyard.knownname + ' in ' + $shipyard.zone.knownname" chance="$debugchance"/>
 
 			<run_script name="'move.generic'">
 				<param name="destination" value="$shipyard"/>
-			</run_script> -->
+			</run_script>
 
 			<do_if value="not $shipyard.exists">
+				<debug_text text="'%s: No valid shipyard found'.[this.ship.idcode]" chance="$debugchance"/>			
 				<resume label="finish"/>
 			</do_if>
 
@@ -101,7 +103,7 @@
 				</do_if>
 			</do_all>
 
-			<debug_text text="'waiting for ' + $BuildingObjects.count + ' subordinates'" chance="$debugchance" />
+			<debug_text text="this.ship.idcode + ' waiting for ' + $BuildingObjects.count + ' subordinates'" chance="$debugchance" />
 			
 			<do_all exact="$BuildingObjects.count" counter="$i" reverse="true">
 				<do_if value="$BuildingObjects.{$i}.isoperational">
